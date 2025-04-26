@@ -1,0 +1,113 @@
+1 
+ 
+MGMT 59000 Visual Analytics, Fall 2024 
+Individual Assignment Set 1 
+Due Date: 11:59 pm on Aug. 30th, 2024 
+ 
+Notes: There are three sets of questions in this assignment. The deliverables will be an Excel file, 
+titled “NBA,” with all required visuals (for question sets 1 and 2) and a Tableau workbook, 
+titled “Airbnb_listing,” with all required visuals (for question set 3). For questions with no 
+visuals related, please create a new worksheet and write your answers on it. For discussions 
+about a chart, please include the discussions on the same worksheet as where the chart is 
+located. For all visualizations, please format the charts properly (including titles, axis names, 
+etc.). 
+ 
+Question 1: Using data on the “NBA Salary” worksheet in the “NBA” Excel file: 
+1.1. Draw a bar (column) chart of salaries for the top five players in the data. For each player, 
+you are expected to show their name, team, and salary. 
+1.2. Draw a bar (column) chart to show the total salaries by team and rank them in descending 
+order (from highest to lowest). Use the color coding below: Green for the top five teams, orange 
+for the bottom five, and grey for the rest. 
+1.3. Based on the information in Question 1.2, draw a treemap showing the top five teams. 
+1.4. Draw a box and whisker plot to show the distributions of salaries by team. (Hint: draw 
+one chart that includes all teams and show the salary distribution for each team.) 
+1.5. Please highlight and discuss two insights from the data and support your reasoning with 
+visuals generated above. (Note: Create a new worksheet in the Excel file and list your insights 
+on the sheet) 
+ 
+2 
+ 
+Question 2. Using data on the “NBA Performance Stats” worksheet in the “NBA” file: 
+2.1. Draw a scatter plot to show the relationship between “Age” and “PTS” (points scored in the 
+season). Please interpret the chart you generated. (Hint: As an example, you can discuss about 
+whether the relationship is positive or negative using a trendline and its associated equation.) 
+2.2. Draw a dual-axis combo chart to show the relationship between average age and total PTS 
+by team. Sort the teams by average age in descending order (from largest to smallest). Please 
+use total PTS on the primary axis (represented by a bar chart) and average age on the secondary 
+axis (represented by a line chart). 
+2.3. Draw a pie chart to show the percentages of points scored by each player position (Note: 
+only five positions in the data, C, PF, PG, SF, and SG). 
+2.4. Draw a heatmap for the five teams shown below based on the total PTS for each 
+combination of team and player position (Note: hide the numbers of PTS). 
+ 
+2.5. Suppose you are the general manager (GM) of a team and would like to create a Gantt chart 
+to track player recruitment activities with the data given below. Fill in the “Days Completed” 
+and “Remaining Days” in the table and create a Gantt chart based on that. 
+ 
+ 
+ 
+Initiative
+Start
+End
+Length
+Completed %
+Days Completed
+Remaining Days
+Hunt Potential Players
+10-Feb-20
+25-Feb-20
+15
+60%
+Contact Players
+15-Feb-20
+15-Mar-20
+30
+40%
+In-Talks
+20-Feb-20
+30-Mar-20
+40
+25%
+Salary Negotiations
+25-Feb-20
+25-Apr-20
+60
+10%
+Sign final contract
+1-Mar-20
+26-Apr-20
+55
+30%
+3 
+ 
+Question 3. Use data in the “Airbnb_listing.csv” file to complete the following case study: 
+Airbnb launched in 2009 by two friends who rented out their San Francisco apartment for a 
+local convention, and it is now one of the largest hotel/rental businesses in the world. In Q3 of 
+2022, Airbnb has had nearly 100 million nights and experiences booked (Airbnb, 2023). Airbnb 
+uses a commission-based platform that allows hosts to rent out a room or the entire dwelling of 
+their home. The type of rental can vary from a single room in Austin, Texas to an entire 
+penthouse in Manhattan, New York. 
+Airbnb has significantly disrupted the traditional hotel industry. This new sharing model 
+goes against the traditional hotel model that is characterized by having an entry barrier, 
+investments, and operating at a fixed cost. Because of the lower entry barrier, Airbnb and other 
+shared rental services continue to grow. According to a study of 1,000 people by Clever in 2019, 
+82% said they would consider renting a portion of their place for extra income. 
+According to a survey conducted by Earnest, on average, Airbnb hosts make over $500 per 
+month ($6,000 annually). As part of the rental process, Airbnb charges a flat 3% service fee to 
+each host. This fee covers Airbnb services such as customer service, marketing, and insurance. 
+As part of this case study, you will take the role of a data analyst. Your job is to look at a 
+data set of Airbnb rentals from New York City. Using this data, identify the profitability of 
+hosts in the city. Along with identifying profits, use the data to identify which areas of the city 
+have grown in popularity and which areas have not. The data used in this study is sourced from 
+the public information on the Airbnb site. Information from this site is collected and aggregated 
+by Inside Airbnb to help facilitate public discussion. 
+Create your own visualization based on your own exploration of the data: 
+3.1. Which borough has the most rentals? 
+3.2. Which borough offers the most affordable rentals? 
+3.3. What is the price breakdown for a particular borough? 
+3.4. What factors (besides location) can influence rental price? (Hint: Pick and analyze at 
+least two extra factors) 
+4 
+ 
+3.5. Which host is the most profitable? 
+3.6. How much has Airbnb earned from NYC rentals? 
