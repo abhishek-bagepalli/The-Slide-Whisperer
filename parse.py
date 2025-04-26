@@ -5,6 +5,9 @@ from PIL import Image
 import io
 from pptx import Presentation
 from pptx.util import Inches, Pt
+import openai
+from dotenv import load_dotenv
+import os
 
 def extract_text_from_pdf(file_path):
     doc = fitz.open(file_path)
@@ -97,7 +100,6 @@ def extract_tables_from_docx(file_path):
 
     return tables_data
 
-
 def create_presentation(title_text, slide_contents, image_paths, table_data, output_path="output.pptx"):
     # Initialize presentation
     prs = Presentation()
@@ -162,10 +164,12 @@ def create_presentation(title_text, slide_contents, image_paths, table_data, out
     prs.save(output_path)
     print(f"✅ Presentation saved to {output_path}")
 
-
-
-# Example usage
 if __name__ == "__main__":
+
+    load_dotenv()
+    openai.api_key = os.getenv("OPENAI_API_KEY")
+
+    
 
     file_path = "docs/temp_with_tables.pdf"  # Change this to your input file
 
@@ -192,11 +196,3 @@ if __name__ == "__main__":
 
     # Create the PPT
     create_presentation("Sample Report Summary", slide_data, image_files, tables)
-
-    
-    # print("Extracted Tables:")
-    # for i, table in enumerate(tables):
-    #     print(f"Table {i+1}:")
-    #     for row in table:
-    #         print(row)
-    #     print("\n")
