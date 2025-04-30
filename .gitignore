@@ -1,1 +1,4 @@
 .env
+*.ipynb
+extracted_images
+docs
