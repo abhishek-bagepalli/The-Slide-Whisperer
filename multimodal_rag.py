@@ -21,6 +21,7 @@ def get_text_embedding(text):
     return embeddings[0]
 
 def get_best_image(text_query, image_index):
+    
     query_emb = get_text_embedding(text_query)
     best_score = -1
     best_image = None
@@ -32,6 +33,13 @@ def get_best_image(text_query, image_index):
     return best_image, best_score
 
 def build_image_index(image_folder):
+
+    print('**************************************************')
+
+    print("Building image index...")
+
+    print('**************************************************')
+
     index = []
     for fname in sorted(os.listdir(image_folder)):
         if fname.lower().endswith(('.png', '.jpg', '.jpeg')):
@@ -39,9 +47,3 @@ def build_image_index(image_folder):
             emb = get_image_embedding(path)
             index.append((fname, emb))
     return index
-
-def return_best_image(query,image_folder="extracted_images"):
-    image_index = build_image_index(image_folder)
-    best_image, score = get_best_image(query, image_index)
-    return best_image, score
-
