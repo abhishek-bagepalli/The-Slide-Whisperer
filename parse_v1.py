@@ -320,7 +320,7 @@ if __name__ == "__main__":
 
 
     else:
-        print("File not found.")    
+        print("File not found.")
 
     # Get tables summary
     tables_summary = summarize_tables(tables)
@@ -331,7 +331,7 @@ if __name__ == "__main__":
     prompt = f"""
     You are an expert presentation designer tasked with generating an initial slide plan for a PowerPoint deck.
 
-    Based on the extracted content below (text, tables, images), create a clean structure for a slide deck.
+    Based on the extracted content below (text, tables), create a clean structure for a slide deck.
 
     For each slide, you must decide:
     - Slide title
@@ -350,7 +350,8 @@ if __name__ == "__main__":
     - "Process", "Hierarchy", "Cycle", "Relationship", etc.
 
     If Image is used, instead of selecting an image from the list, describe what the image should show.
-    This will later be used to automatically select the most relevant image from a local collection.
+    This will later be used to automatically select the most relevant image from a local collection..
+    
 
     Output Format:
     Return a JSON list.
