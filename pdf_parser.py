@@ -8,10 +8,36 @@ from transformers import CLIPProcessor, CLIPModel
 import torch
 from dotenv import load_dotenv
 
+
 load_dotenv()
 
 nest_asyncio.apply()
 
+def rename_image_files(job_id, images_dir="./images"):
+    """
+    Rename image files by removing the job_id prefix.
+    
+    Args:
+        job_id (str): The job ID to remove from filenames
+        images_dir (str): Directory containing the image files
+        
+    Returns:
+        None
+    """
+    # Iterate through all files in the images directory
+    for filename in os.listdir(images_dir):
+        # Check if the filename contains the job_id
+        if job_id in filename:
+            # Create the old and new file paths
+            old_path = os.path.join(images_dir, filename)
+            new_filename = filename.replace(job_id + "-", "")
+            new_path = os.path.join(images_dir, new_filename)
+            
+            # Rename the file
+            os.rename(old_path, new_path)
+            print(f"Renamed {filename} to {new_filename}")
+
+    print("Finished renaming all files")
 
 def process_document(file_path, json_output_filename="document_parsed.json", image_download_dir="./images"):
     """
@@ -45,9 +71,7 @@ def process_document(file_path, json_output_filename="document_parsed.json", ima
         f.write(formatted_json)
 
     print('**************************************************')
-
     print("JSON data has been written to document_parsed.json")
-
     print('**************************************************')
     
     # Save JSON result
@@ -59,22 +83,36 @@ def process_document(file_path, json_output_filename="document_parsed.json", ima
     parser.get_images(json_result,"./images")
 
     print('**************************************************')
-
     print("Images have been extracted and saved to ./images")
-
     print('**************************************************')
 
-    # image_index = []
-    # for image_doc in image_documents:
-    #     image_path = image_doc.metadata.get("file_path")
-    #     if image_path:
-    #         try:
-    #             image = Image.open(image_path).convert("RGB")
-    #             inputs = processor(images=image, return_tensors="pt")
-    #             with torch.no_grad():
-    #                 embeddings = model.get_image_features(**inputs)
-    #             image_index.append((image_path, embeddings[0]))
-    #         except Exception as e:
-    #             print(f"Error processing image {image_path}: {e}")
+    #Rename images
+    rename_image_files(json_result[0]['job_id'])
+
+    #Match images with dimensions and save metadata
+    image_metadata = []
+
+    for page in json_result[0]['pages']:
+        for img in page['images']:
+            width = img['width']
+            height = img['height']
+            name = img['name']
+            original_height = img['original_height']
+            original_width = img['original_width']
+            image_metadata.append({
+                "name": name,
+                "width": width,
+                "height": height,
+                "original_height": original_height,
+                "original_width": original_width
+            })
+
+    # Save image metadata to JSON file
+    with open('image_metadata.json', 'w') as f:
+        json.dump(image_metadata, f, indent=2)
+    
+    print('**************************************************')
+    print("Image metadata has been saved to image_metadata.json")
+    print('**************************************************')
     
     return json_result
