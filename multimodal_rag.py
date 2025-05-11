@@ -20,18 +20,6 @@ def get_text_embedding(text):
         embeddings = model.get_text_features(**inputs)
     return embeddings[0]
 
-def get_best_image(text_query, image_index):
-    
-    query_emb = get_text_embedding(text_query)
-    best_score = -1
-    best_image = None
-    for fname, img_emb in image_index:
-        score = F.cosine_similarity(query_emb, img_emb, dim=0).item()
-        if score > best_score:
-            best_score = score
-            best_image = fname
-    return best_image, best_score
-
 def build_image_index(image_folder):
 
     print('**************************************************')
