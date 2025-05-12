@@ -6,9 +6,10 @@ from pptx.enum.shapes import MSO_SHAPE
 from pptx.enum.text import PP_ALIGN
 from pptx.dml.color import RGBColor
 import os
+import json
 
 # Create or load a presentation
-PPTX_PATH = "output_presentation.pptx"
+PPTX_PATH = "loreal_presentation_v1.pptx"
 if os.path.exists(PPTX_PATH):
     prs = Presentation(PPTX_PATH)
 else:
@@ -20,27 +21,37 @@ SLIDE_HEIGHT = prs.slide_height.inches
 def save_presentation():
     prs.save(PPTX_PATH)
 
-def create_slide(title_dict, text_dict, text_box_dict, image_path_dict, image_box_dict):
+def create_slide(spec_arg):
+    prs.slide_height = Inches(spec_arg['slide_dimensions']['width'])
+    prs.slide_height = Inches(spec_arg['slide_dimensions']['height'])
     slide_layout = prs.slide_layouts[5]  # Blank layout
     slide = prs.slides.add_slide(slide_layout)
 
-    title = title_dict.get("title")
-    text_items = text_dict.get("text", [])
-    is_bulleted = text_dict.get("bulleted", False)
-    font_size = text_dict.get("font_size", 24)
+    title = spec_arg.get("title")
+    subtitle = spec_arg.get("subtitle")
+    text_items = spec_arg.get("text", [])
+    is_bulleted = spec_arg.get("bulleted", False)
+    font_size = spec_arg.get("font_size", 24)
 
-    text_box = text_box_dict.get("text_box", {})
-    image_path = image_path_dict.get("image_path")
-    image_box = image_box_dict.get("image_box", {})
+    text_box = spec_arg.get("text_box", {})
+    image_path = spec_arg.get("image_path")
+    image_box = spec_arg.get("image_box", {})
 
     padding = 0.2  # default padding
     text_padding = text_box.get("padding", padding)
     image_padding = image_box.get("padding", padding)
+
+    title_box = spec_arg.get("title_box", {})
+    subtitle_box = spec_arg.get("subtitle_box", {})
     title_padding = 0.2
 
     if title:
-        title_shape = slide.shapes.title or slide.shapes.add_textbox(Inches(0.5), Inches(title_padding), Inches(9), Inches(0.8))
+        title_shape = slide.shapes.title or slide.shapes.add_textbox(Inches(title_box['x']), Inches(title_box['y']), Inches(title_box['width']), Inches(title_box['height']))
         title_shape.text = title
+    
+    if subtitle:
+        subtitle_shape = slide.shapes.add_textbox(Inches(subtitle_box['x']), Inches(subtitle_box['y']), Inches(subtitle_box['width']), Inches(subtitle_box['height']))
+        subtitle_shape.text = subtitle
 
     if text_items:
         x = Inches(text_box.get("x") + text_padding)
@@ -48,6 +59,13 @@ def create_slide(title_dict, text_dict, text_box_dict, image_path_dict, image_bo
         w = Inches(text_box.get("width") - 2 * text_padding)
         h = Inches(text_box.get("height") - 2 * text_padding)
         text_shape = slide.shapes.add_textbox(x, y, w, h)
+
+        # estimated_line_height = font_size * 1.2 / 72  # in inches
+        # total_estimated_height = estimated_line_height * len(text_items)
+
+        # if total_estimated_height > h.inches:
+        #     w = w + 0.5
+
         tf = text_shape.text_frame
         tf.clear()
         for i, item in enumerate(text_items):
@@ -106,77 +124,11 @@ def add_chart_to_slide(slide_number, chart_data_path):
     return {"status": "success", "message": f"Chart placeholder added to slide {slide_number}."}
 
 
-# create_slide(
-#     {"title": "Yue Sai's Relevance Decline"},
-#     {"text": [
-#         "Multiple unsuccessful attempts to reposition the brand",
-#         "Failing to adapt to changing consumer preferences",
-#         "Losing market share to competitors with more innovative strategies"
-#     ], "bulleted": True, "font_size": 20},
-#     {"text_box": {
-#         "layout": "left", "x": 0.25, "y": 1.0, "width": 6.0, "height": 4.0, "padding": 1
-#     }},
-#     {"image_path": "images/img_p0_2.png"},
-#     {"image_box": {
-#         "layout": "right", "x": 5.0, "y": 1.0, "width": 5.0, "height": 4.0, "padding": 1
-#     }}
-# )
+with open("slide_layouts.json", "r") as f:
+    slide_specs = json.load(f)
 
-slide_specs = [
-    {
-        "title": "Targeting Modern, Health-Conscious Young Women in China",
-        "text_dict": {
-            "text": ['Developing products tailored to health and wellness trends',   
-                     'Utilizing digital marketing channels to reach the target demographic',   
-                     'Emphasizing natural ingredients and sustainability in product offerings'],
-            "bulleted": True,
-            "font_size": 16
-        },
-        "text_box_dict": {
-            "text_box": {
-                "layout": "right", "x": 0.5, "y": 1.0, "width": 6.0, "height": 6.0, "padding": 0.7
-            }
-        },
-        "image_path_dict": {
-            "image_path": "images/img_p0_1.png"
-        },
-        "image_box_dict": {
-            "image_box": {
-                "layout": "left", "x": 5, "y": 1.0, "width": 5.0, "height": 4.0, "padding": 0.7
-            }
-        }
-    },
-    {
-        "title": "Yue Sai's Relevance Decline",
-        "text_dict": {
-            "text": ["Multiple unsuccessful attempts to reposition the brand",
-                        "Failing to adapt to changing consumer preferences",
-                        "Losing market share to competitors with more innovative strategies"],
-            "bulleted": True,
-            "font_size": 18
-        },
-        "text_box_dict": {
-            "text_box": {
-                "layout": "left", "x": 0.5, "y": 1.0, "width": 6.0, "height": 6.0, "padding": 0.7
-            }
-        },
-        "image_path_dict": {
-            "image_path": "images/img_p0_2.png"
-        },
-        "image_box_dict": {
-            "image_box": {
-                "layout": "right", "x": 5.0, "y": 1.0, "width": 5.0, "height": 4.0, "padding": 0.7
-            }
-        }
-    }
-]
+print(slide_specs)
 
 for spec in slide_specs:
-    result = create_slide(
-        {"title": spec["title"]},
-        spec["text_dict"],
-        spec["text_box_dict"],
-        spec["image_path_dict"],
-        spec["image_box_dict"]
-    )
+    result = create_slide(spec)
     print(f"✅ Slide created: {result}")
