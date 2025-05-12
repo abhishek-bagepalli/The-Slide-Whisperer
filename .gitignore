@@ -1,1 +1,5 @@
 .env
+# *.ipynb
+extracted_images
+docs
+parse_v1.py
