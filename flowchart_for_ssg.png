@@ -1,0 +1,10 @@
+// Sample Flowchart
+digraph {
+	0 [label="Open Ticket"]
+	1 [label="Assign Ticket"]
+	2 [label="Post Updates"]
+	3 [label="Close Ticket"]
+	0 -> 1
+	1 -> 2
+	2 -> 3
+}
