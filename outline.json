@@ -4,60 +4,174 @@
   "sections": [
     {
       "heading": "Brief Assessment",
-      "num_content_slides": 2,
-      "key_points": [
-        "Yue Sai lost relevance due to failed repositionings",
-        "Competitive market with rising local players and digital consumption",
-        "Align city-tier strategy with clear brand identity"
+      "num_content_slides": 1,
+      "slide_distribution": [
+        {
+          "sub_slide": 1,
+          "sub_slide_title": "Yue Sai's Relevance",
+          "sub_slide_subtitle": "Challenges and Opportunities",
+          "key_points": [
+            "Yue Sai's lost relevance due to failed repositionings",
+            "Competitive market with rising local players",
+            "Digital platforms offer better engagement"
+          ]
+        }
       ]
     },
     {
       "heading": "Decision Problem",
-      "num_content_slides": 2,
-      "key_points": [
-        "Thorough market research needed to understand trends and preferences",
-        "Leverage heritage and reputation to appeal to modern consumers",
-        "Implement innovative marketing strategies tailored to local market"
+      "num_content_slides": 1,
+      "slide_distribution": [
+        {
+          "sub_slide": 1,
+          "sub_slide_title": "Repositioning Yue Sai",
+          "sub_slide_subtitle": "Market Research and Strategies",
+          "key_points": [
+            "Leveraging heritage and reputation",
+            "Innovative marketing strategies",
+            "Tailored product offerings"
+          ]
+        }
       ]
     },
     {
       "heading": "Criteria",
       "num_content_slides": 1,
-      "key_points": [
-        "Analyze sales performance and product-market fit",
-        "Assess local relevance and demographic responsiveness"
+      "slide_distribution": [
+        {
+          "sub_slide": 1,
+          "sub_slide_title": "Sales Performance and Fit",
+          "sub_slide_subtitle": "Assessment and Analysis",
+          "key_points": [
+            "Sales data projection",
+            "Market research insights",
+            "Customer preference alignment"
+          ]
+        }
       ]
     },
     {
       "heading": "Strategic Fit",
       "num_content_slides": 1,
-      "key_points": [
-        "Evaluate alignment of alternatives with brand vision and mission"
+      "slide_distribution": [
+        {
+          "sub_slide": 1,
+          "sub_slide_title": "Alignment with Brand Vision",
+          "sub_slide_subtitle": "",
+          "key_points": [
+            "Scoring alternatives based on brand values"
+          ]
+        }
       ]
     },
     {
       "heading": "Risk of Attrition",
       "num_content_slides": 1,
-      "key_points": [
-        "Measure customer loyalty and growth",
-        "Evaluate customer retention metrics and purchase behavior"
+      "slide_distribution": [
+        {
+          "sub_slide": 1,
+          "sub_slide_title": "Customer Loyalty Measurement",
+          "sub_slide_subtitle": "Retention and Growth",
+          "key_points": [
+            "Customer retention metrics",
+            "Purchase behavior analysis",
+            "Demographic changes impact"
+          ]
+        }
       ]
     },
     {
       "heading": "Execution Complexity",
       "num_content_slides": 1,
-      "key_points": [
-        "Assess implementation difficulty of proposed alternative",
-        "Consider costs related to resources, budget constraints, production, and logistics"
+      "slide_distribution": [
+        {
+          "sub_slide": 1,
+          "sub_slide_title": "Implementation Difficulty",
+          "sub_slide_subtitle": "Cost and Resource Assessment",
+          "key_points": [
+            "Cost considerations",
+            "Resource allocation",
+            "Logistics challenges"
+          ]
+        }
+      ]
+    },
+    {
+      "heading": "Moderate Risk",
+      "num_content_slides": 1,
+      "slide_distribution": [
+        {
+          "sub_slide": 1,
+          "sub_slide_title": "Competitive Landscape",
+          "sub_slide_subtitle": "Challenges and Rivals",
+          "key_points": [
+            "Digital space competition",
+            "Local rivals impact",
+            "Alienating older loyalists risk"
+          ]
+        }
+      ]
+    },
+    {
+      "heading": "Attrition Risk",
+      "num_content_slides": 1,
+      "slide_distribution": [
+        {
+          "sub_slide": 1,
+          "sub_slide_title": "Audience Expansion Impact",
+          "sub_slide_subtitle": "Retention vs. Brand Dilution",
+          "key_points": [
+            "Increased retention rates",
+            "Brand prestige dilution"
+          ]
+        }
+      ]
+    },
+    {
+      "heading": "Execution",
+      "num_content_slides": 1,
+      "slide_distribution": [
+        {
+          "sub_slide": 1,
+          "sub_slide_title": "Growth Strategies",
+          "sub_slide_subtitle": "Digital Campaigns and TCM",
+          "key_points": [
+            "Targeted digital campaigns",
+            "TCM research investment",
+            "Premium tier expansion"
+          ]
+        }
+      ]
+    },
+    {
+      "heading": "Very High",
+      "num_content_slides": 1,
+      "slide_distribution": [
+        {
+          "sub_slide": 1,
+          "sub_slide_title": "Channel Management Complexity",
+          "sub_slide_subtitle": "Costs and Challenges",
+          "key_points": [
+            "Managing multiple channels",
+            "Increased complexity and costs"
+          ]
+        }
       ]
     },
     {
       "heading": "Recommendation",
       "num_content_slides": 1,
-      "key_points": [
-        "Alternative 1 - Yue Sai for Modern Young Women",
-        "Rebuild brand with luxury appeal and cultural relevance through TCM",
-        "Target modern, health-conscious young women in China"
+      "slide_distribution": [
+        {
+          "sub_slide": 1,
+          "sub_slide_title": "Alternative 1 - Yue Sai for Modern Young Women",
+          "sub_slide_subtitle": "Luxury Appeal and Cultural Relevance",
+          "key_points": [
+            "Rebuilding brand with luxury appeal",
+            "Targeting health-conscious young women",
+            "Distinguishing from other luxury brands"
+          ]
+        }
       ]
     }
   ]

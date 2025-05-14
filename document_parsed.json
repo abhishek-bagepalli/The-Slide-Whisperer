@@ -450,13 +450,13 @@
       }
     ],
     "job_metadata": {
-      "credits_used": 9.0,
+      "credits_used": 0,
       "job_credits_usage": 0,
       "job_pages": 0,
       "job_auto_mode_triggered_pages": 0,
       "job_is_cache_hit": true
     },
-    "job_id": "f94f4e57-e451-4dd3-a1fb-149f8de89862",
+    "job_id": "3c0fcd03-be8d-46c4-a402-d67942575a01",
     "file_path": "docs/loreal.docx"
   }
 ]

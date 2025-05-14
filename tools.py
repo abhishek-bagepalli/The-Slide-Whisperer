@@ -12,6 +12,7 @@ from pptx import Presentation
 from pptx.util import Inches, Pt
 from llama_parse import LlamaParse
 from pdf_parser import rename_image_files
+import copy
 
 client = OpenAI()
 
@@ -203,7 +204,8 @@ def get_image_dimensions(image_name):
                 
         for img in metadata:
             if img['name'] == image_name:
-                return img['width'], img['height'], img['original_width'], img['original_height']
+                print('milgya')
+                return img['name'],img['width'], img['height']
                     
         return None
     except FileNotFoundError:
@@ -212,4 +214,81 @@ def get_image_dimensions(image_name):
     except json.JSONDecodeError:
         print("Error: Invalid JSON in image_metadata.json")
         return None
+
+def get_all_image_dimensions(images_dir="images"):
+    """
+    Get dimensions of all images in the images folder
+    
+    Returns:
+        list: List of dictionaries containing image metadata
+    """
+    import os
+    from PIL import Image
+    
+    image_metadata = []
+    
+    # Check if images directory exists
+    if not os.path.exists(images_dir):
+        print(f"Error: {images_dir} directory not found")
+        return []
+    
+    # Iterate through all files in images directory
+    for filename in os.listdir(images_dir):
+        if filename.lower().endswith(('.png', '.jpg', '.jpeg', '.gif', '.bmp')):
+            try:
+                # Open image and get dimensions
+                with Image.open(os.path.join(images_dir, filename)) as img:
+                    width, height = img.size
+                    
+                    # Store metadata
+                    image_metadata.append({
+                        'name': filename,
+                        'width': width,
+                        'height': height
+                    })
+                    
+            except Exception as e:
+                print(f"Error processing {filename}: {str(e)}")
+    
+    # Save metadata to JSON file
+    try:
+        with open('image_metadata.json', 'w') as f:
+            json.dump(image_metadata, f, indent=2)
+        print(f"✅ Saved metadata for {len(image_metadata)} images")
+    except Exception as e:
+        print(f"Error saving metadata: {str(e)}")
+    
+    return image_metadata
+
+def update_slide_content_with_dimensions(slide_content):
+    """
+    Update slide content with image dimensions from image_metadata.json
+    
+    Args:
+        slide_content (list): List of slide content dictionaries
+        
+    Returns:
+        list: Updated slide content with image dimensions
+    """
+    updated_content = copy.deepcopy(slide_content)
+    
+    for slide in updated_content:
+        if 'slide_content' in slide and 'image_paths' in slide['slide_content']:
+            image_paths = slide['slide_content']['image_paths']
+            dimensions = []
+            
+            for img_path in image_paths:
+                img_info = get_image_dimensions(img_path)
+                if img_info:
+                    name, width, height = img_info
+                    dimensions.append({
+                        'path': img_path,
+                        'width': width,
+                        'height': height
+                    })
+            
+            slide['slide_content']['image_dimensions'] = dimensions
+    
+    return updated_content
+
 
