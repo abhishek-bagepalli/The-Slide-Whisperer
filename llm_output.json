@@ -1,0 +1,579 @@
+[
+  {
+    "slide_dimensions": {
+      "width": 10,
+      "height": 5.625
+    },
+    "title_box": {
+      "x": 0.5,
+      "y": 0.5,
+      "width": 9,
+      "height": 0.5,
+      "font_size": 24,
+      "padding": 0.1
+    },
+    "subtitle_box": {
+      "x": 0.5,
+      "y": 1.2,
+      "width": 9,
+      "height": 0.5,
+      "font_size": 18,
+      "padding": 0.1
+    },
+    "bulleted": true,
+    "content_font_size": 16,
+    "text_box": {
+      "layout": "left",
+      "x": 0.5,
+      "y": 2,
+      "width": 4.5,
+      "height": 3,
+      "padding": 0.2
+    },
+    "image_path": "img_p0_2.png",
+    "image_box": {
+      "layout": "right",
+      "x": 5.5,
+      "y": 2,
+      "width": 4.5,
+      "height": 3,
+      "padding": 0.2
+    },
+    "title": "Brief Assessment",
+    "subtitle": "",
+    "text": [
+      "Limited brand awareness among younger consumers",
+      "Intensifying competition from emerging local brands",
+      "Strong consumer preference for traditional skincare"
+    ]
+  },
+  {
+    "slide_dimensions": {
+      "width": 10,
+      "height": 5.625
+    },
+    "title_box": {
+      "x": 0.5,
+      "y": 0.5,
+      "width": 9,
+      "height": 1,
+      "font_size": 24,
+      "padding": 0.2
+    },
+    "subtitle_box": {
+      "x": 0.5,
+      "y": 1.5,
+      "width": 9,
+      "height": 1,
+      "font_size": 18,
+      "padding": 0.2
+    },
+    "bulleted": true,
+    "content_font_size": 16,
+    "text_box": {
+      "layout": "left",
+      "x": 0.5,
+      "y": 2.5,
+      "width": 4.5,
+      "height": 3,
+      "padding": 0.2
+    },
+    "image_path": "img_p0_2.png",
+    "image_box": {
+      "layout": "right",
+      "x": 5.5,
+      "y": 2.5,
+      "width": 4.5,
+      "height": 3,
+      "padding": 0.2
+    },
+    "title": "Decision Problem",
+    "subtitle": "",
+    "text": [
+      "Analyze current market trends and consumer preferences",
+      "Capitalize on brand heritage and established reputation",
+      "Modernize brand image to increase contemporary appeal"
+    ]
+  },
+  {
+    "slide_dimensions": {
+      "width": 10,
+      "height": 5.625
+    },
+    "title_box": {
+      "x": 0.5,
+      "y": 0.5,
+      "width": 9,
+      "height": 0.5,
+      "font_size": 24,
+      "padding": 0.1
+    },
+    "subtitle_box": {
+      "x": 0.5,
+      "y": 1.2,
+      "width": 9,
+      "height": 0.5,
+      "font_size": 18,
+      "padding": 0.1
+    },
+    "bulleted": true,
+    "content_font_size": 16,
+    "text_box": {
+      "layout": "left",
+      "x": 0.5,
+      "y": 2,
+      "width": 4.5,
+      "height": 3,
+      "padding": 0.2
+    },
+    "image_path": "img_p0_2.png",
+    "image_box": {
+      "layout": "right",
+      "x": 5.5,
+      "y": 2,
+      "width": 4.5,
+      "height": 3,
+      "padding": 0.2
+    },
+    "title": "Decision Problem",
+    "subtitle": "Sub-slide 2",
+    "text": [
+      "Customize products to meet specific customer needs",
+      "Adapt strategies to fit local market conditions",
+      "Focus on regaining market share and relevance"
+    ]
+  },
+  {
+    "slide_dimensions": {
+      "width": 10,
+      "height": 5.625
+    },
+    "title_box": {
+      "x": 1,
+      "y": 0.5,
+      "width": 8,
+      "height": 1,
+      "font_size": 24,
+      "padding": 0.2
+    },
+    "subtitle_box": {
+      "x": 1,
+      "y": 1.7,
+      "width": 8,
+      "height": 0.5,
+      "font_size": 18,
+      "padding": 0.2
+    },
+    "bulleted": true,
+    "content_font_size": 16,
+    "text_box": {
+      "layout": "left",
+      "x": 1,
+      "y": 2.5,
+      "width": 4.5,
+      "height": 3,
+      "padding": 0.2
+    },
+    "image_path": "None",
+    "image_box": {
+      "layout": "right",
+      "x": 5.5,
+      "y": 2.5,
+      "width": 3.5,
+      "height": 3,
+      "padding": 0.2
+    },
+    "title": "Criteria",
+    "subtitle": "",
+    "text": [
+      "Analyze projected sales data for revenue growth.",
+      "Evaluate product alignment with target segment needs.",
+      "Assess local relevance and demographic responsiveness."
+    ]
+  },
+  {
+    "slide_dimensions": {
+      "width": 10,
+      "height": 5.625
+    },
+    "title_box": {
+      "x": 0.5,
+      "y": 0.5,
+      "width": 9,
+      "height": 0.5,
+      "font_size": 24,
+      "padding": 0.1
+    },
+    "subtitle_box": {
+      "x": 0.5,
+      "y": 1.2,
+      "width": 9,
+      "height": 0.5,
+      "font_size": 18,
+      "padding": 0.1
+    },
+    "bulleted": true,
+    "content_font_size": 16,
+    "text_box": {
+      "layout": "left",
+      "x": 0.5,
+      "y": 2,
+      "width": 4.5,
+      "height": 3,
+      "padding": 0.2
+    },
+    "image_path": "None",
+    "image_box": {
+      "layout": "right",
+      "x": 5.5,
+      "y": 2,
+      "width": 4,
+      "height": 3,
+      "padding": 0.2
+    },
+    "title": "Strategic Fit",
+    "subtitle": "",
+    "text": [
+      "Evaluate alternatives for brand compatibility",
+      "Analyze alignment with company values",
+      "Prioritize options that enhance strategic fit"
+    ]
+  },
+  {
+    "slide_dimensions": {
+      "width": 10,
+      "height": 5.625
+    },
+    "title_box": {
+      "x": 0.5,
+      "y": 0.5,
+      "width": 9,
+      "height": 0.5,
+      "font_size": 24,
+      "padding": 0.1
+    },
+    "subtitle_box": {
+      "x": 0.5,
+      "y": 1.2,
+      "width": 9,
+      "height": 0.5,
+      "font_size": 18,
+      "padding": 0.1
+    },
+    "bulleted": true,
+    "content_font_size": 16,
+    "text_box": {
+      "layout": "left",
+      "x": 0.5,
+      "y": 2,
+      "width": 4.5,
+      "height": 3,
+      "padding": 0.2
+    },
+    "image_path": "None",
+    "image_box": {
+      "layout": "right",
+      "x": 5.5,
+      "y": 2,
+      "width": 4,
+      "height": 3,
+      "padding": 0.2
+    },
+    "title": "Risk of Attrition",
+    "subtitle": "",
+    "text": [
+      "Review customer retention statistics",
+      "Examine buying patterns",
+      "Evaluate shifts in customer demographics"
+    ]
+  },
+  {
+    "slide_dimensions": {
+      "width": 10,
+      "height": 5.625
+    },
+    "title_box": {
+      "x": 0.5,
+      "y": 0.5,
+      "width": 9,
+      "height": 0.5,
+      "font_size": 24,
+      "padding": 0.1
+    },
+    "subtitle_box": {
+      "x": 0.5,
+      "y": 1.2,
+      "width": 9,
+      "height": 0.5,
+      "font_size": 18,
+      "padding": 0.1
+    },
+    "bulleted": true,
+    "content_font_size": 16,
+    "text_box": {
+      "layout": "left",
+      "x": 0.5,
+      "y": 2,
+      "width": 4.5,
+      "height": 3.5,
+      "padding": 0.2
+    },
+    "image_path": "img_p0_2.png",
+    "image_box": {
+      "layout": "right",
+      "x": 5.5,
+      "y": 2,
+      "width": 4.5,
+      "height": 3.5,
+      "padding": 0.2
+    },
+    "title": "Execution Complexity",
+    "subtitle": "",
+    "text": [
+      "Evaluate resource-related costs",
+      "Account for budget limitations",
+      "Highlight logistics and production factors"
+    ]
+  },
+  {
+    "slide_dimensions": {
+      "width": 10,
+      "height": 5.625
+    },
+    "title_box": {
+      "x": 0.5,
+      "y": 0.5,
+      "width": 9,
+      "height": 1,
+      "font_size": 24,
+      "padding": 0.2
+    },
+    "subtitle_box": {
+      "x": 0.5,
+      "y": 1.7,
+      "width": 9,
+      "height": 1,
+      "font_size": 18,
+      "padding": 0.2
+    },
+    "bulleted": true,
+    "content_font_size": 16,
+    "text_box": {
+      "layout": "left",
+      "x": 0.5,
+      "y": 2.5,
+      "width": 4.5,
+      "height": 3,
+      "padding": 0.2
+    },
+    "image_path": "None",
+    "image_box": {
+      "layout": "right",
+      "x": 5.5,
+      "y": 2.5,
+      "width": 4,
+      "height": 3,
+      "padding": 0.2
+    },
+    "title": "Moderate Risk",
+    "subtitle": "",
+    "text": [
+      "Potential alienation of older loyal customers",
+      "Intense competition from established local brands",
+      "Navigating challenges in the digital marketplace"
+    ]
+  },
+  {
+    "slide_dimensions": {
+      "width": 10,
+      "height": 5.625
+    },
+    "title_box": {
+      "x": 0.5,
+      "y": 0.5,
+      "width": 9,
+      "height": 0.5,
+      "font_size": 24,
+      "padding": 0.1
+    },
+    "subtitle_box": {
+      "x": 0.5,
+      "y": 1.2,
+      "width": 9,
+      "height": 0.5,
+      "font_size": 18,
+      "padding": 0.1
+    },
+    "bulleted": true,
+    "content_font_size": 16,
+    "text_box": {
+      "layout": "left",
+      "x": 0.5,
+      "y": 2,
+      "width": 4.5,
+      "height": 3,
+      "padding": 0.2
+    },
+    "image_path": "None",
+    "image_box": {
+      "layout": "right",
+      "x": 5.5,
+      "y": 2,
+      "width": 4,
+      "height": 3,
+      "padding": 0.2
+    },
+    "title": "Attrition Risk",
+    "subtitle": "",
+    "text": [
+      "Enhancing retention without diluting brand identity",
+      "Appealing to a wider audience while maintaining exclusivity",
+      "Preserving brand prestige amidst expansion"
+    ]
+  },
+  {
+    "slide_dimensions": {
+      "width": 10,
+      "height": 5.625
+    },
+    "title_box": {
+      "x": 0.5,
+      "y": 0.5,
+      "width": 9,
+      "height": 0.5,
+      "font_size": 24,
+      "padding": 0.1
+    },
+    "subtitle_box": {
+      "x": 0.5,
+      "y": 1.2,
+      "width": 9,
+      "height": 0.5,
+      "font_size": 18,
+      "padding": 0.1
+    },
+    "bulleted": true,
+    "content_font_size": 16,
+    "text_box": {
+      "layout": "left",
+      "x": 0.5,
+      "y": 2,
+      "width": 4.5,
+      "height": 3.5,
+      "padding": 0.2
+    },
+    "image_path": "img_p0_1.png",
+    "image_box": {
+      "layout": "right",
+      "x": 5.5,
+      "y": 2,
+      "width": 4.5,
+      "height": 3.5,
+      "padding": 0.2
+    },
+    "title": "Execution",
+    "subtitle": "",
+    "text": [
+      "Launch targeted digital marketing campaigns",
+      "Invest in research and development for TCM",
+      "Expand premium tier product offerings"
+    ]
+  },
+  {
+    "slide_dimensions": {
+      "width": 10,
+      "height": 5.625
+    },
+    "title_box": {
+      "x": 0.5,
+      "y": 0.5,
+      "width": 9,
+      "height": 0.5,
+      "font_size": 24,
+      "padding": 0.1
+    },
+    "subtitle_box": {
+      "x": 0.5,
+      "y": 1.2,
+      "width": 9,
+      "height": 0.5,
+      "font_size": 18,
+      "padding": 0.1
+    },
+    "bulleted": true,
+    "content_font_size": 16,
+    "text_box": {
+      "layout": "left",
+      "x": 0.5,
+      "y": 2,
+      "width": 4.5,
+      "height": 3,
+      "padding": 0.2
+    },
+    "image_path": "img_p0_2.png",
+    "image_box": {
+      "layout": "right",
+      "x": 5.5,
+      "y": 2,
+      "width": 4.5,
+      "height": 3,
+      "padding": 0.2
+    },
+    "title": "Very High",
+    "subtitle": "",
+    "text": [
+      "Managing multiple channels is complex",
+      "High costs associated with channel management",
+      "Challenges in coordinating across platforms"
+    ]
+  },
+  {
+    "slide_dimensions": {
+      "width": 10,
+      "height": 5.625
+    },
+    "title_box": {
+      "x": 0.5,
+      "y": 0.5,
+      "width": 9,
+      "height": 0.5,
+      "font_size": 24,
+      "padding": 0.1
+    },
+    "subtitle_box": {
+      "x": 0.5,
+      "y": 1.2,
+      "width": 9,
+      "height": 0.5,
+      "font_size": 18,
+      "padding": 0.1
+    },
+    "bulleted": true,
+    "content_font_size": 16,
+    "text_box": {
+      "layout": "left",
+      "x": 0.5,
+      "y": 1.8,
+      "width": 4.5,
+      "height": 3,
+      "padding": 0.2
+    },
+    "image_path": "img_p0_2.png",
+    "image_box": {
+      "layout": "right",
+      "x": 5.5,
+      "y": 1.8,
+      "width": 4,
+      "height": 3,
+      "padding": 0.2
+    },
+    "title": "Recommendation",
+    "subtitle": "",
+    "text": [
+      "Revitalize brand with luxury and Traditional Chinese Medicine (TCM) elements",
+      "Focus on modern, health-conscious young women",
+      "Differentiate Yue Sai within L'Oreal's brand lineup"
+    ]
+  }
+]
+ 
