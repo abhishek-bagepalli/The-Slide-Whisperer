@@ -11,7 +11,7 @@ import os
 import json
 
 # Create or load a presentation
-PPTX_PATH = "loreal_presentation_v1.pptx"
+PPTX_PATH = "airbnb_v1.pptx"
 # PPTX_PATH_CLEAN = "loreal_presentation_v1_clean.pptx"
 
 prs = Presentation(PPTX_PATH)
@@ -163,7 +163,7 @@ def create_slide_from_template(spec_arg, i):
     subtitle = spec_arg.get("subtitle")
     text_items = spec_arg.get("text", [])
     is_bulleted = spec_arg.get("bulleted", False)
-    font_size = spec_arg.get("font_size", 24)
+    font_size = spec_arg.get("content_font_size", 24)
 
     text_box = spec_arg.get("text_box", {})
     image_paths = spec_arg.get("image_paths")
@@ -248,7 +248,7 @@ def create_slide_from_template(spec_arg, i):
     }
 
 
-with open("slide_layouts 2.json", "r") as f:
+with open("generated_layouts.json", "r") as f:
     slide_specs = json.load(f)
 
 print(slide_specs)

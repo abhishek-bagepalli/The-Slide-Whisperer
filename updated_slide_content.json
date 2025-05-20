@@ -1,0 +1,133 @@
+[
+  {
+    "slide_number": 1,
+    "slide_title": "Revolutionizing Travel: The Airbnb Story",
+    "slide_subtitle": "Exploring the Journey from Airbeds to Global Dominance"
+  },
+  {
+    "slide_number": 2,
+    "slide_title": "Early Beginnings",
+    "slide_subtitle": "Innovative Roots of Airbnb",
+    "slide_content": {
+      "bullets": [
+        "Airbnb founders offered airbeds in their apartment to fund rent",
+        "First guests shattered assumptions about Airbnb's target market",
+        "Positive experiences led to the realization of Airbnb's travel potential",
+        "Key milestones include Nathan Blecharczyk joining as technical lead",
+        "Airbnb launched during the Democratic National Convention in Denver"
+      ],
+      "speaker_notes": "The founders' humble beginnings and initial challenges paved the way for Airbnb's success.",
+      "image_caption": [
+        "Timeline showing the progression from offering airbeds to launching during a major convention"
+      ],
+      "image_paths": [
+        "timeline_showing_the_progression_from_offering_air.jpg"
+      ]
+    }
+  },
+  {
+    "slide_number": 3,
+    "slide_title": "Financial Struggles & Dedication",
+    "slide_subtitle": "Commitment Leads to Success",
+    "slide_content": {
+      "bullets": [
+        "Founders faced financial challenges and considered quitting Airbnb",
+        "Decision to focus solely on Airbnb for three months renewed dedication",
+        "Key milestones include entering Y-Combinator program and reaching 'ramen profitability'",
+        "Focus on New York City market led to improvements in listings and host support",
+        "Acquiring Wimdu, a German Airbnb clone, prompted strategic decisions for global network"
+      ],
+      "speaker_notes": "The founders' perseverance and strategic decisions shaped Airbnb's trajectory.",
+      "image_caption": [
+        "Visualization showing the financial challenges faced by the cofounders and their decision to give Airbnb three more months"
+      ],
+      "image_paths": [
+        "visualization_showing_the_financial_challenges_fac.jpg"
+      ]
+    }
+  },
+  {
+    "slide_number": 4,
+    "slide_title": "Design Thinking & Expansion",
+    "slide_subtitle": "Empathy and Strategy Drive Growth",
+    "slide_content": {
+      "bullets": [
+        "Addressing low-quality property photos led to a significant increase in conversion rates",
+        "Emphasis on starting with the perfect experience and working backward",
+        "Focus on 'enlightened empathy' led to deeper understanding of host perspectives",
+        "Successful strategy of product improvement in New York City before expansion",
+        "Local offices and teams enhanced international presence and growth"
+      ],
+      "speaker_notes": "Innovative design approaches and strategic expansion propelled Airbnb's success.",
+      "image_caption": [
+        "Visualization showing the iterative process of improving the Airbnb experience based on direct interactions with hosts"
+      ],
+      "image_paths": [
+        "visualization_showing_the_iterative_process_of_imp.jpg"
+      ]
+    }
+  },
+  {
+    "slide_number": 5,
+    "slide_title": "Milestones & Challenges",
+    "slide_subtitle": "Navigating Success and Adversity",
+    "slide_content": {
+      "bullets": [
+        "Celebration of reaching a million cumulative bookings milestone",
+        "Launch of Wimdu prompts strategic decisions for global network",
+        "Reflection on growth and competition with aggressive tactics of Wimdu",
+        "Decision-making process between acquiring Wimdu (Plan A) and alternative strategy (Plan B)",
+        "Revenue model: 10% charge to guests and 3% charge to hosts"
+      ],
+      "speaker_notes": "Airbnb's milestones and challenges shaped its evolution and strategic decisions.",
+      "image_caption": [
+        "Visualization showing the growth trajectory of Airbnb bookings reaching one million"
+      ],
+      "image_paths": [
+        "visualization_showing_the_growth_trajectory_of_air.jpg"
+      ]
+    }
+  },
+  {
+    "slide_number": 6,
+    "slide_title": "Strategic Response & Growth",
+    "slide_subtitle": "Adapting to Challenges and Innovating",
+    "slide_content": {
+      "bullets": [
+        "Challenge faced in July 2011 when a host's apartment was trashed",
+        "Launch of international professional photography service in October 2011",
+        "Revenue model involved charging guests 10% and hosts 3%",
+        "Average Airbnb stay longer than hotel stays with lower daily rates",
+        "Focus on affordability, convenience, unique spaces, and local experiences"
+      ],
+      "speaker_notes": "Airbnb's response to challenges and focus on enhancing user experience drove growth.",
+      "image_caption": [
+        "Image of the TechCrunch report on the incident where a host's apartment was trashed"
+      ],
+      "image_paths": [
+        "image_of_the_techcrunch_report_on_the_incident_whe.jpg"
+      ]
+    }
+  },
+  {
+    "slide_number": 7,
+    "slide_title": "Conclusion & Key Takeaways",
+    "slide_subtitle": "Lessons Learned from Airbnb's Journey",
+    "slide_content": {
+      "bullets": [
+        "Combination of innovation, dedication, and strategic decisions propelled Airbnb's success",
+        "Design thinking, empathy, and local focus were key drivers of growth",
+        "Adaptation to challenges and constant improvement led to resilience and innovation",
+        "Revenue model and user experience enhancements were pivotal in Airbnb's evolution",
+        "Airbnb's story showcases the power of perseverance, creativity, and user-centric approach"
+      ],
+      "speaker_notes": "Airbnb's journey serves as a testament to entrepreneurial spirit and adaptability in the face of challenges.",
+      "image_caption": [
+        "Infographic comparing the average stay duration and daily rates of Airbnb rentals with traditional hotels"
+      ],
+      "image_paths": [
+        "infographic_comparing_the_average_stay_duration_an.jpg"
+      ]
+    }
+  }
+]

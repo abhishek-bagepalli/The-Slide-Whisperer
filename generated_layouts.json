@@ -1,0 +1,411 @@
+[
+  {
+    "slide_dimensions": {
+      "width": 4,
+      "height": 3
+    },
+    "title_box": {
+      "x": 0.5,
+      "y": 0.5,
+      "width": 9,
+      "height": 0.5,
+      "font_size": 24,
+      "padding": 0.2
+    },
+    "subtitle_box": {
+      "x": 0.5,
+      "y": 1.2,
+      "width": 9,
+      "height": 0.5,
+      "font_size": 18,
+      "padding": 0.2
+    },
+    "bulleted": true,
+    "content_font_size": 16,
+    "text_box": {},
+    "image_paths": [],
+    "image_boxes": [],
+    "title": "Airbnb: The First Five Years",
+    "subtitle": "By the Abhisheks",
+    "text": [],
+    "slide_layout": 0
+  },
+  {
+    "slide_dimensions": {
+      "width": 10,
+      "height": 5.625
+    },
+    "title_box": {
+      "x": 0.5,
+      "y": 0.5,
+      "width": 9,
+      "height": 0.5,
+      "font_size": 24,
+      "padding": 0.1
+    },
+    "subtitle_box": {
+      "x": 0.5,
+      "y": 1.2,
+      "width": 9,
+      "height": 0.5,
+      "font_size": 18,
+      "padding": 0.1
+    },
+    "bulleted": true,
+    "content_font_size": 14,
+    "text_box": {
+      "layout": "left",
+      "x": 0.5,
+      "y": 1.8,
+      "width": 4.5,
+      "height": 3.5,
+      "padding": 0.1
+    },
+    "image_paths": [
+      "airbnb_launch_at_the_democratic_national_conventio.jpg"
+    ],
+    "image_boxes": [
+      {
+        "layout": "right",
+        "x": 5.5,
+        "y": 1.8,
+        "width": 4.5,
+        "height": 3.5,
+        "padding": 0.1
+      }
+    ],
+    "title": "The Founding of Airbnb and Early Success",
+    "subtitle": "",
+    "text": [
+      "In May 2023, Brian Chesky reflects on Airbnb's journey and vision for the future.",
+      "Airbnb founders offered airbeds in their San Francisco apartment to fund rent in October 2007.",
+      "Addition of Nathan Blecharczyk as technical lead marked a significant milestone in February 2008.",
+      "Launch at the South by Southwest Festival in March 2008 garnered positive reviews.",
+      "Early success showcased a new way for hosts to earn money and guests to enjoy unique travel experiences."
+    ]
+  },
+  {
+    "slide_dimensions": {
+      "width": 10,
+      "height": 5.625
+    },
+    "title_box": {
+      "x": 0.5,
+      "y": 0.5,
+      "width": 9,
+      "height": 0.5,
+      "font_size": 24,
+      "padding": 0.1
+    },
+    "subtitle_box": {
+      "x": 0.5,
+      "y": 1.2,
+      "width": 9,
+      "height": 0.5,
+      "font_size": 18,
+      "padding": 0.1
+    },
+    "bulleted": true,
+    "content_font_size": 14,
+    "text_box": {
+      "layout": "left",
+      "x": 0.5,
+      "y": 1.8,
+      "width": 4.5,
+      "height": 3.5,
+      "padding": 0.2
+    },
+    "image_paths": [
+      "obama_o's_and_cap'n_mccain's_cereal_boxes.jpg"
+    ],
+    "image_boxes": [
+      {
+        "layout": "right",
+        "x": 5.2,
+        "y": 1.8,
+        "width": 4.3,
+        "height": 3.5,
+        "padding": 0.2
+      }
+    ],
+    "title": "Airbnb's Innovative Fundraising Strategies",
+    "subtitle": "Sub-slide 2",
+    "text": [
+      "In 2008, Airbnb founders designed and sold Obama O's and Cap'n McCain's cereal boxes to generate revenue.",
+      "Securing funding was challenging due to investor skepticism and lack of tech expertise.",
+      "Pivotal decision to give the startup three more months with full dedication led to growth.",
+      "In January 2009, Airbnb saw growth with 1,000 listings and 150 bookings.",
+      "Strategic focus on the NYC market and addressing hosts' challenges with property photos."
+    ]
+  },
+  {
+    "slide_dimensions": {
+      "width": 10,
+      "height": 5.625
+    },
+    "title_box": {
+      "x": 0.5,
+      "y": 0.5,
+      "width": 9,
+      "height": 0.5,
+      "font_size": 24,
+      "padding": 0.1
+    },
+    "subtitle_box": {
+      "x": 0.5,
+      "y": 1.2,
+      "width": 9,
+      "height": 0.5,
+      "font_size": 18,
+      "padding": 0.1
+    },
+    "bulleted": true,
+    "content_font_size": 14,
+    "text_box": {
+      "layout": "left",
+      "x": 0.5,
+      "y": 1.8,
+      "width": 4.5,
+      "height": 3.8,
+      "padding": 0.2
+    },
+    "image_paths": [
+      "airbnb's_professional_photography_service_launch.jpg"
+    ],
+    "image_boxes": [
+      {
+        "layout": "right",
+        "x": 5.3,
+        "y": 1.8,
+        "width": 4.2,
+        "height": 3.8,
+        "padding": 0.2
+      }
+    ],
+    "title": "Sequoia Capital's Investment and User Experience Focus",
+    "subtitle": "Sub-slide 3",
+    "text": [
+      "In April 2009, Airbnb secured $600,000 seed funding led by Sequoia Capital.",
+      "Investment driven by recognition of Airbnb's disruptive business model and network effects.",
+      "Focus on enhancing user experience led to increased conversion rates and doubled revenues in NYC.",
+      "Introduction of a free professional photography service to enhance listing quality.",
+      "Emphasis on 'do things that don't scale' strategy for prioritizing quality over scalability."
+    ]
+  },
+  {
+    "slide_dimensions": {
+      "width": 10,
+      "height": 5.625
+    },
+    "title_box": {
+      "x": 0.5,
+      "y": 0.5,
+      "width": 9,
+      "height": 0.5,
+      "font_size": 24,
+      "padding": 0.1
+    },
+    "subtitle_box": {
+      "x": 0.5,
+      "y": 1.2,
+      "width": 9,
+      "height": 0.5,
+      "font_size": 18,
+      "padding": 0.1
+    },
+    "bulleted": true,
+    "content_font_size": 14,
+    "text_box": {
+      "layout": "left",
+      "x": 0.5,
+      "y": 1.8,
+      "width": 4.5,
+      "height": 3.5,
+      "padding": 0.2
+    },
+    "image_paths": [
+      "wimdu_launch_announcement.jpg"
+    ],
+    "image_boxes": [
+      {
+        "layout": "right",
+        "x": 5.5,
+        "y": 1.8,
+        "width": 4,
+        "height": 3.5,
+        "padding": 0.2
+      }
+    ],
+    "title": "Greylock Partners and Series A Funding",
+    "subtitle": "Sub-slide 4",
+    "text": [
+      "Airbnb secures a $7.2 million Series A funding round from Greylock Partners and Sequoia Capital.",
+      "Reid Hoffman's investment decision reflects mixed reactions within Greylock.",
+      "Announcement of a million cumulative bookings in February 2011.",
+      "Competitive landscape shifts with the launch of Wimdu in March 2011.",
+      "Chesky's reaction to competition and the need for differentiation in the market."
+    ]
+  },
+  {
+    "slide_dimensions": {
+      "width": 10,
+      "height": 5.625
+    },
+    "title_box": {
+      "x": 0.5,
+      "y": 0.5,
+      "width": 9,
+      "height": 0.5,
+      "font_size": 24,
+      "padding": 0.1
+    },
+    "subtitle_box": {
+      "x": 0.5,
+      "y": 1.2,
+      "width": 9,
+      "height": 0.5,
+      "font_size": 18,
+      "padding": 0.1
+    },
+    "bulleted": true,
+    "content_font_size": 16,
+    "text_box": {
+      "layout": "left",
+      "x": 0.5,
+      "y": 1.8,
+      "width": 4.5,
+      "height": 3.8,
+      "padding": 0.2
+    },
+    "image_paths": [
+      "airbnb's_localization_strategy_implementation.jpg"
+    ],
+    "image_boxes": [
+      {
+        "layout": "right",
+        "x": 5.5,
+        "y": 1.8,
+        "width": 4,
+        "height": 3.8,
+        "padding": 0.2
+      }
+    ],
+    "title": "Critical Juncture and Strategic Decisions",
+    "subtitle": "Sub-slide 5",
+    "text": [
+      "Airbnb faces intense competition from Wimdu, prompting strategic reevaluation.",
+      "Decision-making process between acquiring Wimdu (Plan A) or pursuing an alternative (Plan B).",
+      "Opting for Plan B reflects commitment to core values and mission.",
+      "Significant funding round in May-June 2011 raises $115 million at a valuation of $1.3 billion.",
+      "Acquisition of Accoleo in Germany to establish a foothold in Europe and expand globally."
+    ]
+  },
+  {
+    "slide_dimensions": {
+      "width": 10,
+      "height": 5.625
+    },
+    "title_box": {
+      "x": 0.5,
+      "y": 0.5,
+      "width": 9,
+      "height": 0.5,
+      "font_size": 24,
+      "padding": 0.1
+    },
+    "subtitle_box": {
+      "x": 0.5,
+      "y": 1.2,
+      "width": 9,
+      "height": 0.5,
+      "font_size": 18,
+      "padding": 0.1
+    },
+    "bulleted": true,
+    "content_font_size": 14,
+    "text_box": {
+      "layout": "left",
+      "x": 0.5,
+      "y": 1.8,
+      "width": 4.5,
+      "height": 3.5,
+      "padding": 0.2
+    },
+    "image_paths": [
+      "airbnb_professional_photography_service_launch.jpg"
+    ],
+    "image_boxes": [
+      {
+        "layout": "right",
+        "x": 5.5,
+        "y": 1.8,
+        "width": 4,
+        "height": 3.5,
+        "padding": 0.2
+      }
+    ],
+    "title": "Service Evolution and Global Expansion",
+    "subtitle": "Sub-slide 6",
+    "text": [
+      "In July 2011, a host incident prompts TechCrunch report questioning Airbnb's reliability.",
+      "Launch of international professional photography service in October 2011.",
+      "Evolution from commission-based model to enhance property listings with high-quality photos.",
+      "Aggressive international expansion with offices in multiple countries and multilingual support.",
+      "Three-quarters of reservations being international, indicating Airbnb's global reach."
+    ]
+  },
+  {
+    "slide_dimensions": {
+      "width": 10,
+      "height": 5.625
+    },
+    "title_box": {
+      "x": 0.5,
+      "y": 0.5,
+      "width": 9,
+      "height": 0.5,
+      "font_size": 24,
+      "padding": 0.1
+    },
+    "subtitle_box": {
+      "x": 0.5,
+      "y": 1.2,
+      "width": 9,
+      "height": 0.5,
+      "font_size": 18,
+      "padding": 0.1
+    },
+    "bulleted": true,
+    "content_font_size": 16,
+    "text_box": {
+      "layout": "left",
+      "x": 0.5,
+      "y": 1.8,
+      "width": 4.5,
+      "height": 3.8,
+      "padding": 0.2
+    },
+    "image_paths": [
+      "airbnb_global_office_locations.jpg"
+    ],
+    "image_boxes": [
+      {
+        "layout": "right",
+        "x": 5.5,
+        "y": 1.8,
+        "width": 4.5,
+        "height": 3.8,
+        "padding": 0.2
+      }
+    ],
+    "title": "Business Growth and Market Differentiation",
+    "subtitle": "Sub-slide 7",
+    "text": [
+      "Airbnb operated on a commission-based model, offering unique travel experiences at affordable rates.",
+      "Preference over traditional hotels driven by cost-effectiveness and diverse accommodation options.",
+      "Focus on community, product quality, and mission-driven ethos sets Airbnb apart.",
+      "Global expansion includes establishing offices in various countries and supporting multiple currencies.",
+      "Strategic move towards enhancing visual appeal of listings to attract more bookings."
+    ]
+  }
+]
