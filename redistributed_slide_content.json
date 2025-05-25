@@ -1,0 +1,168 @@
+[
+  {
+    "slide": 1,
+    "slide_title": "Airbnb's Early Days and Founding Vision (Part 1)",
+    "slide_content": {
+      "bullets": [
+        "Founded in 2007 by Brian Chesky, Joe Gebbia, and Nathan Blecharczyk as a lodging marketplace",
+        "Initial concept of offering airbeds in their San Francisco apartment to fund rent"
+      ],
+      "speaker_notes": "This slide focuses on the inception of Airbnb, highlighting the unconventional beginnings and the critical early decisions that shaped the company's direction.",
+      "image_paths": [
+        "airbnb_growth_timeline_from_2007_to_2008.jpg"
+      ]
+    }
+  },
+  {
+    "slide": 2,
+    "slide_title": "Airbnb's Early Days and Founding Vision (Part 2)",
+    "slide_content": {
+      "bullets": [
+        "Pivotal realization about the future of lodging through the first guest experiences",
+        "Addition of Nathan Blecharczyk as a technical lead in February 2008"
+      ],
+      "speaker_notes": "Continuation of Airbnb's early days and founding vision, showcasing key developments and team expansion.",
+      "image_paths": []
+    }
+  },
+  {
+    "slide": 2,
+    "slide_title": "Creative Solutions and Financial Struggles (Part 1)",
+    "slide_content": {
+      "bullets": [
+        "Designing and selling Obama O's and Cap'n McCain's cereal boxes for revenue",
+        "Challenges in securing funding due to investor skepticism and lack of tech expertise"
+      ],
+      "speaker_notes": "This slide delves into the innovative solutions and financial challenges faced by Airbnb in its early stages, showcasing the founders' perseverance and strategic decisions.",
+      "image_paths": [
+        "financial_performance_comparison_of_airbnb_in_2008.jpg"
+      ]
+    }
+  },
+  {
+    "slide": 3,
+    "slide_title": "Creative Solutions and Financial Struggles (Part 2)",
+    "slide_content": {
+      "bullets": [
+        "Key decision to give the startup three more months with full dedication",
+        "Growth in listings and bookings during President Obama's inauguration in January 2009"
+      ],
+      "speaker_notes": "Continuation of Airbnb's creative solutions and financial struggles, highlighting pivotal decisions and milestones.",
+      "image_paths": [
+        "obama_o's_and_cap'n_mccain's_cereal_boxes.jpg"
+      ]
+    }
+  },
+  {
+    "slide": 4,
+    "slide_title": "Strategic Funding and User Experience Focus (Part 1)",
+    "slide_content": {
+      "bullets": [
+        "Securing a significant seed funding round of $600,000 led by Sequoia Capital in April 2009",
+        "Importance of proprietary advantages and network effects for market success"
+      ],
+      "speaker_notes": "This slide emphasizes the strategic investment decisions and user-centric approach that propelled Airbnb's growth and enhanced its competitive edge.",
+      "image_paths": [
+        "sequoia_capital's_investment_in_airbnb.jpg"
+      ]
+    }
+  },
+  {
+    "slide": 5,
+    "slide_title": "Strategic Funding and User Experience Focus (Part 2)",
+    "slide_content": {
+      "bullets": [
+        "Pioneering 'do things that don't scale' strategy to enhance user experience",
+        "Introduction of a free professional photography service to improve listing quality"
+      ],
+      "speaker_notes": "Continuation of Airbnb's strategic funding and user experience focus, showcasing innovative strategies for growth and quality enhancement.",
+      "image_paths": [
+        "airbnb's_professional_photography_service_launch.jpg"
+      ]
+    }
+  },
+  {
+    "slide": 6,
+    "slide_title": "Milestones in Growth and Competitive Landscape (Part 1)",
+    "slide_content": {
+      "bullets": [
+        "Securing a $7.2 million Series A funding round from Greylock Partners and Sequoia Capital",
+        "Reid Hoffman's pivotal role in the funding decision despite initial skepticism"
+      ],
+      "speaker_notes": "This slide highlights key funding achievements, competitive challenges, and pivotal moments that shaped Airbnb's trajectory in a dynamic market environment.",
+      "image_paths": [
+        "airbnb_series_a_funding_round_comparison.jpg"
+      ]
+    }
+  },
+  {
+    "slide": 7,
+    "slide_title": "Milestones in Growth and Competitive Landscape (Part 2)",
+    "slide_content": {
+      "bullets": [
+        "Reaching a million cumulative bookings in February 2011",
+        "Impact of Wimdu's launch in March 2011 on Airbnb's competitive positioning"
+      ],
+      "speaker_notes": "Continuation of milestones in growth and competitive landscape, showcasing key achievements and market dynamics.",
+      "image_paths": [
+        "wimdu_launch_announcement.jpg"
+      ]
+    }
+  },
+  {
+    "slide": 8,
+    "slide_title": "Strategic Decisions and Global Expansion (Part 1)",
+    "slide_content": {
+      "bullets": [
+        "Choosing between Plan A (acquiring Wimdu) and Plan B (mission-driven approach)",
+        "Securing $115 million in funding at a valuation of $1.3 billion in May-June 2011"
+      ],
+      "speaker_notes": "This slide showcases Airbnb's strategic choices, international expansion strategies, and commitment to its core values amidst intense competition.",
+      "image_paths": [
+        "comparison_of_airbnb_and_wimdu_growth_strategies.jpg"
+      ]
+    }
+  },
+  {
+    "slide": 9,
+    "slide_title": "Strategic Decisions and Global Expansion (Part 2)",
+    "slide_content": {
+      "bullets": [
+        "Acquisition of Accoleo to establish presence in Germany and Europe",
+        "Emphasis on community, product quality, and mission-driven ethos"
+      ],
+      "speaker_notes": "Continuation of strategic decisions and global expansion, highlighting acquisitions and core values.",
+      "image_paths": [
+        "airbnb's_localization_strategy_implementation.jpg"
+      ]
+    }
+  },
+  {
+    "slide": 10,
+    "slide_title": "Adaptation and Service Enhancements (Part 1)",
+    "slide_content": {
+      "bullets": [
+        "Response to challenges like the July 2011 incident with a focus on evolving services",
+        "Launch of international professional photography service in October 2011"
+      ],
+      "speaker_notes": "This slide covers Airbnb's adaptability, service enhancements, and response to challenges, showcasing continuous improvement.",
+      "image_paths": [
+        "airbnb_professional_photography_service_launch.jpg"
+      ]
+    }
+  },
+  {
+    "slide": 11,
+    "slide_title": "Adaptation and Service Enhancements (Part 2)",
+    "slide_content": {
+      "bullets": [
+        "Transition to a commission-based model for guests and hosts",
+        "Aggressive international expansion and global reach by late 2011"
+      ],
+      "speaker_notes": "Continuation of adaptation and service enhancements, highlighting business model evolution and global expansion strategies.",
+      "image_paths": [
+        "airbnb_global_office_locations.jpg"
+      ]
+    }
+  }
+]

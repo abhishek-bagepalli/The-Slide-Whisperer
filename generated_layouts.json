@@ -1,0 +1,531 @@
+[
+  {
+    "slide_dimensions": {
+      "width": 10,
+      "height": 5.625
+    },
+    "title_box": {
+      "x": 0.5,
+      "y": 0.5,
+      "width": 9,
+      "height": 0.5,
+      "font_size": 24,
+      "padding": 0.1
+    },
+    "subtitle_box": {
+      "x": 0.5,
+      "y": 1.2,
+      "width": 9,
+      "height": 0.5,
+      "font_size": 18,
+      "padding": 0.1
+    },
+    "bulleted": true,
+    "content_font_size": 16,
+    "text_box": {
+      "layout": "left",
+      "x": 0.5,
+      "y": 1.8,
+      "width": 4.5,
+      "height": 3.5,
+      "padding": 0.2
+    },
+    "image_paths": [
+      "airbnb_early_timeline_infographic.jpg"
+    ],
+    "image_boxes": [
+      {
+        "layout": "right",
+        "x": 5.5,
+        "y": 1.8,
+        "width": 4.5,
+        "height": 3.5,
+        "padding": 0.2
+      }
+    ],
+    "title": "The Early Days of Airbnb: Disrupting the Lodging Industry",
+    "subtitle": "Slide 1",
+    "text": [
+      "In October 2007, Brian Chesky and Joe Gebbia start Airbnb by renting airbeds in their San Francisco apartment during a design conference to fund their rent.",
+      "The addition of Nathan Blecharczyk as a technical lead in February 2008 and the successful launch of AirBed&Breakfast during the Democratic National Convention in August 2008 marked significant milestones.",
+      "Chesky and Gebbia's focus on high-quality property photos significantly increased conversion rates in New York City, leading to doubled revenues and enhanced user experiences.",
+      "Airbnb's early success was attributed to the founders' determination to provide unique guest experiences and personal connections."
+    ],
+    "template_layout_index": 1
+  },
+  {
+    "slide_dimensions": {
+      "width": 10,
+      "height": 5.625
+    },
+    "title_box": {
+      "x": 0.5,
+      "y": 0.5,
+      "width": 9,
+      "height": 0.5,
+      "font_size": 24,
+      "padding": 0.1
+    },
+    "subtitle_box": {
+      "x": 0.5,
+      "y": 1.2,
+      "width": 9,
+      "height": 0.5,
+      "font_size": 18,
+      "padding": 0.1
+    },
+    "bulleted": true,
+    "content_font_size": 16,
+    "text_box": {
+      "layout": "left",
+      "x": 0.5,
+      "y": 1.8,
+      "width": 4.5,
+      "height": 3.5,
+      "padding": 0.2
+    },
+    "image_paths": [
+      "obama_o's_and_cap'n_mccain's_cereal_boxes.jpg"
+    ],
+    "image_boxes": [
+      {
+        "layout": "right",
+        "x": 5.5,
+        "y": 1.8,
+        "width": 4.5,
+        "height": 3.5,
+        "padding": 0.2
+      }
+    ],
+    "title": "Innovative Marketing Strategies: Obama O's and Cap'n McCain's",
+    "subtitle": "Slide 2",
+    "text": [
+      "Facing financial difficulties in 2008, Airbnb cofounders designed and sold cereal boxes to raise funds and attract media attention.",
+      "The successful marketing campaign raised $30,000, showcasing the founders' creativity and resilience during challenging times.",
+      "Investor skepticism and the Global Financial Crisis posed significant challenges to securing funding in the early stages of Airbnb.",
+      "Despite initial setbacks, the cofounders committed to giving the startup three more months before considering quitting."
+    ],
+    "template_layout_index": 6
+  },
+  {
+    "slide_dimensions": {
+      "width": 10,
+      "height": 5.625
+    },
+    "title_box": {
+      "x": 0.5,
+      "y": 0.5,
+      "width": 9,
+      "height": 0.5,
+      "font_size": 24,
+      "padding": 0.1
+    },
+    "subtitle_box": {
+      "x": 0.5,
+      "y": 1.2,
+      "width": 9,
+      "height": 0.5,
+      "font_size": 18,
+      "padding": 0.1
+    },
+    "bulleted": true,
+    "content_font_size": 16,
+    "text_box": {
+      "layout": "left",
+      "x": 0.5,
+      "y": 1.8,
+      "width": 4.5,
+      "height": 3.5,
+      "padding": 0.2
+    },
+    "image_paths": [
+      "airbnb_rebranding_process.jpg"
+    ],
+    "image_boxes": [
+      {
+        "layout": "right",
+        "x": 5.5,
+        "y": 1.8,
+        "width": 4.5,
+        "height": 3.5,
+        "padding": 0.2
+      }
+    ],
+    "title": "Securing Seed Funding and Rebranding: Path to Growth",
+    "subtitle": "Slide 3",
+    "text": [
+      "In 2009, Airbnb secured a seed round of $600,000 led by Sequoia Capital, highlighting the company's disruptive business model and global network effects.",
+      "Rebranding as Airbnb.com and entering the Y-Combinator program marked pivotal moments in the company's journey towards growth and recognition.",
+      "Despite investor skepticism, strategic investments recognized Airbnb's potential as a disruptive force in the lodging industry.",
+      "The early challenges in securing venture capital underscored the importance of unique value propositions and network effects."
+    ],
+    "template_layout_index": 1
+  },
+  {
+    "slide_dimensions": {
+      "width": 10,
+      "height": 5.625
+    },
+    "title_box": {
+      "x": 0.5,
+      "y": 0.5,
+      "width": 9,
+      "height": 0.5,
+      "font_size": 24,
+      "padding": 0.1
+    },
+    "subtitle_box": {
+      "x": 0.5,
+      "y": 1.2,
+      "width": 9,
+      "height": 0.5,
+      "font_size": 18,
+      "padding": 0.1
+    },
+    "bulleted": true,
+    "content_font_size": 16,
+    "text_box": {
+      "layout": "left",
+      "x": 0.5,
+      "y": 1.8,
+      "width": 4.5,
+      "height": 3.5,
+      "padding": 0.2
+    },
+    "image_paths": [
+      "airbnb_hosts_interacting_with_photographers_for_property_photos.jpg"
+    ],
+    "image_boxes": [
+      {
+        "layout": "right",
+        "x": 5.5,
+        "y": 1.8,
+        "width": 4.5,
+        "height": 3.5,
+        "padding": 0.2
+      }
+    ],
+    "title": "Turning Challenges into Opportunities: User-Centric Approach",
+    "subtitle": "Slide 4",
+    "text": [
+      "In 2009, Airbnb focused on improving user experiences by emphasizing high-quality property photos to boost booking conversion rates.",
+      "The hands-on design research and customer interaction in New York City led to a deeper understanding of user needs and preferences.",
+      "Securing a seed round of $600,000 highlighted Airbnb's potential for scaling successful strategies globally.",
+      "Despite initial skepticism, the company's unique value proposition and network effects attracted strategic investments."
+    ],
+    "template_layout_index": 1
+  },
+  {
+    "slide_dimensions": {
+      "width": 10,
+      "height": 5.625
+    },
+    "title_box": {
+      "x": 0.5,
+      "y": 0.5,
+      "width": 9,
+      "height": 0.5,
+      "font_size": 24,
+      "padding": 0.1
+    },
+    "subtitle_box": {
+      "x": 0.5,
+      "y": 1.2,
+      "width": 9,
+      "height": 0.5,
+      "font_size": 18,
+      "padding": 0.1
+    },
+    "bulleted": true,
+    "content_font_size": 16,
+    "text_box": {
+      "layout": "left",
+      "x": 0.5,
+      "y": 1.8,
+      "width": 4.5,
+      "height": 3.5,
+      "padding": 0.2
+    },
+    "image_paths": [
+      "reid_hoffman_presenting_airbnb_investment_to_greyl.jpg"
+    ],
+    "image_boxes": [
+      {
+        "layout": "right",
+        "x": 5.5,
+        "y": 1.8,
+        "width": 4.5,
+        "height": 3.5,
+        "padding": 0.2
+      }
+    ],
+    "title": "Series A Funding and Milestone Achievements: Growth Trajectory",
+    "subtitle": "Slide 5",
+    "text": [
+      "In 2010, Airbnb raised $7.2 million in Series A funding from Greylock Partners and Sequoia Capital, validating the company's disruptive potential.",
+      "Reid Hoffman's conviction in Airbnb's innovative approach led to successful funding rounds despite initial skepticism.",
+      "Reaching a million cumulative bookings in February 2011 highlighted Airbnb's growing popularity and user adoption.",
+      "The launch of Wimdu by the Samwer brothers showcased the trend of replicating successful internet companies, posing new challenges for Airbnb."
+    ],
+    "template_layout_index": 1
+  },
+  {
+    "slide_dimensions": {
+      "width": 10,
+      "height": 5.625
+    },
+    "title_box": {
+      "x": 0.5,
+      "y": 0.5,
+      "width": 9,
+      "height": 0.5,
+      "font_size": 24,
+      "padding": 0.1
+    },
+    "subtitle_box": {
+      "x": 0.5,
+      "y": 1.2,
+      "width": 9,
+      "height": 0.5,
+      "font_size": 18,
+      "padding": 0.1
+    },
+    "bulleted": true,
+    "content_font_size": 16,
+    "text_box": {
+      "layout": "left",
+      "x": 0.5,
+      "y": 1.8,
+      "width": 4.5,
+      "height": 3.5,
+      "padding": 0.2
+    },
+    "image_paths": [
+      "airbnb_local_offices_setup_in_germany.jpg"
+    ],
+    "image_boxes": [
+      {
+        "layout": "right",
+        "x": 5.5,
+        "y": 1.8,
+        "width": 4.5,
+        "height": 3.5,
+        "padding": 0.2
+      }
+    ],
+    "title": "Navigating Competition and Strategic Decisions: Wimdu Challenge",
+    "subtitle": "Slide 6",
+    "text": [
+      "In 2011, Airbnb faced competition from Wimdu, a German clone led by Oliver Samwer, prompting strategic reassessment.",
+      "Exploring the idea of acquiring Wimdu to maintain the global network, Airbnb ultimately decided to pursue an alternative Plan B driven by mission-focused values.",
+      "Emphasizing community, product excellence, and a mission-driven culture set Airbnb apart from competitors like Wimdu.",
+      "Airbnb's focus on local offices and teams transformed it into a truly international business, solidifying its global position."
+    ],
+    "template_layout_index": 1
+  },
+  {
+    "slide_dimensions": {
+      "width": 10,
+      "height": 5.625
+    },
+    "title_box": {
+      "x": 0.5,
+      "y": 0.5,
+      "width": 9,
+      "height": 0.5,
+      "font_size": 24,
+      "padding": 0.1
+    },
+    "subtitle_box": {
+      "x": 0.5,
+      "y": 1.2,
+      "width": 9,
+      "height": 0.5,
+      "font_size": 18,
+      "padding": 0.1
+    },
+    "bulleted": true,
+    "content_font_size": 16,
+    "text_box": {
+      "layout": "left",
+      "x": 0.5,
+      "y": 1.8,
+      "width": 4.5,
+      "height": 3.5,
+      "padding": 0.2
+    },
+    "image_paths": [
+      "airbnb_professional_photography_session.jpg"
+    ],
+    "image_boxes": [
+      {
+        "layout": "right",
+        "x": 5.5,
+        "y": 1.8,
+        "width": 4.5,
+        "height": 3.5,
+        "padding": 0.2
+      }
+    ],
+    "title": "Innovating User Experience: Professional Photography Service",
+    "subtitle": "Slide 7",
+    "text": [
+      "In July 2011, Airbnb faced a critical incident when a host reported vandalism, leading to negative publicity and challenges in user trust.",
+      "Launching an international professional photography service in October 2011 aimed to enhance property listings' visual appeal and user experience.",
+      "By January 2012, Airbnb photographers had taken over 400,000 photos, demonstrating the company's commitment to quality and professionalism.",
+      "The fee structure of charging guests around 10% and hosts 3% covered operational costs and reflected Airbnb's focus on service excellence."
+    ],
+    "template_layout_index": 1
+  },
+  {
+    "slide_dimensions": {
+      "width": 10,
+      "height": 5.625
+    },
+    "title_box": {
+      "x": 0.5,
+      "y": 0.5,
+      "width": 9,
+      "height": 0.5,
+      "font_size": 24,
+      "padding": 0.1
+    },
+    "subtitle_box": {
+      "x": 0.5,
+      "y": 1.2,
+      "width": 9,
+      "height": 0.5,
+      "font_size": 18,
+      "padding": 0.1
+    },
+    "bulleted": true,
+    "content_font_size": 16,
+    "text_box": {
+      "layout": "left",
+      "x": 0.5,
+      "y": 1.8,
+      "width": 4.5,
+      "height": 3.5,
+      "padding": 0.2
+    },
+    "image_paths": [
+      "sequoia_capital_investment_in_airbnb.jpg"
+    ],
+    "image_boxes": [
+      {
+        "layout": "right",
+        "x": 5.5,
+        "y": 1.8,
+        "width": 4.5,
+        "height": 3.5,
+        "padding": 0.2
+      }
+    ],
+    "title": "Lessons Learned and Growth Trajectory: User-Centric Evolution",
+    "subtitle": "Slide 8",
+    "text": [
+      "By focusing on user needs and localized solutions, Airbnb scaled successful strategies globally, showcasing the importance of enlightened empathy.",
+      "Securing a seed round of $600,000 in April 2009 led by Sequoia Capital highlighted Airbnb's potential for disruptive business models.",
+      "Despite initial investor skepticism, Airbnb's unique value proposition and network effects attracted strategic investments, setting the stage for future growth.",
+      "The company's commitment to providing unique guest experiences and personalized connections shaped its user-centric evolution and global success."
+    ],
+    "template_layout_index": 1
+  },
+  {
+    "slide_dimensions": {
+      "width": 10,
+      "height": 5.625
+    },
+    "title_box": {
+      "x": 0.5,
+      "y": 0.5,
+      "width": 9,
+      "height": 0.5,
+      "font_size": 24,
+      "padding": 0.1
+    },
+    "subtitle_box": {
+      "x": 0.5,
+      "y": 1.2,
+      "width": 9,
+      "height": 0.5,
+      "font_size": 18,
+      "padding": 0.1
+    },
+    "bulleted": true,
+    "content_font_size": 16,
+    "text_box": {
+      "layout": "left",
+      "x": 0.5,
+      "y": 1.8,
+      "width": 4.5,
+      "height": 3.5,
+      "padding": 0.2
+    },
+    "image_paths": [
+      "comparison_of_funding_rounds_in_airbnb's_growth_jo.jpg"
+    ],
+    "image_boxes": [
+      {
+        "layout": "right",
+        "x": 5.5,
+        "y": 1.8,
+        "width": 4.5,
+        "height": 3.5,
+        "padding": 0.2
+      }
+    ],
+    "title": "Innovative Strategies and Strategic Funding: Paving the Future",
+    "subtitle": "Slide 9",
+    "text": [
+      "In May 2021, Airbnb was the world's leading lodging marketplace, offering millions of listings across over 220 countries and regions.",
+      "Maintaining profitability and achieving a successful IPO underscored Airbnb's resilience and disruptive impact on the industry.",
+      "The company's commitment to unique user experiences and continuous innovation positioned it as a transformative force in travel and accommodation.",
+      "Strategic partnerships and investments fueled Airbnb's growth and global expansion, solidifying its position as a market leader."
+    ],
+    "template_layout_index": 1
+  },
+  {
+    "slide_dimensions": {
+      "width": 10,
+      "height": 5.625
+    },
+    "title_box": {
+      "x": 0.5,
+      "y": 0.5,
+      "width": 9,
+      "height": 0.5,
+      "font_size": 24,
+      "padding": 0.1
+    },
+    "subtitle_box": {
+      "x": 0.5,
+      "y": 1.2,
+      "width": 9,
+      "height": 0.5,
+      "font_size": 18,
+      "padding": 0.1
+    },
+    "bulleted": true,
+    "content_font_size": 16,
+    "text_box": {
+      "layout": "left",
+      "x": 0.5,
+      "y": 1.8,
+      "width": 4.5,
+      "height": 3.5,
+      "padding": 0.2
+    },
+    "image_paths": [],
+    "image_boxes": [],
+    "title": "Conclusion: Embracing Innovation and Resilience",
+    "subtitle": "Slide 10",
+    "text": [
+      "Airbnb's journey from innovative beginnings to global success showcases the power of challenging the status quo and fostering continuous evolution.",
+      "The company's focus on disrupting traditional lodging models and providing unique guest experiences has redefined the travel industry.",
+      "Lessons learned from overcoming challenges and embracing creativity underline Airbnb's commitment to innovation and resilience.",
+      "As Airbnb continues to shape the future of travel, its story serves as an inspiration for aspiring entrepreneurs and industry disruptors."
+    ],
+    "template_layout_index": 7
+  }
+]

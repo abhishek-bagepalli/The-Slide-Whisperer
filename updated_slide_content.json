@@ -1,263 +1,107 @@
 [
   {
-    "section": "Brief Assessment",
-    "sub_slide": 1,
+    "slide": 1,
+    "slide_title": "Airbnb's Early Days and Growth",
     "slide_content": {
       "bullets": [
-        "Yue Sai struggled with brand repositioning.",
-        "Local competitors are gaining market share.",
-        "Digital platforms enhance customer engagement."
+        "Founded in 2007 by Brian Chesky, Joe Gebbia, and Nathan Blecharczyk, Airbnb became the world's leading lodging marketplace by June 2021.",
+        "Airbnb had four million hosts offering seven million listings in over 220 countries and regions.",
+        "Despite the challenges posed by the Covid-19 pandemic, Airbnb had profitable third quarters in 2018, 2019, and 2020.",
+        "Successful IPO in 2021 marked a significant milestone for the company."
       ],
-      "speaker_notes": "Yue Sai has faced challenges in maintaining its brand relevance due to unsuccessful repositioning efforts. This has allowed local competitors to capture a larger portion of the market. Meanwhile, digital platforms are proving to be more effective in engaging with customers, offering opportunities for brands to connect with their audience in innovative ways.",
-      "image_caption": [
-        "Logo of Yue Sai brand"
-      ],
-      "flowchart": "False",
-      "flowchart_description": null,
-      "image_paths": [
-        "img_p0_2.png"
-      ],
-      "image_dimensions": [
-        {
-          "path": "img_p0_2.png",
-          "width": 335,
-          "height": 335
-        }
-      ]
+      "speaker_notes": "The early innovative approach of Airbnb founders led to unexpected connections and friendships, setting the foundation for the unique hosting model. The company's growth continued with strategic features like online payments through PayPal and expanding listings during major events.",
+      "image_paths": "airbnb_early_days_at_design_conference.jpg"
     }
   },
   {
-    "section": "Decision Problem",
-    "sub_slide": 1,
+    "slide": 2,
+    "slide_title": "Airbnb's Innovative Initiatives",
     "slide_content": {
       "bullets": [
-        "Utilize heritage and reputation for brand strength",
-        "Implement innovative marketing strategies",
-        "Offer products tailored to customer needs"
+        "In October 2007, Chesky and Gebbia rented out airbeds in their apartment at a design conference, leading to the inception of Airbnb's hosting model.",
+        "During the Democratic National Convention in Denver in August 2008, Airbnb's prices were noted to be lower than hotel rates, attracting 80,000 attendees and generating 80 bookings.",
+        "Airbnb's early experience as hosts gave insight into the future of lodging, sustaining belief in the Airbnb model."
       ],
-      "speaker_notes": "In this slide, we will explore how leveraging our brand's heritage and reputation can enhance our market position. By implementing innovative marketing strategies, we can reach new audiences and engage with existing customers in fresh ways. Additionally, offering tailored product offerings allows us to meet the specific needs of our diverse customer base, ensuring satisfaction and loyalty.",
-      "image_caption": [
-        "A historic brand logo symbolizing heritage and reputation"
-      ],
-      "flowchart": "False",
-      "flowchart_description": null,
-      "image_paths": [
-        "a_historic_brand_logo_symbolizing_heritage_and_rep.jpg"
-      ],
-      "image_dimensions": [
-        {
-          "path": "a_historic_brand_logo_symbolizing_heritage_and_rep.jpg",
-          "width": 1200,
-          "height": 617
-        }
-      ]
+      "speaker_notes": "Airbnb's innovative strategies during events and early hosting experiences provided valuable insights that shaped the company's direction and growth.",
+      "image_paths": "img_p8_2.png"
     }
   },
   {
-    "section": "Criteria",
-    "sub_slide": 1,
+    "slide": 3,
+    "slide_title": "Financial Challenges and Creative Solutions",
     "slide_content": {
       "bullets": [
-        "Analyze projected sales data trends.",
-        "Summarize key market research findings.",
-        "Align strategies with customer preferences."
+        "In 2008, faced with financial struggles and investor skepticism, Airbnb founders designed and sold limited edition cereal boxes, raising $30,000.",
+        "Securing funding proved difficult due to the Global Financial Crisis and investor doubts about the unconventional idea of AirBed&Breakfast.",
+        "In January 2009, Airbnb rebranded as Airbnb.com, joined Y-Combinator, and aimed for 'ramen profitability' to sustain financially."
       ],
-      "speaker_notes": "In this slide, we will first delve into the projected sales data trends, examining how these projections align with our overall business goals. Next, we will summarize the key findings from our recent market research, highlighting the most significant insights that could impact our strategies. Finally, we will discuss how we can align our strategies with customer preferences to ensure that our offerings meet their needs and expectations.",
-      "image_caption": [],
-      "flowchart": "False",
-      "flowchart_description": null
+      "speaker_notes": "The founders' persistence through financial challenges and focus on sustainability led to strategic decisions that laid the groundwork for future growth and investment.",
+      "image_paths": "obama_o's_and_cap'n_mccain's_cereal_boxes.jpg"
     }
   },
   {
-    "section": "Strategic Fit",
-    "sub_slide": 1,
+    "slide": 4,
+    "slide_title": "Strategic Funding and User-Centric Approach",
     "slide_content": {
       "bullets": [
-        "Evaluate alternatives against brand values",
-        "Prioritize options that align with strategic goals",
-        "Assess potential impact on brand perception"
+        "In 2009, Airbnb raised a seed round of $600,000 led by Sequoia Capital, recognizing the company's disruptive business model and network effects.",
+        "By focusing on user feedback and design research, Airbnb achieved 'enlightened empathy' and improved rental conversions.",
+        "The company's unique approach to the vacation rental market and user experience set the stage for future success."
       ],
-      "speaker_notes": "In this slide, we will discuss how we score various alternatives based on our brand values. First, we evaluate each alternative to ensure it aligns with our core brand values. This step is crucial as it helps us maintain brand integrity. Next, we prioritize options that align with our strategic goals, ensuring that our decisions support long-term growth and success. Finally, we assess the potential impact of these alternatives on our brand perception, which helps us understand how our choices might influence customer and market views of our brand.",
-      "image_caption": [],
-      "flowchart": "False",
-      "flowchart_description": null
+      "speaker_notes": "Through strategic funding and a user-centric approach, Airbnb solidified its position as a disruptive player in the lodging marketplace.",
+      "image_paths": "airbnb_founders_working_on_redesigning_the_website.jpg"
     }
   },
   {
-    "section": "Risk of Attrition",
-    "sub_slide": 1,
+    "slide": 5,
+    "slide_title": "Market Expansion and Competitive Landscape",
     "slide_content": {
       "bullets": [
-        "Analyze customer retention metrics",
-        "Evaluate purchase behavior trends",
-        "Assess impact of demographic changes"
+        "In 2010, Airbnb secured a significant $7.2 million Series A funding round from Greylock Partners and Sequoia Capital, marking a pivotal moment in the company's growth.",
+        "Competitive landscape intensified with the entry of Wimdu, a German Airbnb clone, founded by the Samwer brothers known for replicating successful American internet companies.",
+        "The trend of cloning successful business models in different regions to capitalize on proven concepts became evident."
       ],
-      "speaker_notes": "Understanding customer retention metrics is crucial for identifying potential attrition risks. By evaluating purchase behavior trends, we can gain insights into customer loyalty and preferences. Additionally, assessing the impact of demographic changes helps us anticipate shifts in customer needs and expectations, allowing us to strategize effectively.",
-      "image_caption": [
-        "Graph illustrating customer retention rates over time"
-      ],
-      "flowchart": "False",
-      "flowchart_description": null,
-      "image_paths": [
-        "graph_illustrating_customer_retention_rates_over_t.jpg"
-      ],
-      "image_dimensions": [
-        {
-          "path": "graph_illustrating_customer_retention_rates_over_t.jpg",
-          "width": 481,
-          "height": 410
-        }
-      ]
+      "speaker_notes": "The competitive market dynamics and strategic funding decisions influenced Airbnb's growth trajectory and response to market challenges.",
+      "image_paths": "Greylock Partners and Sequoia Capital Funding Airbnb"
     }
   },
   {
-    "section": "Execution Complexity",
-    "sub_slide": 1,
+    "slide": 6,
+    "slide_title": "Strategic Decision-Making and Expansion",
     "slide_content": {
       "bullets": [
-        "Evaluate cost implications",
-        "Optimize resource distribution",
-        "Address logistical hurdles"
+        "In 2010, Airbnb faced a new challenge with the emergence of Wimdu, prompting strategic evaluations and decision-making between Plan A and Plan B.",
+        "By May 2011, Airbnb raised a substantial $115 million in funding, allowing aggressive expansion into Germany and Europe.",
+        "The strategic acquisition of Accoleo in Germany served as a stepping stone for establishing a strong presence in the region."
       ],
-      "speaker_notes": "When considering execution complexity, it's crucial to evaluate the cost implications of any project or initiative. This includes understanding both direct and indirect costs and how they impact the overall budget. Optimizing resource distribution is another key aspect, ensuring that human, financial, and material resources are allocated effectively to maximize efficiency. Lastly, addressing logistical hurdles is essential to ensure smooth operations, which involves planning for transportation, supply chain management, and potential disruptions.",
-      "image_caption": [
-        "A warehouse with organized shelves and resources"
-      ],
-      "flowchart": "False",
-      "flowchart_description": null,
-      "image_paths": [
-        "a_warehouse_with_organized_shelves_and_resources.jpg"
-      ],
-      "image_dimensions": [
-        {
-          "path": "a_warehouse_with_organized_shelves_and_resources.jpg",
-          "width": 1600,
-          "height": 986
-        }
-      ]
+      "speaker_notes": "The strategic decisions made between competing options and aggressive funding rounds shaped Airbnb's expansion and competitive stance in the market.",
+      "image_paths": "airbnb's_global_office_expansion_strategy.jpg"
     }
   },
   {
-    "section": "Moderate Risk",
-    "sub_slide": 1,
+    "slide": 7,
+    "slide_title": "User Experience and International Growth",
     "slide_content": {
       "bullets": [
-        "Intense competition in the digital space",
-        "Challenges from local competitors",
-        "Risk of alienating older loyal customers"
+        "In July 2011, Airbnb faced a critical incident when a host blogged about her apartment being trashed, leading to a TechCrunch report questioning platform safety measures.",
+        "By October 2011, Airbnb launched its international professional photography service to enhance property listings and improve user experience.",
+        "Aggressive international expansion in 2011 included offices in multiple countries, multilingual customer support, and support for various currencies."
       ],
-      "speaker_notes": "The digital space is becoming increasingly competitive, with numerous players vying for consumer attention and market share. This environment demands innovative strategies to stand out. Additionally, local competitors are making significant strides, posing a direct threat to market presence and share. It's crucial to monitor their strategies and adapt accordingly. Moreover, as we evolve and adopt new technologies and strategies, there's a risk of alienating our older, loyal customer base. It's important to balance innovation with the needs and preferences of these customers to maintain their loyalty.",
-      "image_caption": [
-        "A digital marketplace with multiple brand logos"
-      ],
-      "flowchart": "False",
-      "flowchart_description": null,
-      "image_paths": [
-        "a_digital_marketplace_with_multiple_brand_logos.jpg"
-      ],
-      "image_dimensions": [
-        {
-          "path": "a_digital_marketplace_with_multiple_brand_logos.jpg",
-          "width": 960,
-          "height": 720
-        }
-      ]
+      "speaker_notes": "Despite setbacks, Airbnb continued to focus on improving user experience and expanding globally, showcasing resilience and commitment to service excellence.",
+      "image_paths": "Airbnb Professional Photography Service Launch Event"
     }
   },
   {
-    "section": "Attrition Risk",
-    "sub_slide": 1,
+    "slide": 8,
+    "slide_title": "Enhanced Services and Global Reach",
     "slide_content": {
       "bullets": [
-        "Focus on strategies to boost employee retention.",
-        "Address potential risks to brand reputation.",
-        "Analyze factors contributing to attrition."
+        "Throughout its operation, Airbnb maintained a fee structure where guests paid about 10% and hosts paid 3%, covering variable costs.",
+        "Airbnb's appeal to guests was driven by lower prices, convenient locations, unique spaces, and the opportunity to experience local living.",
+        "In the second half of 2011, Airbnb aggressively expanded internationally, offering customer service in 15 languages and supporting 17 currencies."
       ],
-      "speaker_notes": "In this slide, we will explore how increasing retention rates can positively impact our organization. By focusing on strategies to retain our top talent, we can reduce turnover costs and maintain a stable workforce. However, it's crucial to address any potential risks that might lead to brand prestige dilution. This could include negative perceptions from high attrition rates or a loss of skilled employees. Finally, we will analyze the various factors contributing to attrition, allowing us to implement targeted interventions to mitigate these issues.",
-      "image_caption": [
-        "A diverse group of professionals collaborating in a modern office setting"
-      ],
-      "flowchart": "False",
-      "flowchart_description": null,
-      "image_paths": [
-        "a_diverse_group_of_professionals_collaborating_in_.jpg"
-      ],
-      "image_dimensions": [
-        {
-          "path": "a_diverse_group_of_professionals_collaborating_in_.jpg",
-          "width": 626,
-          "height": 417
-        }
-      ]
-    }
-  },
-  {
-    "section": "Execution",
-    "sub_slide": 1,
-    "slide_content": {
-      "bullets": [
-        "Implement targeted digital marketing campaigns.",
-        "Invest in Traditional Chinese Medicine (TCM) research.",
-        "Expand the premium product tier."
-      ],
-      "speaker_notes": "To ensure our strategies are effective, we will focus on three key areas. First, we will implement targeted digital marketing campaigns to reach our desired audience more efficiently and increase engagement. Second, we will invest in Traditional Chinese Medicine (TCM) research to innovate and enhance our product offerings, aligning with market trends and consumer interests. Lastly, we aim to expand our premium product tier, catering to a growing market segment that values high-quality, exclusive products.",
-      "image_caption": [],
-      "flowchart": "False",
-      "flowchart_description": null
-    }
-  },
-  {
-    "section": "Very High",
-    "sub_slide": 1,
-    "slide_content": {
-      "bullets": [
-        "Challenges of managing multiple communication channels",
-        "Increased operational complexity",
-        "Rising costs associated with channel management"
-      ],
-      "speaker_notes": "In today's interconnected business environment, managing multiple communication channels is a significant challenge. Companies must ensure seamless integration across these channels to provide a consistent customer experience. This integration often leads to increased operational complexity, as each channel may require specific strategies and tools. Additionally, the costs associated with managing these channels can rise significantly, impacting the overall budget and requiring careful financial planning.",
-      "image_caption": [
-        "A network of interconnected communication channels"
-      ],
-      "flowchart": "False",
-      "flowchart_description": null,
-      "image_paths": [
-        "a_network_of_interconnected_communication_channels.jpg"
-      ],
-      "image_dimensions": [
-        {
-          "path": "a_network_of_interconnected_communication_channels.jpg",
-          "width": 1024,
-          "height": 576
-        }
-      ]
-    }
-  },
-  {
-    "section": "Recommendation",
-    "sub_slide": 1,
-    "slide_content": {
-      "bullets": [
-        "Rebuild brand with a focus on luxury appeal",
-        "Target health-conscious young women",
-        "Differentiate from other luxury brands"
-      ],
-      "speaker_notes": "To rebuild our brand with a luxury appeal, we need to focus on high-quality materials and exclusive designs that resonate with our target demographic. Our primary audience consists of health-conscious young women who value both aesthetics and wellness. We must ensure that our brand stands out from other luxury brands by offering unique value propositions, such as sustainable practices or personalized experiences.",
-      "image_caption": [
-        "Elegant luxury product display targeting young women"
-      ],
-      "flowchart": "False",
-      "flowchart_description": null,
-      "image_paths": [
-        "elegant_luxury_product_display_targeting_young_wom.jpg"
-      ],
-      "image_dimensions": [
-        {
-          "path": "elegant_luxury_product_display_targeting_young_wom.jpg",
-          "width": 626,
-          "height": 417
-        }
-      ]
+      "speaker_notes": "The strategic fee structure and focus on guest experience contributed to Airbnb's popularity and global expansion, highlighting the platform's unique value proposition.",
+      "image_paths": "img_p9_1.png"
     }
   }
 ]

@@ -1,47 +1,9 @@
 [
   {
-    "name": "a_digital_marketplace_with_multiple_brand_logos.jpg",
-    "width": 960,
-    "height": 720
-  },
-  {
-    "name": "a_diverse_group_of_professionals_collaborating_in_.jpg",
-    "width": 626,
-    "height": 417
-  },
-  {
-    "name": "a_historic_brand_logo_symbolizing_heritage_and_rep.jpg",
-    "width": 1200,
-    "height": 617
-  },
-  {
-    "name": "a_network_of_interconnected_communication_channels.jpg",
-    "width": 1024,
-    "height": 576
-  },
-  {
-    "name": "a_warehouse_with_organized_shelves_and_resources.jpg",
-    "width": 1600,
-    "height": 986
-  },
-  {
-    "name": "elegant_luxury_product_display_targeting_young_wom.jpg",
-    "width": 626,
-    "height": 417
-  },
-  {
-    "name": "graph_illustrating_customer_retention_rates_over_t.jpg",
-    "width": 481,
-    "height": 410
-  },
-  {
-    "name": "img_p0_1.png",
-    "width": 722,
-    "height": 406
-  },
-  {
-    "name": "img_p0_2.png",
-    "width": 335,
-    "height": 335
+    "name": "img_p1_1.png",
+    "width": 400,
+    "height": 233,
+    "original_height": 233,
+    "original_width": 400
   }
 ]

@@ -27,45 +27,45 @@ class DocumentOutline(BaseModel):
 
 # Prompt template
 PROMPT_TEMPLATE = """
-You are a slide-outline assistant.  
-Given the document title and a list of section summaries, produce a JSON object matching this schema:
+  You are a slide-outline assistant.  
+  Given the document title and separate lists of text summaries, produce a JSON object matching this schema:
 
-{{
-  "title": <string>,           // main deck title
-  "subtitle": <string>,        // optional subtitle or author
-  "sections": [
-    {{
-      "heading": <string>,     // section heading
-      "num_content_slides": <integer >= 1>,  
-      "slide_distribution": [
-        {{
-          "sub_slide": <integer>,  // Sub slide number
-          "sub_slide_title": <string>,  // Sub slide title
-          "sub_slide_subtitle": <string>,  // Sub slide subtitle (optional)
-          "key_points": [<string>, ...]  // 1-3 bullet points for this slide. If more than 3, move to next sub-slide
-        }},
-        ...
-      ]
-    }},
-    …
-  ]
-}}
+  {{
+    "title": <string>,           // main deck title
+    "subtitle": <string>,        // optional subtitle or author
+    "sections": [
+      {{
+        "heading": <string>,     // section heading
+        "num_content_slides": <integer >= 1>,  
+        "slide_distribution": [
+          {{
+            "sub_slide": <integer>,  // Sub slide number
+            "sub_slide_title": <string>,  // Sub slide title
+            "sub_slide_subtitle": <string>,  // Sub slide subtitle (optional)
+            "key_points": [<string>, ...]  // 1-3 bullet points for this slide. If more than 3, move to next sub-slide
+          }},
+          ...
+        ]
+      }},
+      …
+    ]
+  }}
 
-Use no extra keys. Constrain total slides (sum of num_content_slides) to be at most {max_slides}.
-Here are the inputs:
+  Use no extra keys. Constrain total slides (sum of num_content_slides) to be at most {max_slides}.
+  Here are the inputs:
 
-Document Title:
-{title}
+  Document Title:
+  {title}
 
-Section Summaries:
-{summaries}
-"""
+  Text Section Summaries:
+  {summaries}
+  """
 
-def generate_outline(title: str, summaries: List[dict], max_slides: int = 15) -> DocumentOutline:
+def generate_outline(title: str, summaries: List[str], max_slides: int = 15) -> DocumentOutline:
     # Fill prompt
     prompt = PROMPT_TEMPLATE.format(
         title=title,
-        summaries="\n".join(f"- {s['title']}: {s['summary']}" for s in summaries),  # Include section titles
+        summaries="\n".join(f"- {summary}" for summary in summaries),
         max_slides=max_slides
     )
 

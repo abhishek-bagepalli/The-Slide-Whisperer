@@ -1,0 +1,187 @@
+[
+  {
+    "detailed_summary": "In May 2023, Brian Chesky, one of the co-founders of Airbnb, reflects on the journey of the company's first five years, emphasizing the importance of maintaining a childlike curiosity and constantly challenging oneself. By June 2021, Airbnb had become the world's leading lodging marketplace with four million hosts offering seven million listings in over 220 countries and regions. Despite the challenges posed by the Covid-19 pandemic, Airbnb had profitable third quarters in 2018, 2019, and 2020. Founded in 2007 by Brian Chesky, Joe Gebbia, and Nathan Blecharczyk, Airbnb went public through a successful IPO. The document provides insights into the early days of Airbnb, starting from October 2007 when Chesky and Gebbia inflated airbeds in their San Francisco apartment to fund their rent and offered them to conference attendees. This experience led to the realization of a new lodging model that would revolutionize the travel industry. The timeline includes key events like the launch of AirBed&Breakfast in August 2008 during the Democratic National Convention in Denver, where the platform attracted 800 listings and 80 bookings, showcasing lower prices compared to hotels and the unique experience of staying with locals. The early success of Airbnb stemmed from the founders' willingness to challenge assumptions and create a new way for hosts to earn money and for guests to travel, setting the stage for the company's exponential growth and future vision.",
+    "key_visualizations": {
+      "charts": [
+        "Airbnb Growth Over Five Years",
+        "Comparison of Airbnb Prices vs. Hotel Rates"
+      ],
+      "images": [
+        "Airbnb Early Days Timeline",
+        "Airbnb Launch at Democratic National Convention"
+      ],
+      "retrived_image_paths_charts": [
+        "airbnb_growth_over_five_years.jpg",
+        "comparison_of_airbnb_prices_vs._hotel_rates.jpg"
+      ],
+      "retrived_image_paths_images": [
+        "airbnb_launch_at_democratic_national_convention.jpg"
+      ]
+    },
+    "retrieved_content_from_document": [
+      {
+        "query": "Exhibit 1 details the experience of the first three Airbnb guests",
+        "response": "airbeds in their San Francisco apartment plus breakfast to conference attendees (Exhibit 1). Three\nattendees, who are older and closer to the mainstream than the cofounders had expected, sign up\nand turn from strangers to friends:\n    We had a 38\u2011year\u2011old female who worked at Razorfish. And then an industrial designer from Salt\n    Lake City who was even older. They slept on an air mattress on our kitchen floor. They broke every\n    assumption we ever made about who would stay on an air bed at a stranger\u2019s house.\u2075\nTheir first experience as hosts gave the cofounders a glimpse into the future of lodging which\nsustained their belief in the Airbnb model for years to come. Y\u2011Combinator\u2019s Paul Graham\nexplains:\n       When they first tried renting out airbeds on their floor during a design convention, all they were\n    hoping  for  was  to  make  enough  money  to  pay  their  rent  that  month.  But  something  surprising"
+      },
+      {
+        "query": "Exhibit 4 shows the traffic to the Airbnb site during the Denver convention",
+        "response": "happy\"              550\n                   ~Victonan\"          550                        L1Q1}                   odemn\n                   ~Get Fill\"          580\n                   ~Sunny\"             585                                   San\n                                                                          Ftarciscn\n                   Cule\"               590\n                   \"Mocern\"            599       Coogl\n                                         NOxL\nExhibit 4: Traffic to the Airbnb site, June 17 to October 16, 2008.\n                                         Site traffic\n                                                                                    Jun I\"Iujn  Oct I0 , Joou"
+      }
+    ]
+  },
+  {
+    "detailed_summary": "In 2008, facing financial difficulties, the Airbnb cofounders creatively designed and sold cereal boxes named Obama O's and Cap'n McCain's, generating $30,000 in revenue. Despite their initial success, the team struggled to secure funding throughout the year due to the Global Financial Crisis and skepticism from investors about the unconventional idea of AirBed&Breakfast. The cofounders received discouraging feedback, with one investor expressing disbelief in investing in a concept like theirs during an economic downturn. By the end of 2008, the founders contemplated quitting but decided to give the startup three more months to gain traction. This pivotal moment led to a renewed commitment to focus solely on Airbnb's growth. In January 2009, during President Obama's inauguration, Airbnb had 1,000 listings and 150 bookings. The cofounders joined the Y-Combinator program, received seed funding, and rebranded the platform as Airbnb.com. Despite initial challenges in securing venture capital, the company's potential was recognized by some investors like Fred Wilson, who acknowledged underestimating the innovative concept and the team's capabilities.",
+    "key_visualizations": {
+      "charts": [
+        "Revenue Comparison: Cereal Boxes vs. AirBed&Breakfast Service",
+        "Investor Sentiment Over Time"
+      ],
+      "images": [
+        "Obama O's and Cap'n McCain's Cereal Boxes",
+        "Airbnb Rebranding Process"
+      ],
+      "retrived_image_paths_charts": [
+        "img_p7_1.png",
+        "investor_sentiment_over_time.jpg"
+      ],
+      "retrived_image_paths_images": [
+        "obama_o's_and_cap'n_mccain's_cereal_boxes.jpg",
+        "airbnb_rebranding_process.jpg"
+      ]
+    },
+    "retrieved_content_from_document": [
+      {
+        "query": "Exhibit 2 details the feedback from investors in 2008",
+        "response": "p. 3\nAirbnb\n    uninterested. And so we had this conversation, the three of us, \u2018When do you know it\u2019s time to\n    quit?\u2019 And we had a realization over the course of that conversation, which is that although over\n    the last year we\u2019ve been working really hard, we\u2019ve actually been a little bit distracted, too. We\n    had side projects going on, and actually at the time I was in Boston, they were in San Francisco,\n    and so we weren\u2019t together as a team, completely focused. So we made a commitment to each other.\n    We said: \u2018let\u2019s give it three more months where we\u2019ll live together and we\u2019ll not have anything else\n    in our lives except for this. We\u2019ll work six to seven days a week and we\u2019ll be very regimented, and\n    after three months, if we\u2019re not going to be in a materially better place, then we\u2019ll quit.\u00b9\u00b9\nJanuary 2009 \u2013 President Obama\u2019s inauguration, attracting 1.8 million people to the Washington,\nD.C. area. The company has 1,000 listings and 150 bookings.\nJanuary  2009  \u2013 The  cofounders  enter the  Y\u2011Combinator  program,  receiving  $20,000  in  seed\nfunding to work at the company full time. The website is renamed Airbnb.com and redesigned.\nAirbnb then seeks venture capital funding with assistance from Y\u2011Combinator\u2019s Paul Graham, but\nis still unsuccessful. Union Square Ventures\u2019 Fred Wilson explains his reluctance to invest:\n    We couldn\u2019t wrap our heads around air mattresses on the living room floors as the next hotel room\n    and did not chase the deal. Others saw the amazing team that we saw, funded them, and the rest is\n    history. Airbnb is well on its way to building the \u201ceBay of spaces.\u201d I\u2019m pretty sure it will be a\n    billion dollar business in time. We made the classic mistake that all investors make. We focused\n    too much on what they were doing at the time and not enough on what they could do, would do,\n    and did do.\u00b9\u00b2\nFebruary-June 2009 \u2013 Paul Graham explains how the cofounders reached \u201cramen profitability\u201d:\n    Airbnb\u2019s goal during Y\u2011Combinator was to reach what we call ramen profitability, which means\n    making enough money that the company can pay the founders\u2019 living expenses,  if they  live  on\n    ramen noodles. Ramen profitability is not, obviously, the end goal of any startup, but it\u2019s the most\n    important threshold on the way, because this is the point where you\u2019re airborne. This is the point\n    where you no longer need investors\u2019 permission  to  continue  existing.  For  the  Airbnbs,  ramen\n    profitability was $4,000 a month: $3,500 for rent, and $500 for food. They taped this goal to the\n    mirror in the bathroom of their apartment.\n    The way to get growth started in something like Airbnb is to focus on the hottest subset of the\n    market. If you can get growth started there, it will spread to the rest. When I asked the Airbnbs"
+      },
+      {
+        "query": "Quotes from Fred Wilson regarding Airbnb's potential",
+        "response": "In  June  2021,  Airbnb  was  the  world\u2019s leading    lodging  marketplace.  With  four  million  hosts\noffering about  seven  million  listings  in  over  220  countries  and  regions\u00b2  and  profitable  third\nquarters in each of the years 2018, 2019 and 2020\u00b3 (in spite of the Covid\u201119 pandemic), Airbnb\nwent public in a highly successful IPO. The company was founded in 2007 by Brian Chesky, Joe\nGebbia  and  Nathan  Blecharczyk.  Gebbia  tells  the  story  of  early  Airbnb  in  this  video.  This\ndocument complements his story with an early company timeline as well as additional data and\ndetails.\nOctober 2007 \u2013 Industrial Designers Society of America conference in San Francisco. To  fund\ntheir  rent, Chesky  and  Gebbia  inflate  three  airbeds\u2074  and  put  together  a  website that offers  the\nairbeds in their San Francisco apartment plus breakfast to conference attendees (Exhibit 1). Three\nattendees, who are older and closer to the mainstream than the cofounders had expected, sign up\nand turn from strangers to friends:\n    We had a 38\u2011year\u2011old female who worked at Razorfish. And then an industrial designer from Salt\n    Lake City who was even older. They slept on an air mattress on our kitchen floor. They broke every\n    assumption we ever made about who would stay on an air bed at a stranger\u2019s house.\u2075\nTheir first experience as hosts gave the cofounders a glimpse into the future of lodging which\nsustained their belief in the Airbnb model for years to come. Y\u2011Combinator\u2019s Paul Graham\nexplains:\n       When they first tried renting out airbeds on their floor during a design convention, all they were\n    hoping  for  was  to  make  enough  money  to  pay  their  rent  that  month.  But  something  surprising\n        happened: they enjoyed having those first three guests staying with them. And the guests enjoyed\n1 \u201cGreatest living business minds,\u201d Forbes Centennial Issue, September 2017.\n2 Source: Airbnb S\u20111, November 2020.\n3 Ibid.\n4 An airbed is an inflatable mattress which is laid on the floor to form a bed.\n5 \u201cThe sharing economy,\u201d Fast Company, April 18, 2011.\nHaim  Mendelson  prepared  this  case  as  the  basis  for  class  discussion  rather  than  to  illustrate  either  effective  or\nineffective  handling  of  an  administrative  situation.   Copyright  \u00a9  2017-2023  by Haim  Mendelson. No  part  of  this\npublication may be reproduced, stored in a retrieval system, used in a spreadsheet, or transmitted in any form or by\nany means \u2013\u2013 electronic, mechanical, photocopying, recording, or otherwise \u2013\u2013 without the permission of the author.\nTo contact the author, email haim@stanford.edu."
+      }
+    ]
+  },
+  {
+    "detailed_summary": "In the early stages of Airbnb's growth, the cofounders aimed to achieve 'ramen profitability' during their time in the Y-Combinator program. Ramen profitability meant making enough money to cover basic living expenses, symbolized by $4,000 a month for rent and food. This milestone signified the company's ability to sustain itself without constant reliance on external investors. To kickstart growth, the founders focused on the most promising market segment, identified as New York City due to high demand. By personally visiting hosts in NYC and improving their property listings, Airbnb was able to address a critical issue faced by hosts\u2014poor quality property photos that deterred potential bookings. The strategic approach of concentrating efforts on a key market and enhancing the user experience by improving property visuals played a crucial role in Airbnb's early expansion.",
+    "key_visualizations": {
+      "charts": [
+        "Ramen Profitability Threshold Progression",
+        "Market Growth Strategy Impact"
+      ],
+      "images": [
+        "Cofounders' Goal Taped to Bathroom Mirror",
+        "Before and After Property Photo Improvement"
+      ],
+      "retrived_image_paths_charts": [
+        "ramen_profitability_threshold_progression.jpg",
+        "market_growth_strategy_impact.jpg"
+      ],
+      "retrived_image_paths_images": [
+        "cofounders'_goal_taped_to_bathroom_mirror.jpg",
+        "before_and_after_property_photo_improvement.jpg"
+      ]
+    },
+    "retrieved_content_from_document": [
+      {
+        "query": "Exact details of the 'ramen profitability' goal set by the cofounders",
+        "response": "history. Airbnb is well on its way to building the \u201ceBay of spaces.\u201d I\u2019m pretty sure it will be a\n    billion dollar business in time. We made the classic mistake that all investors make. We focused\n    too much on what they were doing at the time and not enough on what they could do, would do,\n    and did do.\u00b9\u00b2\nFebruary-June 2009 \u2013 Paul Graham explains how the cofounders reached \u201cramen profitability\u201d:\n    Airbnb\u2019s goal during Y\u2011Combinator was to reach what we call ramen profitability, which means\n    making enough money that the company can pay the founders\u2019 living expenses,  if they  live  on\n    ramen noodles. Ramen profitability is not, obviously, the end goal of any startup, but it\u2019s the most\n    important threshold on the way, because this is the point where you\u2019re airborne. This is the point\n    where you no longer need investors\u2019 permission  to  continue  existing.  For  the  Airbnbs,  ramen"
+      },
+      {
+        "query": "Specific data on the impact of focusing on New York City market",
+        "response": "market. If you can get growth started there, it will spread to the rest. When I asked the Airbnbs\n    where there was most demand, they knew from searches: New York City. So they focused on New\n    York.  They  went  there  in  person  to  visit  their  hosts  and  help  them  make  their  listings  more\n    attractive.13\nNew York City (NYC) has 40 listed apartments that convert to 15 monthly rentals. Chesky and\nGebbia travel to NYC and find that a key pain point for hosts is taking and uploading photos of\ntheir properties:\n    The  photos  were  really  bad.  People  were  using  camera  phones  and  taking  Craigslist\u2011quality\n    pictures. Surprise! No one was booking because you couldn\u2019t see what you were paying for.\u00b9\u2074\n11 \u201c10 years of community,\u201d Airbnb, August 10, 2018.\n12 \u201cAirbnb,\u201d AVC, March 16, 2011.\n13 \u201cThe Airbnbs.\u201d Paul Graham, YC Blog, December 10, 2020.\n14 \u201cAirbnb,\u201d Fast Company, February 7, 2012."
+      }
+    ]
+  },
+  {
+    "detailed_summary": "In their quest for growth, Airbnb's cofounders, Chesky and Gebbia, identified the need to enhance property visuals to drive conversions. By borrowing a high-resolution camera and personally visiting hosts in New York City, they captured high-quality photos that significantly increased conversion rates by 2.5 times, leading to a doubling of revenues in NYC by the end of the month. The founders emphasized the importance of 'doing things that don't scale' initially to create the perfect user experience, a strategy that proved pivotal in Airbnb's success. Through face-to-face interactions with hosts and the practice of 'enlightened empathy,' where they deeply understood the hosts' perspectives, they were able to improve the design and user experience of the platform. This hands-on approach not only solved immediate challenges in New York but also laid the foundation for addressing issues in other cities like Paris, London, Vancouver, and Miami. In April 2009, Airbnb secured a seed round of $600,000 led by Sequoia Capital, recognizing the company's global network effects and disruptive business model. Despite initial skepticism from investors like Reid Hoffman, who underestimated the platform's potential, Airbnb's innovative strategies and focus on user experience propelled its growth.",
+    "key_visualizations": {
+      "charts": [
+        "Conversion Rate Improvement in NYC",
+        "Revenue Growth Impact of High-Quality Photos"
+      ],
+      "images": [
+        "Chesky and Gebbia Interacting with Hosts in NYC",
+        "Before and After Property Photo Comparison"
+      ],
+      "retrived_image_paths_charts": [
+        "conversion_rate_improvement_in_nyc.jpg",
+        "revenue_growth_impact_of_high-quality_photos.jpg"
+      ],
+      "retrived_image_paths_images": [
+        "chesky_and_gebbia_interacting_with_hosts_in_nyc.jpg",
+        "before_and_after_property_photo_comparison.jpg"
+      ]
+    },
+    "retrieved_content_from_document": [
+      {
+        "query": "Exact impact data on revenue doubling in NYC after photo improvements",
+        "response": "p. 4\nAirbnb\nTo address the problem, Chesky and Gebbia borrow and then rent a high\u2011resolution camera. They\nvisit  hosts  door  to  door and  take high\u2011quality  photos  of  their properties,  discovering  that  they\nincrease  conversion from  listings  to  rentals  by  2.5X.  By  month\u2019s end, NYC  revenues  double.\nChesky explains:\n    Do things that don\u2019t scale. We start with the perfect experience and then work backward. That\u2019s\n    how we\u2019re going to continue to be successful.\u00b9\u2075\nGebbia adds:\n    And I\u2019d show the photos in the back of the camera\u2026 and these hosts were like \u201cOh my god, my\n    apartment looks amazing, I can\u2019t believe it, do you want to stay for some tea or coffee?\u201d And so,\n    I\u2019d end up spending a few hours sometimes in their homes just talking with them. And this is where"
+      },
+      {
+        "query": "Quotes from Alfred Lin and Reid Hoffman regarding Airbnb's business model",
+        "response": "p. 5\nAirbnb\n    none of the upsides of creating a travel space marketplace. The downsides naturally include: you\u2019ve\n    got connectivity with kind of a stranger (and by the way, there\u2019s an upside to that as well), you\u2019ve\n    got the uncertainty about the environment that you\u2019re going into\u2026 When it\u2019s a room, or once we\n    are renting an apartment, the room you have is your own room, you have your own bed etc., it\u2019s\n    like your own space, you know versus the couches are out in some other kind of space. It\u2019s always\n    the low end. It\u2019s got to be the absolute cheapest thing like, maybe the next cheapest is you can have\n    a sleeping bag in my yard. You have all of those challenges and none of the potential upsides like\n    I\u2019d much rather rent your apartment on the Seine than even that really gorgeous [Four Seasons]\n    hotel, because of the location of the apartment and the view when you look out the window, and\n    even if it\u2019s not as well appointed as the Four Seasons, oh my god, it\u2019s an apartment on the Seine.\n    And that was part of the upside of Airbnb but none of that was explained to me.20\nSummer 2010 \u2013 Without publicity, Airbnb initiates a  free professional photography service. It\ncontracts with 20 photographers to take verified high\u2011quality photos of hosts\u2019 properties and post\nthem to their listings. Airbnb pays photographers $50 per listing plus up to $15 for local travel.\u00b2\u00b9\nNovember  2010 \u2013    Airbnb  raises  $7.2  million  Series  A  funding from  Greylock  Partners  and\nSequoia Capital. Reid Hoffman describes how his Airbnb investment was received at Greylock:\n    Greylock  has  55  years  of  investing  history,  and  when  it  looks  back  it  realizes  that  its  best\n    investments are from mixed votes, from some partners going: \u201cthis is absolutely critical and\n    important\u201d and other partners going \u201cI think this is a real serious mistake,  this  is  an  investing\n    mistake, this is gonna be a drag on the portfolio.\u201d I brought the investment in and this investment\n    had that exact characteristic. David Sze, who was my most helpful board member at LinkedIn and\n    who was my primary recruit into Greylock, looks at me and says: \u201clook, every venture capitalist\n    has to have a deal that they can fail on. Airbnb can be yours.\u201d And I was like, okay, boy, here\u2019s an\n    experienced VC, my very first deal on the door, oops, right? But I had enough conviction and it\n    was like \u201clook, I think I\u2019m right, I think David\u2019s wrong\u201d and then other partners were like \u201cnope, I\n    think this is actually a pretty interesting investment, I think you should do it.\u201d So we had that kind\n    of mixed thing so I got the license to go and put a term sheet down.22\nFebruary 2011 \u2013  Airbnb announces a million cumulative bookings since launch.\nMarch 2011 \u2013 Wimdu, a German Airbnb clone founded by the Samwer brothers, launches. The"
+      }
+    ]
+  },
+  {
+    "detailed_summary": "In a significant milestone, Airbnb secures a $7.2 million Series A funding round from Greylock Partners and Sequoia Capital, marking a crucial stage in the company's growth trajectory. Despite initial skepticism from some investors like Reid Hoffman, who initially viewed Airbnb as a risky investment, the mixed opinions within Greylock Partners led to the decision to proceed with the funding. This investment played a pivotal role in supporting Airbnb's expansion and development. As the company continued to evolve, it faced challenges from competitors like Wimdu, a German Airbnb clone founded by the Samwer brothers. The Samwer brothers' rapid scaling and localization strategy posed a threat to Airbnb's global presence. In response, Airbnb contemplated acquiring Wimdu to maintain its competitive edge but ultimately decided to pursue an alternative strategy, known as Plan B, to retain its mission-driven focus and unique identity. This decision reflected Airbnb's commitment to its community and core values, prioritizing long-term sustainability over short-term gains.",
+    "key_visualizations": {
+      "charts": [
+        "Funding Impact on Airbnb's Growth",
+        "Competitive Landscape Comparison: Airbnb vs. Wimdu"
+      ],
+      "images": [
+        "Reid Hoffman's Investment Reflections",
+        "Samwer Brothers' Company Scaling Strategy"
+      ],
+      "retrived_image_paths_charts": [
+        "funding_impact_on_airbnb's_growth.jpg",
+        "competitive_landscape_comparison:_airbnb_vs._wimdu.jpg"
+      ],
+      "retrived_image_paths_images": [
+        "reid_hoffman's_investment_reflections.jpg",
+        "samwer_brothers'_company_scaling_strategy.jpg"
+      ]
+    },
+    "retrieved_content_from_document": [
+      {
+        "query": "Quotes from Reid Hoffman on the decision to invest in Airbnb",
+        "response": "looking to make an investment in it myself. It\u2019s Airbnb.\u201d And I go like, what\u2019s that? \u201cWell, it\u2019s\n    renting couches, you know, everyone has couches and now every space opens up because you can\n    rent a couch.\u201d That was essentially how I was pitched on it. I was like okay, if it\u2019s essentially a\n    couch thing, don\u2019t talk to me about it. And the reason was couches have all of the downsides and\n15 Ibid.\n16 \u201cHow I Built It\u201d with Guy Raz, Airbnb: Joe Gebbia, NPR, August 28, 2017.\n17 \u201cAirbnb,\u201d Fast Company, February 7, 2012.\n18 Fireside chat with Alfred Lin and Bambi Francisco, Post-Seed Conference, San Francisco, December 5, 2015.\n19 Reid Hoffman is a famous American entrepreneur and venture capitalist. He cofounded some of the early social\nnetworks, was an executive at PayPal and cofounded LinkedIn. Hoffman is a partner at venture capital firm Greylock\nPartners."
+      },
+      {
+        "query": "Specific details on the competitive dynamics between Airbnb and Wimdu",
+        "response": "an experience as ours\u202625\nMay-June 2011 \u2013 By May 2011, Airbnb raised less than $8 million in total. Airbnb goes into a\nmassive  funding  round  to  finance  growth, raising  $115  million  at  a  $1.3 billion  valuation  and\naggressively moving into Germany and then the rest of Europe. Airbnb acquires Accoleo, a small\nGerman Airbnb clone, using its operations as a beachhead and opening offices in Hamburg and\nlater in Berlin.\nAt that point, Airbnb became a truly global travel network. Chesky explains:\n    The other thing we did\u2026 that was incredibly important that they were doing really well which is\n    we opened local offices\u2026 and we really hired local teams, and a lot of them came from the local\n    community. And it wasn\u2019t until we did that that our business became  a  primarily  international\n    business. And that was key. It was like the product and the community \u2013 but also with the local\n    culture. 26\n24 In reality, Wimdu raised $90 million.\n25 Brian Chesky in TechCrunch video interview, October 11, 2013.\n26 Ibid."
+      }
+    ]
+  },
+  {
+    "detailed_summary": "By May 2011, Airbnb underwent a significant funding round, raising $115 million at a valuation of $1.3 billion to fuel its aggressive expansion into Germany and subsequently across Europe. The company strategically acquired Accoleo, a German Airbnb clone, to establish a foothold in the German market, leading to the opening of offices in Hamburg and Berlin. This move marked Airbnb's transformation into a truly global travel network. The decision to establish local offices and hire local teams proved pivotal in internationalizing the business, enabling Airbnb to cater to diverse markets effectively. The emphasis on integrating local culture into operations, alongside product development and community engagement, played a crucial role in Airbnb's evolution into a primarily international business. Despite facing challenges from competitors like Wimdu, Airbnb's commitment to its mission-driven approach and community-centric values guided its strategic decisions, reinforcing its position as a global leader in the travel industry.",
+    "key_visualizations": {
+      "charts": [
+        "Funding Impact on International Expansion",
+        "Localization Strategy Success Metrics"
+      ],
+      "images": [
+        "Airbnb Office Opening in Berlin",
+        "Accoleo Acquisition Announcement"
+      ],
+      "retrived_image_paths_charts": [
+        "funding_impact_on_international_expansion.jpg",
+        "localization_strategy_success_metrics.jpg"
+      ],
+      "retrived_image_paths_images": [
+        "airbnb_office_opening_in_berlin.jpg",
+        "accoleo_acquisition_announcement.jpg"
+      ]
+    },
+    "retrieved_content_from_document": [
+      {
+        "query": "Quotes from Brian Chesky on the importance of local offices in international expansion",
+        "response": "p. 6\nAirbnb\n    And so you can imagine how we felt \u2013 and I think at that point we had done the round with Greylock\n    for $7 million and I also get a news report that this guy Oliver Samwer has raised $400 million,24\n    he has hired 400 people in like 30 days, set up 40 offices. I didn\u2019t know it was kind of possible \u2013 it\n    took Joe and I like 2 years to hire 40 people and he got 400 people in 30 days out of nowhere, and\n    he was going to create this company, and this company was going to be a clone of our company,\n    and he made no mistake about saying that we were an American company and he was going to out\u2011\n    localize us. At that point, we really started investigating, well, do we think this strategy is going to\n    work. And it became clear that there was one thing they did that worked very well, and that one\n    thing was that they actually had local people and local offices on the ground. We tested it ourselves\n    and we realized, oh crap \u2013 that actually works!\n    ... I end up going to Berlin in 2011, met with Samwer and\u2026 we realized that we had a decision to\n    make, and the decision was [between] Plan A and what we called Plan B. And Plan A was we retain\n    this global travel network by acquiring Wimdu. Because we visited them and they clearly had a ton\n    of traction. Or, we had Plan B. The problem is, we didn\u2019t know what Plan B was yet. And, we\u2019re\n    like, OK, we have to come up with plan B. And, even that night, we decided to do Plan B. We\n    decided to do plan B even though we had no Plan B\u2026 We don\u2019t know what Plan B is, but I\u2019d rather\n    pursue Plan B and maybe win, but maybe lose, than inherit this other company that we thought was\n    not mission\u2011based\u2026 because it wouldn\u2019t be Airbnb, and I wouldn\u2019t want to come to work for that\n    company, be part of that company... I\u2019d rather lose and keep our soul than win without it. And so\n    we said now we\u2019re basically, frankly fighting for our life to retain this global network. And I\n    thought we\u2019d win\u2026 In wars, missionaries typically beat mercenaries, and we knew like we did it\n    for the mission, we were willing to do it for the long term. I remember even Paul Graham telling\n    me\u2026 if you\u2019re in a race, they can sprint with you but they don\u2019t want to do the marathon. And I\n    think the community ultimately was the difference. I think we provide a much better product but\n    the community was that magic, the bottle that they were never able to crack. Our community loved\n    the experience, our employees loved working there, everything was mission\u2011driven and we really\n    agonized over every step of the [customer] experience, and people tried them, but it wasn\u2019t as good\n    an experience as ours\u202625\nMay-June 2011 \u2013 By May 2011, Airbnb raised less than $8 million in total. Airbnb goes into a"
+      },
+      {
+        "query": "Specific data on the growth trajectory post-funding round",
+        "response": "p. 3\nAirbnb\n    uninterested. And so we had this conversation, the three of us, \u2018When do you know it\u2019s time to\n    quit?\u2019 And we had a realization over the course of that conversation, which is that although over\n    the last year we\u2019ve been working really hard, we\u2019ve actually been a little bit distracted, too. We\n    had side projects going on, and actually at the time I was in Boston, they were in San Francisco,\n    and so we weren\u2019t together as a team, completely focused. So we made a commitment to each other.\n    We said: \u2018let\u2019s give it three more months where we\u2019ll live together and we\u2019ll not have anything else\n    in our lives except for this. We\u2019ll work six to seven days a week and we\u2019ll be very regimented, and\n    after three months, if we\u2019re not going to be in a materially better place, then we\u2019ll quit.\u00b9\u00b9\nJanuary 2009 \u2013 President Obama\u2019s inauguration, attracting 1.8 million people to the Washington,\nD.C. area. The company has 1,000 listings and 150 bookings.\nJanuary  2009  \u2013 The  cofounders  enter the  Y\u2011Combinator  program,  receiving  $20,000  in  seed\nfunding to work at the company full time. The website is renamed Airbnb.com and redesigned.\nAirbnb then seeks venture capital funding with assistance from Y\u2011Combinator\u2019s Paul Graham, but\nis still unsuccessful. Union Square Ventures\u2019 Fred Wilson explains his reluctance to invest:\n    We couldn\u2019t wrap our heads around air mattresses on the living room floors as the next hotel room\n    and did not chase the deal. Others saw the amazing team that we saw, funded them, and the rest is\n    history. Airbnb is well on its way to building the \u201ceBay of spaces.\u201d I\u2019m pretty sure it will be a\n    billion dollar business in time. We made the classic mistake that all investors make. We focused\n    too much on what they were doing at the time and not enough on what they could do, would do,\n    and did do.\u00b9\u00b2\nFebruary-June 2009 \u2013 Paul Graham explains how the cofounders reached \u201cramen profitability\u201d:\n    Airbnb\u2019s goal during Y\u2011Combinator was to reach what we call ramen profitability, which means\n    making enough money that the company can pay the founders\u2019 living expenses,  if they  live  on\n    ramen noodles. Ramen profitability is not, obviously, the end goal of any startup, but it\u2019s the most\n    important threshold on the way, because this is the point where you\u2019re airborne. This is the point\n    where you no longer need investors\u2019 permission  to  continue  existing.  For  the  Airbnbs,  ramen\n    profitability was $4,000 a month: $3,500 for rent, and $500 for food. They taped this goal to the\n    mirror in the bathroom of their apartment.\n    The way to get growth started in something like Airbnb is to focus on the hottest subset of the\n    market. If you can get growth started there, it will spread to the rest. When I asked the Airbnbs"
+      }
+    ]
+  }
+]

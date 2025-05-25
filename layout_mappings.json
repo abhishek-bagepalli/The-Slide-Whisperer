@@ -1,0 +1,247 @@
+[
+  {
+    "slide_number": 1,
+    "layout_id": 4,
+    "layout_name": "Title and content 2",
+    "mapping": [
+      {
+        "content_type": "title",
+        "value": "Early Days of Airbnb: Revolutionizing Travel",
+        "placeholder_type": "TITLE",
+        "placeholder_index": 0
+      },
+      {
+        "content_type": "bullets",
+        "value": [
+          "Founded in 2007 by Brian Chesky, Joe Gebbia, and Nathan Blecharczyk",
+          "Launch of AirBed&Breakfast in August 2008 at the Democratic National Convention",
+          "Unique experience of staying with locals and lower prices compared to hotels"
+        ],
+        "placeholder_type": "OBJECT",
+        "placeholder_index": 1
+      },
+      {
+        "content_type": "image_path",
+        "value": "airbnb_launch_at_democratic_national_convention.jpg",
+        "placeholder_type": "PICTURE",
+        "placeholder_index": 13
+      },
+      {
+        "content_type": "speaker_notes",
+        "value": "The early success of Airbnb stemmed from challenging assumptions and creating a new lodging model.",
+        "placeholder_type": "SLIDE_NUMBER",
+        "placeholder_index": 11
+      }
+    ]
+  },
+  {
+    "slide_number": 2,
+    "layout_id": 1,
+    "layout_name": "Title and content with image right",
+    "mapping": [
+      {
+        "content_type": "title",
+        "value": "Financial Creativity and Growth Challenges",
+        "placeholder_type": "TITLE",
+        "placeholder_index": 0
+      },
+      {
+        "content_type": "bullets",
+        "value": [
+          "Designed and sold Obama O's and Cap'n McCain's cereal boxes in 2008",
+          "Struggles to secure funding due to skepticism and economic downturn",
+          "Renewed commitment after contemplating quitting in 2008"
+        ],
+        "placeholder_type": "OBJECT",
+        "placeholder_index": 1
+      },
+      {
+        "content_type": "image_path",
+        "value": "obama_o's_and_cap'n_mccain's_cereal_boxes.jpg",
+        "placeholder_type": "PICTURE",
+        "placeholder_index": 13
+      },
+      {
+        "content_type": "speaker_notes",
+        "value": "The obstacles faced in funding led to a strategic focus on growth and perseverance.",
+        "placeholder_type": "NOTES",
+        "placeholder_index": -1
+      }
+    ]
+  },
+  {
+    "slide_number": 3,
+    "layout_id": 6,
+    "layout_name": "Content + picture",
+    "mapping": [
+      {
+        "content_type": "title",
+        "value": "Ramen Profitability and Market Strategy",
+        "placeholder_type": "TITLE",
+        "placeholder_index": 0
+      },
+      {
+        "content_type": "bullets",
+        "value": [
+          "'Ramen profitability' goal in Y-Combinator program",
+          "Focus on New York City market for growth",
+          "Improving property visuals to enhance user experience"
+        ],
+        "placeholder_type": "OBJECT",
+        "placeholder_index": 1
+      },
+      {
+        "content_type": "image_path",
+        "value": "before_and_after_property_photo_improvement.jpg",
+        "placeholder_type": "PICTURE",
+        "placeholder_index": 14
+      },
+      {
+        "content_type": "speaker_notes",
+        "value": "Achieving 'ramen profitability' marked a crucial milestone in sustaining Airbnb's growth.",
+        "placeholder_type": "SLIDE_NUMBER",
+        "placeholder_index": 12
+      }
+    ]
+  },
+  {
+    "slide_number": 4,
+    "layout_id": 5,
+    "layout_name": "Title + picture",
+    "mapping": [
+      {
+        "content_type": "title",
+        "value": "Innovative User Experience Strategies",
+        "placeholder_type": "CENTER_TITLE",
+        "placeholder_index": 0
+      },
+      {
+        "content_type": "bullets",
+        "value": [
+          "Capturing high-quality photos to drive conversion rates in NYC",
+          "Securing a seed round of $600,000 in April 2009",
+          "Focus on 'doing things that don't scale' to create the perfect user experience"
+        ],
+        "placeholder_type": "BODY",
+        "placeholder_index": 1
+      },
+      {
+        "content_type": "image_path",
+        "value": "chesky_and_gebbia_interacting_with_hosts_in_nyc.jpg",
+        "placeholder_type": "PICTURE",
+        "placeholder_index": 13
+      },
+      {
+        "content_type": "speaker_notes",
+        "value": "Enhancing property visuals led to significant revenue growth and user engagement.",
+        "placeholder_type": "BODY",
+        "placeholder_index": 2
+      }
+    ]
+  },
+  {
+    "slide_number": 5,
+    "layout_id": 5,
+    "layout_name": "Title + picture",
+    "mapping": [
+      {
+        "content_type": "title",
+        "value": "Strategic Funding and Competitive Dynamics",
+        "placeholder_type": "CENTER_TITLE",
+        "placeholder_index": 0
+      },
+      {
+        "content_type": "bullets",
+        "value": [
+          "Securing $7.2 million Series A funding in a crucial growth stage",
+          "Challenges from competitors like Wimdu and strategic decisions",
+          "Focus on long-term sustainability and mission-driven approach"
+        ],
+        "placeholder_type": "BODY",
+        "placeholder_index": 1
+      },
+      {
+        "content_type": "image_path",
+        "value": "funding_impact_on_airbnb's_growth.jpg",
+        "placeholder_type": "PICTURE",
+        "placeholder_index": 13
+      },
+      {
+        "content_type": "speaker_notes",
+        "value": "The funding round played a pivotal role in supporting Airbnb's expansion and development.",
+        "placeholder_type": "CAPTION",
+        "placeholder_index": 2
+      }
+    ]
+  },
+  {
+    "slide_number": 6,
+    "layout_id": 6,
+    "layout_name": "Content + picture",
+    "mapping": [
+      {
+        "content_type": "title",
+        "value": "Global Expansion and Localization Strategy",
+        "placeholder_type": "TITLE",
+        "placeholder_index": 0
+      },
+      {
+        "content_type": "bullets",
+        "value": [
+          "Major funding round in May 2011 for international expansion",
+          "Establishing local offices and hiring local teams for diverse markets",
+          "Acquisition of Accoleo in Germany to solidify presence"
+        ],
+        "placeholder_type": "OBJECT",
+        "placeholder_index": 1
+      },
+      {
+        "content_type": "image_path",
+        "value": "airbnb_office_opening_in_berlin.jpg",
+        "placeholder_type": "PICTURE",
+        "placeholder_index": 14
+      },
+      {
+        "content_type": "speaker_notes",
+        "value": "The emphasis on local presence contributed to Airbnb's transformation into a global travel network.",
+        "placeholder_type": "SLIDE_NUMBER",
+        "placeholder_index": 12
+      }
+    ]
+  },
+  {
+    "slide_number": 7,
+    "layout_id": 4,
+    "layout_name": "Title and content 2",
+    "mapping": [
+      {
+        "content_type": "title",
+        "value": "Sustaining Growth and Strategic Vision",
+        "placeholder_type": "TITLE",
+        "placeholder_index": 0
+      },
+      {
+        "content_type": "bullets",
+        "value": [
+          "Emphasis on community-centric values and long-term sustainability",
+          "Navigating competitive landscape and strategic decision-making",
+          "Commitment to unique identity and mission-driven focus"
+        ],
+        "placeholder_type": "OBJECT",
+        "placeholder_index": 1
+      },
+      {
+        "content_type": "image_path",
+        "value": "reid_hoffman's_investment_reflections.jpg",
+        "placeholder_type": "PICTURE",
+        "placeholder_index": 13
+      },
+      {
+        "content_type": "speaker_notes",
+        "value": "Maintaining a strategic focus on sustainability and values amidst competitive challenges.",
+        "placeholder_type": "SLIDE_NUMBER",
+        "placeholder_index": 11
+      }
+    ]
+  }
+]

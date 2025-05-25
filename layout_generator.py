@@ -1,96 +1,122 @@
-from openai import OpenAI
+from pydantic import BaseModel, Field
+from typing import List
 import json
-from tools import get_image_dimensions
+
+
+class SlideContent(BaseModel):
+    bullets: List[str]
+    image_paths: List[str] = Field(default_factory=list)
+
+class SlideContentForLayout(BaseModel):
+    section: str
+    sub_slide: int
+    slide_content: SlideContent
+
+class Layout(BaseModel):
+    slide_dimensions: dict
+    title_box: dict
+    subtitle_box: dict
+    bulleted: bool
+    content_font_size: int
+    text_box: dict
+    image_paths: List[str]
+    image_boxes: List[dict]
+    title: str
+    subtitle: str
+    text: List[str]
+
+layouts: List[Layout] = []
+
+def generate_layout_for_slide(slide_data: dict) -> dict:
+    """Generate layout for a single slide's data"""
+    # Default slide dimensions (16:9 aspect ratio)
+    slide_dimensions = {
+        "width": 10,
+        "height": 5.625
+    }
+    
+    # Default title box
+    title_box = {
+        "x": 0.5,
+        "y": 0.5,
+        "width": 9,
+        "height": 0.5,
+        "font_size": 24,
+        "padding": 0.1
+    }
+    
+    # Default subtitle box
+    subtitle_box = {
+        "x": 0.5,
+        "y": 1.2,
+        "width": 9,
+        "height": 0.5,
+        "font_size": 18,
+        "padding": 0.1
+    }
+    
+    # Default text box
+    text_box = {
+        "layout": "left",
+        "x": 0.5,
+        "y": 1.8,
+        "width": 4.5,
+        "height": 3.5,
+        "padding": 0.2
+    }
+    
+    # Create image box if there are images
+    image_boxes = []
+    if slide_data["slide_content"]["image_paths"]:
+        image_boxes.append({
+            "layout": "right",
+            "x": 5.5,
+            "y": 1.8,
+            "width": 4.5,
+            "height": 3.5,
+            "padding": 0.2
+        })
+    
+    return {
+        "slide_dimensions": slide_dimensions,
+        "title_box": title_box,
+        "subtitle_box": subtitle_box,
+        "bulleted": True,
+        "content_font_size": 16,
+        "text_box": text_box,
+        "image_paths": slide_data["slide_content"]["image_paths"],
+        "image_boxes": image_boxes,
+        "title": slide_data["section"],
+        "subtitle": f"Sub-slide {slide_data['sub_slide']}",
+        "text": slide_data["slide_content"]["bullets"]
+    }
 
 def get_slide_layout(slide_content):
-    client = OpenAI()
-    
-    # Check if slide has images
-    has_images = bool(slide_content['slide_content'].get('image_paths', []))
-    
-    prompt = f"""
-    You are a professional presentation designer. Design a layout for this slide content. ENSURE THERE IS NO OVERLAP OF TEXT AND IMAGES.
-    
-    Guidelines:
-    - Create a balanced layout that emphasizes key points
-    - Position text and images strategically
-    - Use appropriate font sizes (12-24)
-    - Consider visual hierarchy
-    - Ensure readability
-    - {'Maintain image aspect ratio' if has_images else 'Center text in the slide since there are no images'}
-    - Standard PowerPoint slide dimensions are (10x5.625 inches)
-    - Ensure the text does not overflow the slide.
-    
-    Slide Content:
-    Section: {slide_content['section']}
-    Sub-slide: {slide_content['sub_slide']}
-    Bullets: {slide_content['slide_content']['bullets']}
-    {f"Image Caption: {slide_content['slide_content'].get('image_caption', [])}" if has_images else ""}
-    {f"Image Paths: {slide_content['slide_content'].get('image_paths', [])}" if has_images else ""}
-    {f"Image Dimensions: {slide_content['slide_content'].get('image_dimensions', [])}" if has_images else ""}
-    
-    Return the layout in this JSON format:
-    {{
-        "slide_dimensions": {{
-            "width": 10,
-            "height": 5.625
-        }},
-        "title_box": {{
-            "x": number,
-            "y": number,
-            "width": number,
-            "height": number,
-            "font_size": number,
-            "padding": number
-        }},
-        "subtitle_box": {{
-            "x": number,
-            "y": number,
-            "width": number,
-            "height": number,
-            "font_size": number,
-            "padding": number
-        }},
-        "bulleted": boolean,
-        "content_font_size": number,
-        "text_box": {{
-            "layout": "left/right/top/bottom",
-            "x": number,
-            "y": number,
-            "width": number,
-            "height": number,
-            "padding": number
-        }},
-        "image_paths": ["string"],
-        "image_boxes": [
-            {{
-                "layout": "left/right/top/bottom",
-                "x": number,
-                "y": number,
-                "width": number,
-                "height": number,
-                "padding": number
-            }}
-        ]
-    }}
     """
+    Generate slide layouts based on the content.
     
-    response = client.chat.completions.create(
-        model="gpt-3.5-turbo",
-        messages=[{"role": "user", "content": prompt}],
-        temperature=0.3,
-        max_tokens=1000,
-    )
+    Args:
+        slide_content (list): List of dictionaries containing slide content
+    """
+    layouts = []
     
-    try:
-        layout = json.loads(response.choices[0].message.content.strip())
-        # Add title and text from slide_content
-        layout["title"] = slide_content['section']
-        layout["subtitle"] = f"Sub-slide {slide_content['sub_slide']}" if slide_content['sub_slide'] > 1 else ""
-        layout["text"] = slide_content['slide_content']['bullets']
-        return layout
-    except json.JSONDecodeError:
-        print(f"Error parsing layout for slide {slide_content['section']} {slide_content['sub_slide']}")
-        return None
-
-
+    for slide in slide_content:
+        layout = {
+            "slide_number": slide.get("slide_number", 1),
+            "layout_id": slide.get("layout_id", 1),
+            "layout_name": slide.get("layout_name", "Title and content"),
+            "title": slide.get("title", ""),
+            "content": {
+                "bullets": slide.get("content", {}).get("bullets", []),
+                "image_path": slide.get("content", {}).get("image_path", ""),
+                "speaker_notes": slide.get("content", {}).get("speaker_notes", "")
+            }
+        }
+        layouts.append(layout)
+    
+    # Save the layouts to a JSON file
+    with open("generated_layouts.json", "w") as f:
+        json.dump(layouts, f, indent=2)
+    
+    print("✅ Slide layouts generated and saved to generated_layouts.json")
+    return layouts
