@@ -1,6 +1,6 @@
 # SlideWhisperer
 
-An AI-powered presentation generation system that transforms documents into beautiful, professional slides. SlideWhisperer uses advanced AI to understand your content, generate appropriate layouts, and create engaging presentations with minimal effort.
+An AI-powered presentation generation system that transforms documents into beautiful, professional slides. SlideWhisperer uses advanced AI to understand your content, generate appropriate layouts, and create engaging presentations with minimal effort. This was created by Abhishek Bagepalli (abagepal@purdue.edu), and Abhishek Baskar (baskar2@purdue.edu).
 
 ## Setup
 
