@@ -6,6 +6,7 @@ parse_v1.py
 *.pptx
 images
 *docs
-__pycache__
+__pycache__/
 chroma_db
 *json
+tempCodeRunnerFile.py
