@@ -1,34 +1,34 @@
 [
   {
     "slide_number": 1,
-    "layout_id": 4,
-    "layout_name": "Title and content 2",
+    "layout_id": 1,
+    "layout_name": "Title and content with image right",
     "mapping": [
       {
         "content_type": "title",
-        "value": "Early Days of Airbnb: Revolutionizing Travel",
+        "value": "The Early Days of Airbnb",
         "placeholder_type": "TITLE",
         "placeholder_index": 0
       },
       {
         "content_type": "bullets",
         "value": [
-          "Founded in 2007 by Brian Chesky, Joe Gebbia, and Nathan Blecharczyk",
-          "Launch of AirBed&Breakfast in August 2008 at the Democratic National Convention",
-          "Unique experience of staying with locals and lower prices compared to hotels"
+          "Founded in 2007 by Brian Chesky, Joe Gebbia, and Nathan Blecharczyk, Airbnb challenged traditional lodging norms",
+          "Initial success during the Denver convention with 800 listings and 80 bookings",
+          "Chesky and Gebbia's unique approach of inflating airbeds in their San Francisco apartment to fund their rent"
         ],
         "placeholder_type": "OBJECT",
         "placeholder_index": 1
       },
       {
         "content_type": "image_path",
-        "value": "airbnb_launch_at_democratic_national_convention.jpg",
+        "value": "airbnb_early_days_at_the_design_conference.jpg",
         "placeholder_type": "PICTURE",
         "placeholder_index": 13
       },
       {
         "content_type": "speaker_notes",
-        "value": "The early success of Airbnb stemmed from challenging assumptions and creating a new lodging model.",
+        "value": "Airbnb's founders' unconventional start set the stage for disrupting the hospitality industry by reimagining lodging experiences.",
         "placeholder_type": "SLIDE_NUMBER",
         "placeholder_index": 11
       }
@@ -36,21 +36,21 @@
   },
   {
     "slide_number": 2,
-    "layout_id": 1,
-    "layout_name": "Title and content with image right",
+    "layout_id": 4,
+    "layout_name": "Title and content 2",
     "mapping": [
       {
         "content_type": "title",
-        "value": "Financial Creativity and Growth Challenges",
+        "value": "Creative Fundraising and Growth Challenges",
         "placeholder_type": "TITLE",
         "placeholder_index": 0
       },
       {
         "content_type": "bullets",
         "value": [
-          "Designed and sold Obama O's and Cap'n McCain's cereal boxes in 2008",
-          "Struggles to secure funding due to skepticism and economic downturn",
-          "Renewed commitment after contemplating quitting in 2008"
+          "Designed and sold cereal boxes named Obama O's and Cap'n McCain's for funding during financial difficulties in 2008",
+          "Securing funding proved challenging due to investor skepticism and market saturation",
+          "Airbnb's commitment to three more months of focused work led to significant progress"
         ],
         "placeholder_type": "OBJECT",
         "placeholder_index": 1
@@ -63,114 +63,114 @@
       },
       {
         "content_type": "speaker_notes",
-        "value": "The obstacles faced in funding led to a strategic focus on growth and perseverance.",
-        "placeholder_type": "NOTES",
-        "placeholder_index": -1
+        "value": "The journey of overcoming financial obstacles and the creative solutions adopted by Airbnb's founders demonstrate their resilience in the face of adversity.",
+        "placeholder_type": "SLIDE_NUMBER",
+        "placeholder_index": 11
       }
     ]
   },
   {
     "slide_number": 3,
-    "layout_id": 6,
-    "layout_name": "Content + picture",
+    "layout_id": 1,
+    "layout_name": "Title and content with image right",
     "mapping": [
       {
         "content_type": "title",
-        "value": "Ramen Profitability and Market Strategy",
+        "value": "Strategic Initiatives for Growth",
         "placeholder_type": "TITLE",
         "placeholder_index": 0
       },
       {
         "content_type": "bullets",
         "value": [
-          "'Ramen profitability' goal in Y-Combinator program",
-          "Focus on New York City market for growth",
-          "Improving property visuals to enhance user experience"
+          "Focus on 'ramen profitability' during Y-Combinator program for financial independence",
+          "Emphasis on New York City market to drive growth and improve user experience",
+          "Addressing poor property photos in NYC listings led to a 2.5x increase in conversion rates"
         ],
         "placeholder_type": "OBJECT",
         "placeholder_index": 1
       },
       {
         "content_type": "image_path",
-        "value": "before_and_after_property_photo_improvement.jpg",
+        "value": "growth_strategy_focused_on_new_york_city_market.jpg",
         "placeholder_type": "PICTURE",
-        "placeholder_index": 14
+        "placeholder_index": 13
       },
       {
         "content_type": "speaker_notes",
-        "value": "Achieving 'ramen profitability' marked a crucial milestone in sustaining Airbnb's growth.",
+        "value": "Airbnb's strategic decisions and attention to detail in user experience optimization contributed to its sustained growth and success.",
         "placeholder_type": "SLIDE_NUMBER",
-        "placeholder_index": 12
+        "placeholder_index": 11
       }
     ]
   },
   {
     "slide_number": 4,
-    "layout_id": 5,
-    "layout_name": "Title + picture",
+    "layout_id": 1,
+    "layout_name": "Title and content with image right",
     "mapping": [
       {
         "content_type": "title",
-        "value": "Innovative User Experience Strategies",
-        "placeholder_type": "CENTER_TITLE",
+        "value": "Revenue Model and Community Engagement",
+        "placeholder_type": "TITLE",
         "placeholder_index": 0
       },
       {
         "content_type": "bullets",
         "value": [
-          "Capturing high-quality photos to drive conversion rates in NYC",
-          "Securing a seed round of $600,000 in April 2009",
-          "Focus on 'doing things that don't scale' to create the perfect user experience"
+          "Revenue model involving charges of around 10% for guests and 3% for hosts",
+          "Community-driven approach and mission focus set Airbnb apart from competitors",
+          "Iterative process of fixing issues locally and applying solutions globally for expansion"
         ],
-        "placeholder_type": "BODY",
+        "placeholder_type": "OBJECT",
         "placeholder_index": 1
       },
       {
         "content_type": "image_path",
-        "value": "chesky_and_gebbia_interacting_with_hosts_in_nyc.jpg",
+        "value": "conversion_rates_improvement_in_nyc_listings.jpg",
         "placeholder_type": "PICTURE",
         "placeholder_index": 13
       },
       {
         "content_type": "speaker_notes",
-        "value": "Enhancing property visuals led to significant revenue growth and user engagement.",
-        "placeholder_type": "BODY",
-        "placeholder_index": 2
+        "value": "Airbnb's commitment to building a strong community and continuous improvement has been integral to its differentiation in the market.",
+        "placeholder_type": "SLIDE_NUMBER",
+        "placeholder_index": 11
       }
     ]
   },
   {
     "slide_number": 5,
-    "layout_id": 5,
-    "layout_name": "Title + picture",
+    "layout_id": 1,
+    "layout_name": "Title and content with image right",
     "mapping": [
       {
         "content_type": "title",
-        "value": "Strategic Funding and Competitive Dynamics",
-        "placeholder_type": "CENTER_TITLE",
+        "value": "Milestones and Funding Rounds",
+        "placeholder_type": "TITLE",
         "placeholder_index": 0
       },
       {
         "content_type": "bullets",
         "value": [
-          "Securing $7.2 million Series A funding in a crucial growth stage",
-          "Challenges from competitors like Wimdu and strategic decisions",
-          "Focus on long-term sustainability and mission-driven approach"
+          "Celebration of reaching a million cumulative bookings in February 2011",
+          "Significant $115 million funding round in May 2011 for expansion into Europe",
+          "Acquisition of Accoleo in Germany to establish a presence in key European markets"
         ],
-        "placeholder_type": "BODY",
+        "placeholder_type": "OBJECT",
         "placeholder_index": 1
       },
       {
         "content_type": "image_path",
-        "value": "funding_impact_on_airbnb's_growth.jpg",
+        "value": "airbnb_funding_rounds_and_valuations_over_time.jpg",
         "placeholder_type": "PICTURE",
         "placeholder_index": 13
       },
       {
         "content_type": "speaker_notes",
-        "value": "The funding round played a pivotal role in supporting Airbnb's expansion and development.",
-        "placeholder_type": "CAPTION",
-        "placeholder_index": 2
+        "value": "Airbnb's strategic funding and expansion decisions fueled its growth into international markets, solidifying its position as a global player.",
+        "placeholder_type": "SLIDE_NUMBER",
+        "placeholder_index": 11
       }
     ]
   },
@@ -181,29 +181,29 @@
     "mapping": [
       {
         "content_type": "title",
-        "value": "Global Expansion and Localization Strategy",
+        "value": "Trust and Safety Initiatives",
         "placeholder_type": "TITLE",
         "placeholder_index": 0
       },
       {
         "content_type": "bullets",
         "value": [
-          "Major funding round in May 2011 for international expansion",
-          "Establishing local offices and hiring local teams for diverse markets",
-          "Acquisition of Accoleo in Germany to solidify presence"
+          "Critical incident in July 2011 highlighted challenges in maintaining trust and safety",
+          "Response through the launch of an international professional photography service",
+          "Enhancing property listings to improve user experience and trust on the platform"
         ],
         "placeholder_type": "OBJECT",
         "placeholder_index": 1
       },
       {
         "content_type": "image_path",
-        "value": "airbnb_office_opening_in_berlin.jpg",
+        "value": "professional_photography_service_launch_in_october.jpg",
         "placeholder_type": "PICTURE",
         "placeholder_index": 14
       },
       {
         "content_type": "speaker_notes",
-        "value": "The emphasis on local presence contributed to Airbnb's transformation into a global travel network.",
+        "value": "Airbnb's swift response to trust and safety concerns underscored its commitment to ensuring a secure and reliable platform for users.",
         "placeholder_type": "SLIDE_NUMBER",
         "placeholder_index": 12
       }
@@ -216,31 +216,136 @@
     "mapping": [
       {
         "content_type": "title",
-        "value": "Sustaining Growth and Strategic Vision",
+        "value": "Strategic Decision-Making and Global Expansion",
         "placeholder_type": "TITLE",
         "placeholder_index": 0
       },
       {
         "content_type": "bullets",
         "value": [
-          "Emphasis on community-centric values and long-term sustainability",
-          "Navigating competitive landscape and strategic decision-making",
-          "Commitment to unique identity and mission-driven focus"
+          "Prioritizing local offices and teams for international expansion",
+          "Challenges and decisions faced in response to rapid expansion threats",
+          "Focus on community integration and cultural engagement for global network building"
         ],
         "placeholder_type": "OBJECT",
         "placeholder_index": 1
       },
       {
         "content_type": "image_path",
-        "value": "reid_hoffman's_investment_reflections.jpg",
+        "value": "international_expansion_offices_opened_by_airbnb.jpg",
         "placeholder_type": "PICTURE",
         "placeholder_index": 13
       },
       {
         "content_type": "speaker_notes",
-        "value": "Maintaining a strategic focus on sustainability and values amidst competitive challenges.",
+        "value": "Airbnb's emphasis on local presence and community engagement played a crucial role in its transformation into a global travel network.",
         "placeholder_type": "SLIDE_NUMBER",
         "placeholder_index": 11
+      }
+    ]
+  },
+  {
+    "slide_number": 8,
+    "layout_id": 6,
+    "layout_name": "Content + picture",
+    "mapping": [
+      {
+        "content_type": "title",
+        "value": "Investment Reflections and Competitive Landscape",
+        "placeholder_type": "TITLE",
+        "placeholder_index": 0
+      },
+      {
+        "content_type": "bullets",
+        "value": [
+          "Reflections on initial skepticism and missed investment opportunities by prominent investors",
+          "Comparison of Airbnb's growth trajectory with competitors and industry clones",
+          "Unique value proposition and differentiation factors in the competitive travel market"
+        ],
+        "placeholder_type": "OBJECT",
+        "placeholder_index": 1
+      },
+      {
+        "content_type": "image_path",
+        "value": "samwer_brothers'_launch_of_wimdu.jpg",
+        "placeholder_type": "PICTURE",
+        "placeholder_index": 14
+      },
+      {
+        "content_type": "speaker_notes",
+        "value": "The competitive landscape analysis and investor perspectives shed light on Airbnb's unique positioning and competitive advantage in the industry.",
+        "placeholder_type": "SLIDE_NUMBER",
+        "placeholder_index": 12
+      }
+    ]
+  },
+  {
+    "slide_number": 9,
+    "layout_id": 6,
+    "layout_name": "Content + picture",
+    "mapping": [
+      {
+        "content_type": "title",
+        "value": "Evolution of Business Models and Industry Impact",
+        "placeholder_type": "TITLE",
+        "placeholder_index": 0
+      },
+      {
+        "content_type": "bullets",
+        "value": [
+          "Evolution of revenue models and fee structures for guests and hosts",
+          "Impact of Airbnb's disruptive business model on traditional lodging providers",
+          "Global market penetration and industry influence of Airbnb's innovative approach"
+        ],
+        "placeholder_type": "OBJECT",
+        "placeholder_index": 1
+      },
+      {
+        "content_type": "image_path",
+        "value": "airbnb_bookings_growth_over_time.jpg",
+        "placeholder_type": "PICTURE",
+        "placeholder_index": 14
+      },
+      {
+        "content_type": "speaker_notes",
+        "value": "The evolution of Airbnb's business models and industry impact showcase the company's transformative role in the travel and hospitality sector.",
+        "placeholder_type": "SLIDE_NUMBER",
+        "placeholder_index": 12
+      }
+    ]
+  },
+  {
+    "slide_number": 10,
+    "layout_id": 1,
+    "layout_name": "Title and content with image right",
+    "mapping": [
+      {
+        "content_type": "title",
+        "value": "Lessons Learned and Future Outlook",
+        "placeholder_type": "TITLE",
+        "placeholder_index": 0
+      },
+      {
+        "content_type": "bullets",
+        "value": [
+          "Key learnings from Airbnb's journey of innovation and growth",
+          "Implications for the future of the travel and lodging industry",
+          "Strategic considerations for maintaining Airbnb's competitive edge in the market"
+        ],
+        "placeholder_type": "OBJECT",
+        "placeholder_index": 1
+      },
+      {
+        "content_type": "image_path",
+        "value": "reid_hoffman_reflecting_on_airbnb_investment_at_gr.jpg",
+        "placeholder_type": "PICTURE",
+        "placeholder_index": 13
+      },
+      {
+        "content_type": "speaker_notes",
+        "value": "Reflecting on Airbnb's past successes and challenges provides valuable insights for the company's future strategic direction and industry leadership.",
+        "placeholder_type": "NOTE",
+        "placeholder_index": -1
       }
     ]
   }

@@ -1,9 +1,37 @@
 [
   {
-    "name": "img_p1_1.png",
-    "width": 400,
-    "height": 233,
-    "original_height": 233,
-    "original_width": 400
+    "name": "img_p7_1.png",
+    "width": 611,
+    "height": 480,
+    "original_height": 480,
+    "original_width": 611
+  },
+  {
+    "name": "img_p7_2.png",
+    "width": 973,
+    "height": 872,
+    "original_height": 872,
+    "original_width": 973
+  },
+  {
+    "name": "img_p8_1.png",
+    "width": 761,
+    "height": 509,
+    "original_height": 509,
+    "original_width": 761
+  },
+  {
+    "name": "img_p8_2.png",
+    "width": 480,
+    "height": 360,
+    "original_height": 360,
+    "original_width": 480
+  },
+  {
+    "name": "img_p9_1.png",
+    "width": 600,
+    "height": 390,
+    "original_height": 390,
+    "original_width": 600
   }
 ]

@@ -1,5 +1,5 @@
 import json
-from slide_content_generator import build_prompt_with_placeholder_indices_and_dimensions, generate_slide_content2
+from slide_content_generator import build_prompt_with_placeholder_indices_and_dimensions
 from create_slide import create_slide_from_content
 from openai import OpenAI
 
@@ -60,15 +60,15 @@ def get_layout_mapping(prompt):
     
     return layout_mapping
 
-if __name__ == "__main__":
-    # Example usage
-    template_path = "available_templates/A.pptx"
-    output_path = "generated_presentation.pptx"
-    slide_contents_path = "slide_contents.json"
+# if __name__ == "__main__":
+#     # Example usage
+#     template_path = "available_templates/A.pptx"
+#     output_path = "generated_presentation.pptx"
+#     slide_contents_path = "slide_contents.json"
     
-    # Get layout specs
-    from slide_content_generator import get_llm_friendly_layouts
-    layout_specs = get_llm_friendly_layouts(template_path)
+#     # Get layout specs
+#     from slide_content_generator import get_llm_friendly_layouts
+#     layout_specs = get_llm_friendly_layouts(template_path)
     
-    # Run the pipeline
-    run_presentation_pipeline(template_path, output_path, slide_contents_path, layout_specs) 
+#     # Run the pipeline
+#     run_presentation_pipeline(template_path, output_path, slide_contents_path, layout_specs) 

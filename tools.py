@@ -203,7 +203,8 @@ class PresentationSummarizer:
         - document_queries can be used to get exact quotes or data points from the document.
         - external_research_from_web can be used to get more information from the web.
         - Key visualizations should be relevant to the detailed summary.
-        - Key visualizations should be specific to the content.
+        - Key visualizations should be specific to the content. 
+        - The name of the suggested vizualization should be descriptive.
         
         Remember: You are creating a single, cohesive presentation, not isolated slides. Think about the key details in the chunk that will be relevant to the presentation, the more details the better. Then think about the key themes conveyed by these details. Then think about how to connect the details and the themes in the a coherent and logical summary."""
         
@@ -243,7 +244,7 @@ class PresentationSummarizer:
         
         Please provide your ideation in the following JSON format:
         {{
-            "detailed_summary": "A comprehensive summary (at least 300 words) of the content that captures all important details and nuances",
+            "detailed_summary": "A comprehensive summary (max 400 words) of the content that captures all important details and nuances",
             "key_visualizations": {{"charts": ["visual1", "visual2", ...], "images": ["visual1", "visual2", ...]}},
             "additional_information_needed": {{
                 "document_queries": ["exact quote or data needed from source", ...],
@@ -419,3 +420,44 @@ def get_best_image(text_query, image_index):
 #             slide['slide_content']['image_dimensions'] = dimensions
     
 #     return updated_content
+
+def update_image_dimensions(slide_content):
+    """
+    Updates the image dimensions for each slide in the slide content.
+    
+    Args:
+        slide_content (list): List of slides containing image paths
+        
+    Returns:
+        list: Updated slide content with image dimensions
+    """
+    import os
+    from PIL import Image
+    
+    for slide in slide_content:
+        if 'slide_content' in slide and 'image_paths' in slide['slide_content']:
+            image_dimensions = []
+            for image_path in slide['slide_content']['image_paths']:
+                try:
+                    full_path = os.path.join('images', image_path)
+                    with Image.open(full_path) as img:
+                        width, height = img.size
+                        image_dimensions.append({
+                            'path': image_path,
+                            'width': width,
+                            'height': height
+                        })
+                except Exception as e:
+                    print(f"Error getting dimensions for {image_path}: {str(e)}")
+                    image_dimensions.append({
+                        'path': image_path,
+                        'width': None,
+                        'height': None
+                    })
+            slide['slide_content']['image_dimensions'] = image_dimensions
+    
+    # Save updated slide_content back to file
+    with open('slide_content.json', 'w') as f:
+        json.dump(slide_content, f, indent=2)
+        
+    return slide_content

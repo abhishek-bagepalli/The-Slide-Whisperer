@@ -93,83 +93,83 @@ def generate_slide_content(presentation_data, minimum_slides=10) -> Tuple[List[S
         print(f"Error: Could not validate content. Error details: {str(e)}")
         return None, None
 
-def generate_slide_content2(presentation_data, layout_specs) -> Tuple[List[Slide], PresentationMetadata]:
-    client = OpenAI()
+# def generate_slide_content2(presentation_data, layout_specs) -> Tuple[List[Slide], PresentationMetadata]:
+#     client = OpenAI()
     
-    # Process the content and determine slide structure
-    slide_prompt = f"""
-    Analyze this content and determine how to split it into appropriate slides (max 3 slides):
-    {json.dumps(presentation_data, indent=2)}
+#     # Process the content and determine slide structure
+#     slide_prompt = f"""
+#     Analyze this content and determine how to split it into appropriate slides (max 3 slides):
+#     {json.dumps(presentation_data, indent=2)}
 
-    Available layouts:
-    {json.dumps(layout_specs, indent=2)}
+#     Available layouts:
+#     {json.dumps(layout_specs, indent=2)}
 
-    For each slide, consider:
-    1. Content length and complexity
-    2. Number of bullet points (max 2-3 very detailed bullet points per slide)
-    3. Whether there's an image
-    4. Layout dimensions and placeholder types
+#     For each slide, consider:
+#     1. Content length and complexity
+#     2. Number of bullet points (max 2-3 very detailed bullet points per slide)
+#     3. Whether there's an image
+#     4. Layout dimensions and placeholder types
 
-    Important placeholder type mapping rules:
-    - "title" content_type must map to "TITLE" placeholder_type
-    - "bullets" content_type must map to "BODY" or "OBJECT" placeholder_type
-    - "image_path" content_type must map to "PICTURE" placeholder_type
-    - "speaker_notes" content_type must map to "BODY" placeholder_type
-    - "caption" content_type must map to "SLIDE_NUMBER" placeholder_type
+#     Important placeholder type mapping rules:
+#     - "title" content_type must map to "TITLE" placeholder_type
+#     - "bullets" content_type must map to "BODY" or "OBJECT" placeholder_type
+#     - "image_path" content_type must map to "PICTURE" placeholder_type
+#     - "speaker_notes" content_type must map to "BODY" placeholder_type
+#     - "caption" content_type must map to "SLIDE_NUMBER" placeholder_type
 
-    Return a JSON object with this structure:
-    {{
-        "slides": [
-            {{
-                "slide_number": <int>,
-                "layout_id": <chosen layout id>,
-                "layout_name": "<chosen layout name>",
-                "mapping": [
-                    {{
-                        "content_type": "title" | "bullets" | "image_path" | "speaker_notes" | "caption",
-                        "value": "...",  // the actual content
-                        "placeholder_type": "TITLE" | "BODY" | "PICTURE" | ...,
-                        "placeholder_index": <int>
-                    }},
-                    ...
-                ]
-            }}
-        ]
-    }}
+#     Return a JSON object with this structure:
+#     {{
+#         "slides": [
+#             {{
+#                 "slide_number": <int>,
+#                 "layout_id": <chosen layout id>,
+#                 "layout_name": "<chosen layout name>",
+#                 "mapping": [
+#                     {{
+#                         "content_type": "title" | "bullets" | "image_path" | "speaker_notes" | "caption",
+#                         "value": "...",  // the actual content
+#                         "placeholder_type": "TITLE" | "BODY" | "PICTURE" | ...,
+#                         "placeholder_index": <int>
+#                     }},
+#                     ...
+#                 ]
+#             }}
+#         ]
+#     }}
 
-    Ensure the bullets are very detailed and informative.
-    """
+#     Ensure the bullets are very detailed and informative.
+#     """
 
-    response = client.chat.completions.create(
-        model="gpt-3.5-turbo",
-        messages=[
-            {"role": "system", "content": "You are a presentation expert who creates well-structured slides with appropriate layouts."},
-            {"role": "user", "content": slide_prompt}
-        ],
-        temperature=0.7,
-        max_tokens=3000
-    )
+#     response = client.chat.completions.create(
+#         model="gpt-3.5-turbo",
+#         messages=[
+#             {"role": "system", "content": "You are a presentation expert who creates well-structured slides with appropriate layouts."},
+#             {"role": "user", "content": slide_prompt}
+#         ],
+#         temperature=0.7,
+#         max_tokens=3000
+#     )
 
-    try:
-        content = response.choices[0].message.content.strip()
-        # Find the first { and last } to extract just the JSON object
-        start_idx = content.find('{')
-        end_idx = content.rfind('}') + 1
-        if start_idx == -1 or end_idx == 0:
-            raise ValueError("No valid JSON object found in response")
+#     try:
+#         content = response.choices[0].message.content.strip()
+#         # Find the first { and last } to extract just the JSON object
+#         start_idx = content.find('{')
+#         end_idx = content.rfind('}') + 1
+#         if start_idx == -1 or end_idx == 0:
+#             raise ValueError("No valid JSON object found in response")
         
-        json_str = content[start_idx:end_idx]
-        raw_content = json.loads(json_str)
+#         json_str = content[start_idx:end_idx]
+#         raw_content = json.loads(json_str)
         
-        # Create slides from the response
-        slides = [Slide(**slide) for slide in raw_content["slides"]]
+#         # Create slides from the response
+#         slides = [Slide(**slide) for slide in raw_content["slides"]]
         
-        return slides
+#         return slides
         
-    except Exception as e:
-        print(f"Error generating slides: {str(e)}")
-        print("Raw response content:", content)
-        return None
+#     except Exception as e:
+#         print(f"Error generating slides: {str(e)}")
+#         print("Raw response content:", content)
+#         return None
 
 def get_available_layouts(template_path = "templates/A.pptx"):
     

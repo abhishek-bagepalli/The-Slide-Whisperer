@@ -1,19 +1,23 @@
 # import os
 import json
-from document_parser import extract_text_and_tables
-from tools import clear_images_folder, PresentationSummarizer
-from text_chunker import chunk_text
-from multi_document_rag import MultiDocumentRAG
-from multimodal_rag import build_image_index
-from get_image_from_web import search_and_download_image_from_web
-from tools import get_best_image
-# # from layout_generator import get_slide_layout
+# from document_parser import extract_text_and_tables
+# from tools import clear_images_folder, PresentationSummarizer
+# from text_chunker import chunk_text
+# from multi_document_rag import MultiDocumentRAG
+# from multimodal_rag import build_image_index
+# from get_image_from_web import search_and_download_image_from_web
+# from tools import get_best_image
+# from layout_generator import get_slide_layout
 # from presentation_creator import create_presentation_from_layouts
 # from pydantic import BaseModel, Field
 # from typing import List, Optional
 from slide_content_generator import generate_slide_content
 from layout_generator3 import generate_layout
 from ppt_creator2 import create_presentation_from_template
+from tools import update_image_dimensions
+from slide_content_generator import build_prompt_with_placeholder_indices_and_dimensions,get_llm_friendly_layouts
+from create_slide import create_slide_from_content
+from presentation_pipeline import run_presentation_pipeline
 
 def main():
     # === PARAMETERS ===
@@ -22,6 +26,8 @@ def main():
     min_chunk_size = 1000
     max_chunk_size = 5000
     minimum_slides = 7
+    chosen_template = "available_templates/A.pptx"
+    output_path = "slide_whisper2.pptx"
 
     # print("🚀 Starting presentation generation process...")
 
@@ -129,36 +135,27 @@ def main():
     #     json.dump(presentation_data, f, indent=2)
     # print("✅ Presentation data saved to presentation_data.json")
 
-    with open('presentation_data.json', 'r') as f:
-        presentation_data = json.load(f)
+    # with open('presentation_data.json', 'r') as f:
+    #     presentation_data = json.load(f)
 
-    slide_content = generate_slide_content(presentation_data)
+    # slides, metadata = generate_slide_content(presentation_data)
 
-    print(slide_content)
+    # print("Generated slides:", slides)
+    # print("Generated metadata:", metadata)
 
-    # Convert Slide objects to dictionaries before JSON serialization
-    slide_content_dict = [slide.dict() for slide in slide_content]
-    with open('slide_content.json', 'w') as f:
-        json.dump(slide_content_dict, f, indent=2)
+    # # Convert Slide objects to dictionaries before JSON serialization
+    # slide_content_dict = [slide.model_dump() for slide in slides]
+    # with open('slide_content.json', 'w') as f:
+    #     json.dump(slide_content_dict, f, indent=2)
 
-    # 9. Generate slide layouts
-    # print("Generating slide layouts...")
+    with open('slide_content.json', 'r') as f:
+        slide_content = json.load(f)
 
-    # layout_output = generate_layout(slide_content)
+    updated_slide_content = update_image_dimensions(slide_content)
 
-    # with open('slide_layouts.json', 'w') as f:
-    #     json.dump(layout_output, f, indent=2)
+    layout_specs = get_llm_friendly_layouts(chosen_template)
 
-    
-    # with open('slide_layouts.json', 'r') as f:
-    #     slide_content = json.load(f)
-
-    # template_path = "available_templates/A.pptx"
-    # output_path = "generated_presentation.pptx"
-    # layouts_json_path = "generated_layouts.json"
-
-    # create_presentation_from_template(template_path, output_path, layouts_json_path)
-
+    run_presentation_pipeline(chosen_template, output_path, 'slide_content.json', layout_specs)
 
 
 
