@@ -30,8 +30,9 @@ class PresentationResponse(BaseModel):
     metadata: PresentationMetadata
     slides: List[Slide]
 
-def generate_slide_content(presentation_data, minimum_slides=10) -> Tuple[List[Slide]]:
+def generate_slide_content(presentation_data, minimum_slides=7) -> Tuple[List[Slide]]:
     client = OpenAI()
+    minimum_slides = min(minimum_slides, 7)
     prompt = f"""
     Strict Instructions:
 
@@ -44,7 +45,8 @@ def generate_slide_content(presentation_data, minimum_slides=10) -> Tuple[List[S
     Then, think about all the `detailed_summary` and details in the `retrieved_content_from_document` and how they can be arranged to determine the overall story of the presentation.
     Then, use the information in the `detailed_summary` and the `response` in the `retrieved_content_from_document` to create informative and clear bullet points for each slide. Each bullet point should be detailed in itself.
     Ensure there are a maximum of 3 bullets per slide, if there is only one text box. If there are multiple text boxes, then there should be a maximum of 4 bullets per slide.
-    Then, map all the key visualizations to appropriate slides using the provided image paths, with captions explaining each visualization. No slide should have more than 1 image. Ensure the image paths are taken from the `retrived_image_paths_charts` and `retrived_image_paths_images`. Do not make up any image paths. Do not add anything to the image paths.
+    Then, map all the key visualizations to appropriate slides using the provided image paths. 
+    You are encouraged to use images. Ensure the image paths are taken from the `retrived_image_paths_charts` and `retrived_image_paths_images`. 
     Then, create a JSON object with the following structure:
     {{
         "metadata": {{
@@ -59,7 +61,7 @@ def generate_slide_content(presentation_data, minimum_slides=10) -> Tuple[List[S
                 "slide_content": {{
                     "bullets": ["bullet point 1", "bullet point 2"], 
                     "speaker_notes": "Detailed speaker notes for this slide",
-                    "image_paths": ["path_to_image1.png","path_to_image_2.png"]
+                    "image_paths": ["image_path_1","image_path_2"]
                 }}
             }}
         ]
@@ -72,7 +74,7 @@ def generate_slide_content(presentation_data, minimum_slides=10) -> Tuple[List[S
             {"role": "system", "content": "You are a presentation expert who creates detailed, informative section content in JSON format with specific examples and thorough analysis."},
             {"role": "user", "content": prompt}
         ],
-        temperature=0.7,
+        temperature=0.3,
         max_tokens=4000
     )
     try:
@@ -92,84 +94,6 @@ def generate_slide_content(presentation_data, minimum_slides=10) -> Tuple[List[S
     except Exception as e:
         print(f"Error: Could not validate content. Error details: {str(e)}")
         return None, None
-
-# def generate_slide_content2(presentation_data, layout_specs) -> Tuple[List[Slide], PresentationMetadata]:
-#     client = OpenAI()
-    
-#     # Process the content and determine slide structure
-#     slide_prompt = f"""
-#     Analyze this content and determine how to split it into appropriate slides (max 3 slides):
-#     {json.dumps(presentation_data, indent=2)}
-
-#     Available layouts:
-#     {json.dumps(layout_specs, indent=2)}
-
-#     For each slide, consider:
-#     1. Content length and complexity
-#     2. Number of bullet points (max 2-3 very detailed bullet points per slide)
-#     3. Whether there's an image
-#     4. Layout dimensions and placeholder types
-
-#     Important placeholder type mapping rules:
-#     - "title" content_type must map to "TITLE" placeholder_type
-#     - "bullets" content_type must map to "BODY" or "OBJECT" placeholder_type
-#     - "image_path" content_type must map to "PICTURE" placeholder_type
-#     - "speaker_notes" content_type must map to "BODY" placeholder_type
-#     - "caption" content_type must map to "SLIDE_NUMBER" placeholder_type
-
-#     Return a JSON object with this structure:
-#     {{
-#         "slides": [
-#             {{
-#                 "slide_number": <int>,
-#                 "layout_id": <chosen layout id>,
-#                 "layout_name": "<chosen layout name>",
-#                 "mapping": [
-#                     {{
-#                         "content_type": "title" | "bullets" | "image_path" | "speaker_notes" | "caption",
-#                         "value": "...",  // the actual content
-#                         "placeholder_type": "TITLE" | "BODY" | "PICTURE" | ...,
-#                         "placeholder_index": <int>
-#                     }},
-#                     ...
-#                 ]
-#             }}
-#         ]
-#     }}
-
-#     Ensure the bullets are very detailed and informative.
-#     """
-
-#     response = client.chat.completions.create(
-#         model="gpt-3.5-turbo",
-#         messages=[
-#             {"role": "system", "content": "You are a presentation expert who creates well-structured slides with appropriate layouts."},
-#             {"role": "user", "content": slide_prompt}
-#         ],
-#         temperature=0.7,
-#         max_tokens=3000
-#     )
-
-#     try:
-#         content = response.choices[0].message.content.strip()
-#         # Find the first { and last } to extract just the JSON object
-#         start_idx = content.find('{')
-#         end_idx = content.rfind('}') + 1
-#         if start_idx == -1 or end_idx == 0:
-#             raise ValueError("No valid JSON object found in response")
-        
-#         json_str = content[start_idx:end_idx]
-#         raw_content = json.loads(json_str)
-        
-#         # Create slides from the response
-#         slides = [Slide(**slide) for slide in raw_content["slides"]]
-        
-#         return slides
-        
-#     except Exception as e:
-#         print(f"Error generating slides: {str(e)}")
-#         print("Raw response content:", content)
-#         return None
 
 def get_available_layouts(template_path = "templates/A.pptx"):
     
@@ -227,27 +151,56 @@ def get_llm_friendly_layouts(pptx_path):
     return layouts_info
 # print(get_llm_friendly_layouts("available_templates/A.pptx"))
 
-def build_prompt_with_placeholder_indices_and_dimensions(slide_content, layout_specs):
+def build_prompt_with_placeholder_indices_and_dimensions(slide_content, layout_specs, previous_slide_layout):
     return f"""
-You are an expert presentation assistant. Consider the font size to be 24pt.
 
-Your task is to:
-1. Choose the most appropriate slide layout from the list below.
-2. Assign each content element (e.g., title, bullets, image, speaker notes) to the best-fitting placeholder within that layout.
+        You are an expert AI presentation designer.
 
-Each layout includes:
-- `layout_id`: an integer used to reference the layout.
-- `layout_name`: name of the layout.
-- `placeholders`: a list of available content slots, each described with:
-  - `name`: the internal name of the placeholder.
-  - `placeholder_type`: one of TITLE, BODY, PICTURE, SUBTITLE, SLIDE_NUMBER, etc.
-  - `index`: the internal ID used to refer to this placeholder.
-  - `position`: its top-left location on the slide (in inches).
-  - `size`: its width and height (in inches).
+Your task is to map slide content to the best PowerPoint slide layout from a given set of layout templates.
 
-Please choose a layout and map each content element to a placeholder by matching its `placeholder_type`. Use the `size` to decide which layout has BODY that is most suitable to fit the bullets. Also try to preserve the aspect ratio of the image.
+---
 
-Respond with a JSON object in the following format:
+## Hard Constraints (Must be obeyed):
+
+1. Only choose layouts that contains **all required placeholder types** for the content:
+   - A `TITLE` or `CENTER_TITLE` placeholder for the slide title.
+   - A `BODY` or `OBJECT` placeholder for bullets. **NEVER use SUBTITLE for bullets.**
+   - A `PICTURE` or `OBJECT`placeholder for images, if any.
+   - If more than one image if present, choose the one that best fits the layout.
+   - Other content (e.g. speaker_notes, captions) must also be mapped to compatible placeholder types.
+
+2. Rank all valid layouts by fitness for this slide based on:
+- Placeholder size match for bullets
+- Aspect ratio match for images
+Pick the top-ranked layout.
+
+3. Do not guess or invent layout names or IDs. Only use layouts from the provided list.
+
+---
+
+## Preferred Layout (Soft Constraints):
+
+1. Use placeholder **size** to improve layout choice:
+   - For bullets, prefer placeholders with width ≥ 4.0 inches and height ≥ 2.0 inches.
+   - For images, prefer placeholders whose aspect ratio matches the image’s.
+
+2. Use layout aesthetics only **after** the hard rules are satisfied.
+
+---
+
+## Task:
+
+1. **First**, validate which layouts meet all hard constraints.
+2. **Second**, select the most appropriate layout from the valid ones based on placeholder sizes and image aspect ratio.
+3. **Third**, generate the mapping of content to placeholders in that layout.
+
+---
+
+## Output Format:
+
+Return only a single valid JSON object in this format:
+
+```json
 {{
   "slide_number": <int>,
   "layout_id": <int>,
@@ -255,18 +208,21 @@ Respond with a JSON object in the following format:
   "mapping": [
     {{
       "content_type": "title" | "bullets" | "image_path" | "speaker_notes" | "caption",
-      "value": "...",  // the actual content
-      "placeholder_type": "TITLE" | "BODY" | "PICTURE" | ...,
+      "value": "...",
+      "placeholder_type": "TITLE" | "BODY" | "OBJECT" | "PICTURE" | ...,
       "placeholder_index": <int>
     }},
     ...
   ]
 }}
 
-Here are the available slide layouts:
-{json.dumps(layout_specs, indent=2)}
+        Here is the content for the slide:
+        {json.dumps(slide_content, indent=2)}
 
-Here is the content for the slide:
-{json.dumps(slide_content, indent=2)}
-"""
+        Here are the available slide layouts:
+        {json.dumps(layout_specs, indent=2)}
+
+        previous_slide_layout: {previous_slide_layout}
+
+    """
 

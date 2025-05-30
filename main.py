@@ -10,6 +10,7 @@ from slide_content_generator import generate_slide_content
 from tools import update_image_dimensions
 from slide_content_generator import get_llm_friendly_layouts
 from presentation_pipeline import run_presentation_pipeline
+from pptx import Presentation
 
 def main():
     # === PARAMETERS ===
@@ -130,7 +131,18 @@ def main():
     with open('presentation_data.json', 'r') as f:
         presentation_data = json.load(f)
 
-    slides, metadata = generate_slide_content(presentation_data)
+    slides, metadata = generate_slide_content(presentation_data, minimum_slides)
+
+    # Save metadata to a JSON file
+    metadata_dict = metadata.model_dump()
+    with open('metadata.json', 'w') as f:
+        json.dump(metadata_dict, f, indent=2)
+    print("✅ Metadata saved to metadata.json")
+
+    # Read metadata from JSON file
+    with open('metadata.json', 'r') as f:
+        metadata_dict = json.load(f)
+    
 
     print("Generated slides:", slides)
     print("Generated metadata:", metadata)
@@ -147,9 +159,32 @@ def main():
 
     layout_specs = get_llm_friendly_layouts(chosen_template)
 
+    print(layout_specs)
+
     run_presentation_pipeline(chosen_template, output_path, 'slide_content.json', layout_specs)
 
-
+    # Add title and subtitle to first slide
+    prs = Presentation(output_path)
+    first_slide = prs.slides[0]
+    
+    # Clear existing content
+    for shape in first_slide.shapes:
+        if shape.has_text_frame:
+            shape.text_frame.clear()
+    
+    # Add title
+    title_shape = first_slide.shapes.title
+    if title_shape:
+        title_shape.text = metadata_dict['title']
+    
+    # Add subtitle
+    subtitle_shape = first_slide.placeholders[1]  # Usually the subtitle placeholder
+    if subtitle_shape:
+        subtitle_shape.text = metadata_dict['subtitle']
+    
+    # Save the modified presentation
+    prs.save(output_path)
+    print("✅ Added title and subtitle to first slide")
 
 if __name__ == "__main__":
     main()

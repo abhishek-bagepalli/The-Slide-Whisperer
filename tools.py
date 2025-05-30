@@ -247,8 +247,8 @@ class PresentationSummarizer:
             "detailed_summary": "A comprehensive summary (max 400 words) of the content that captures all important details and nuances",
             "key_visualizations": {{"charts": ["visual1", "visual2", ...], "images": ["visual1", "visual2", ...]}},
             "additional_information_needed": {{
-                "document_queries": ["exact quote or data needed from source", ...],
-                "external_research_from_web": ["topic to research", "specific data point to verify", ...]
+                "document_queries": ["exact quote or data needed from source", ...] (a maximum of 2 unique document queries),
+                "external_research_from_web": ["topic to research", "specific data point to verify", ...] (a maximum of 2 unique external research from web)
             }}
         }}
 

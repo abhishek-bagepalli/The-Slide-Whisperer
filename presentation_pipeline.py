@@ -18,14 +18,15 @@ def run_presentation_pipeline(template_path, output_path, slide_contents_path, l
         slide_contents = json.load(f)
     
     layout_mappings = []
-    
+    previous_slide_layout = None
     # Process each slide content
     for content in slide_contents:
         # Build prompt for layout selection
-        prompt = build_prompt_with_placeholder_indices_and_dimensions(content, layout_specs)
+        prompt = build_prompt_with_placeholder_indices_and_dimensions(content, layout_specs, previous_slide_layout)
         
         layout_mapping = get_layout_mapping(prompt)
         layout_mappings.append(layout_mapping)
+        previous_slide_layout = layout_mapping['layout_id']
 
         print(layout_mapping)
 
@@ -41,24 +42,40 @@ def run_presentation_pipeline(template_path, output_path, slide_contents_path, l
     # Create the final presentation
     create_slide_from_content(template_path, output_path, layout_mappings)
 
-def get_layout_mapping(prompt):
+def get_layout_mapping(prompt: str):
     client = OpenAI()
-    
-    response = client.chat.completions.create(
-        model="gpt-3.5-turbo",
-        messages=[
-            {"role": "system", "content": "You are a presentation expert who maps content to appropriate slide layouts."},
-            {"role": "user", "content": prompt}
-        ],
-        temperature=0.7,
-        max_tokens=1000
-    )
 
-    layout_mapping = response.choices[0].message.content.strip()
-    layout_mapping = layout_mapping.replace('```json', '').replace('```', '').rstrip(',')
-    layout_mapping = json.loads(layout_mapping)
-    
-    return layout_mapping
+    try:
+        response = client.chat.completions.create(
+            model="gpt-3.5-turbo",
+            messages=[
+                {"role": "system", "content": "You are a presentation expert who maps content to appropriate slide layouts."},
+                {"role": "user", "content": prompt}
+            ],
+            temperature=0.3,
+            max_tokens=1200
+        )
+
+        layout_mapping_text = response.choices[0].message.content.strip()
+        json_start = layout_mapping_text.find('{')
+        json_end = layout_mapping_text.rfind('}') + 1
+        layout_mapping_cleaned = layout_mapping_text[json_start:json_end]
+
+        return json.loads(layout_mapping_cleaned)
+
+    except json.JSONDecodeError as e:
+        return {
+            "error": "JSONDecodeError",
+            "message": str(e),
+            "raw_response": layout_mapping_text
+        }
+
+    except Exception as e:
+        return {
+            "error": "Exception",
+            "message": str(e),
+            "raw_response": None
+        }
 
 # if __name__ == "__main__":
 #     # Example usage

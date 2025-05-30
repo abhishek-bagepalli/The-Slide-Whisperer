@@ -16,7 +16,7 @@ load_dotenv()
 class MultiDocumentRAG:
     def __init__(self, 
                  persist_directory: str = "./chroma_db",
-                 chunk_size: int = 3000,
+                 chunk_size: int = 2500,
                  chunk_overlap: int = 200,
                  force_recreate: bool = False):
         """
