@@ -104,8 +104,6 @@ def process_document(file_path, json_output_filename="document_parsed.json", ima
                 "name": name,
                 "width": width,
                 "height": height,
-                "original_height": original_height,
-                "original_width": original_width
             })
 
     # Save image metadata to JSON file

@@ -5,6 +5,7 @@ from openai import OpenAI
 from pptx import Presentation
 from pptx.enum.shapes import MSO_SHAPE_TYPE
 from pptx.enum.shapes import PP_PLACEHOLDER
+from pptx.enum.shapes import PP_PLACEHOLDER_TYPE
 
 class ContentMapping(BaseModel):
     content_type: str
@@ -204,8 +205,9 @@ def get_llm_friendly_layouts(pptx_path):
             if shape.is_placeholder:
                 phf = shape.placeholder_format
                 try:
-                    ph_type = PP_PLACEHOLDER(phf.type).name
-                except ValueError:
+                    # Get the placeholder type directly from the enum value
+                    ph_type = str(phf.type)
+                except (ValueError, AttributeError):
                     ph_type = "UNKNOWN"
 
                 layout_data["placeholders"].append({

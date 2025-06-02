@@ -225,20 +225,18 @@ class PresentationSummarizer:
         Returns:
             PresentationIdeation: A structured ideation object containing detailed summary, visualizations, and additional information
         """
-        # Create context from previous summaries
-        # context = ""
-        # if self.previous_summaries:
-        #     context = "Previous ideations in the presentation:\n"
-        #     for i, prev_summary in enumerate(self.previous_summaries, 1):
-        #         context += f"{i}. {prev_summary}\n"
-        #     context += "\n"
+        # Create a fresh conversation with just the system prompt and current context
+        messages = [{
+            "role": "system",
+            "content": self.system_prompt
+        }]
 
         # Add previous chunk context if available
         chunk_context = ""
         if previous_chunk:
             chunk_context = f"Previous content chunk for context:\n{previous_chunk}\n\n"
 
-        # Add the current text to conversation history
+        # Add the current text to conversation
         prompt = f"""
         {chunk_context}
         
@@ -255,7 +253,7 @@ class PresentationSummarizer:
         Content to ideate on:
         {text}"""
 
-        self.conversation_history.append({
+        messages.append({
             "role": "user",
             "content": prompt
         })
@@ -263,7 +261,7 @@ class PresentationSummarizer:
         # Get response from model
         response = self.client.chat.completions.create(
             model=self.model,
-            messages=self.conversation_history,
+            messages=messages,
             temperature=0.3,
             max_tokens=2000,
         )
@@ -287,12 +285,8 @@ class PresentationSummarizer:
                 additional_information_needed=summary_dict["additional_information_needed"]
             )
             
-            # Add the response to conversation history and previous summaries
+            # Store the summary for reference but don't add to conversation history
             self.previous_summaries.append(summary)
-            self.conversation_history.append({
-                "role": "assistant",
-                "content": summary
-            })
 
             return ideation
         except Exception as e:
