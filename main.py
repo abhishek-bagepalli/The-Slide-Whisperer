@@ -13,7 +13,7 @@ from presentation_pipeline import run_presentation_pipeline
 
 def main():
     # === PARAMETERS ===
-    document_path = "docs/Airbnb Case.pdf"  # Change as needed
+    document_path = "docs/cookbook.pdf"  # Change as needed
     image_folder = "./images"
     min_chunk_size = 1000
     max_chunk_size = 5000
@@ -31,7 +31,7 @@ def main():
     print(f"📄 Processing document: {document_path}")
     print("🔎 Initializing RAG and answering document queries...")
     rag = MultiDocumentRAG()
-    rag.process_documents([document_path])
+    # rag.process_documents([document_path])
 
     with open('document_parsed.json', 'r') as f:
         json_result = json.load(f)
