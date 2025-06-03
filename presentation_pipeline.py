@@ -25,18 +25,21 @@ def run_presentation_pipeline(template_path, output_path, slide_contents_path, l
         prompt = build_prompt_with_placeholder_indices_and_dimensions(content, layout_specs)
         
         layout_mapping = get_layout_mapping(prompt)
+        
+        # Clean up image paths in the mapping
+        for item in layout_mapping['mapping']:
+            if item['content_type'] == 'image_path':
+                # Remove any 'images\' prefix from the path
+                item['value'] = item['value'].replace('images\\', '').replace('images/', '')
+        
         layout_mappings.append(layout_mapping)
-
         print(layout_mapping)
-
         print('--------------------------------')
 
     # Write layout mappings to a JSON file
     with open('layout_mappings.json', 'w') as f:
         json.dump(layout_mappings, f, indent=2)
     print(f"✅ Layout mappings saved to: layout_mappings.json")
-        
-
 
     # Create the final presentation
     create_slide_from_content(template_path, output_path, layout_mappings)

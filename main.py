@@ -1,4 +1,5 @@
 import json
+import os
 from document_parser import extract_text_and_tables
 from tools import clear_images_folder, PresentationSummarizer
 from text_chunker import chunk_text
@@ -10,30 +11,46 @@ from slide_content_generator import generate_slide_content
 from tools import update_image_dimensions
 from slide_content_generator import get_llm_friendly_layouts
 from presentation_pipeline import run_presentation_pipeline
+from config import PATHS
+from pathlib import Path
+import shutil
 
-def main():
+def main(document_path):
     # === PARAMETERS ===
-    document_path = "docs/cookbook.pdf"  # Change as needed
-    image_folder = "./images"
+    if not document_path:
+        raise ValueError("Document path is required")
+        
+    # Clean up any existing data
+    print("🧹 Cleaning up existing data...")
+    for path in [PATHS['document_parsed'], PATHS['presentation_data'], PATHS['slide_content']]:
+        if path.exists():
+            path.unlink()
+    
+    # Clear the chroma database
+    chroma_db = Path("./chroma_db")
+    if chroma_db.exists():
+        shutil.rmtree(chroma_db)
+        
+    image_folder = str(PATHS['images'])
     min_chunk_size = 1000
     max_chunk_size = 5000
     minimum_slides = 7
-    chosen_template = "available_templates/A.pptx"
-    output_path = "outputs/slide_whisper3.pptx"
+    chosen_template = str(PATHS['templates'] / "A.pptx")
+    output_path = str(PATHS['outputs'] / "slide_whisper3.pptx")
 
     print("🚀 Starting presentation generation process...")
+    print(f"📄 Processing document: {document_path}")
 
     # 1. Clear images folder
     print("🗑️ Clearing existing images folder...")
     clear_images_folder()
 
     # 2. Parse document and extract images/metadata
-    print(f"📄 Processing document: {document_path}")
     print("🔎 Initializing RAG and answering document queries...")
-    rag = MultiDocumentRAG()
-    # rag.process_documents([document_path])
+    rag = MultiDocumentRAG(force_recreate=True)  # Force recreation of the database
+    rag.process_documents([document_path])
 
-    with open('document_parsed.json', 'r') as f:
+    with open(PATHS['document_parsed'], 'r') as f:
         json_result = json.load(f)
 
     # 3. Extract text and tables
@@ -104,30 +121,42 @@ def main():
         for query in summary.key_visualizations['charts']:
             image_path, confidence = get_best_image(query, image_index)
             if confidence > 0.3:
+                # Store only the filename without the images\ prefix
+                if image_path:
+                    image_path = os.path.basename(image_path)
                 summary_data["key_visualizations"]["retrived_image_paths_charts"].append(image_path)
             else:
                 image_path = search_and_download_image_from_web(query)
                 if image_path:
+                    # Store only the filename without the images\ prefix
+                    if os.path.isabs(image_path):
+                        image_path = os.path.basename(image_path)
                     summary_data["key_visualizations"]["retrived_image_paths_charts"].append(image_path)
         
         # Process images
         for query in summary.key_visualizations['images']:
             image_path, confidence = get_best_image(query, image_index)
             if confidence > 0.3:
+                # Store only the filename without the images\ prefix
+                if image_path:
+                    image_path = os.path.basename(image_path)
                 summary_data["key_visualizations"]["retrived_image_paths_images"].append(image_path)
             else:
                 image_path = search_and_download_image_from_web(query)
                 if image_path:
+                    # Store only the filename without the images\ prefix
+                    if os.path.isabs(image_path):
+                        image_path = os.path.basename(image_path)
                     summary_data["key_visualizations"]["retrived_image_paths_images"].append(image_path)
         
         presentation_data.append(summary_data)
 
     # Save to JSON
-    with open('presentation_data.json', 'w') as f:
+    with open(PATHS['presentation_data'], 'w') as f:
         json.dump(presentation_data, f, indent=2)
     print("✅ Presentation data saved to presentation_data.json")
 
-    with open('presentation_data.json', 'r') as f:
+    with open(PATHS['presentation_data'], 'r') as f:
         presentation_data = json.load(f)
 
     slides, metadata = generate_slide_content(presentation_data)
@@ -137,19 +166,17 @@ def main():
 
     # Convert Slide objects to dictionaries before JSON serialization
     slide_content_dict = [slide.model_dump() for slide in slides]
-    with open('slide_content.json', 'w') as f:
+    with open(PATHS['slide_content'], 'w') as f:
         json.dump(slide_content_dict, f, indent=2)
 
-    with open('slide_content.json', 'r') as f:
+    with open(PATHS['slide_content'], 'r') as f:
         slide_content = json.load(f)
 
     updated_slide_content = update_image_dimensions(slide_content)
 
     layout_specs = get_llm_friendly_layouts(chosen_template)
 
-    run_presentation_pipeline(chosen_template, output_path, 'slide_content.json', layout_specs)
-
-
+    run_presentation_pipeline(chosen_template, output_path, str(PATHS['slide_content']), layout_specs)
 
 if __name__ == "__main__":
     main()

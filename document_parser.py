@@ -98,12 +98,14 @@ def process_document(file_path, json_output_filename="document_parsed.json", ima
             width = img['width']
             height = img['height']
             name = img['name']
-            original_height = img['original_height']
-            original_width = img['original_width']
+            original_height = img.get('original_height', height)  # Use height as fallback
+            original_width = img.get('original_width', width)    # Use width as fallback
             image_metadata.append({
                 "name": name,
                 "width": width,
                 "height": height,
+                "original_height": original_height,
+                "original_width": original_width
             })
 
     # Save image metadata to JSON file

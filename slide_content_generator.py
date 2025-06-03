@@ -81,6 +81,17 @@ def generate_slide_content(presentation_data, minimum_slides=10) -> Tuple[List[S
         content = content.replace('```json', '').replace('```', '').rstrip(',')
         raw_content = json.loads(content)
         
+        # Clean up image paths in the raw content
+        for slide in raw_content["slides"]:
+            if "slide_content" in slide and "image_paths" in slide["slide_content"]:
+                # Clean up each image path
+                cleaned_paths = []
+                for path in slide["slide_content"]["image_paths"]:
+                    # Remove any 'images\' or 'images/' prefix
+                    cleaned_path = path.replace('images\\', '').replace('images/', '')
+                    cleaned_paths.append(cleaned_path)
+                slide["slide_content"]["image_paths"] = cleaned_paths
+        
         # Validate metadata and slides using Pydantic
         slides = [Slide(**slide) for slide in raw_content["slides"]]
         metadata = PresentationMetadata(**raw_content["metadata"])

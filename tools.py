@@ -151,9 +151,7 @@ def process_document(file_path, json_output_filename="document_parsed.json", ima
             image_metadata.append({
                 "name": name,
                 "width": width,
-                "height": height,
-                "original_height": original_height,
-                "original_width": original_width
+                "height": height
             })
 
     # Save image metadata to JSON file
@@ -204,6 +202,7 @@ class PresentationSummarizer:
         - external_research_from_web can be used to get more information from the web.
         - Key visualizations should be relevant to the detailed summary.
         - Key visualizations should be specific to the content. 
+        - Suggest at least 3 key visualizations.
         - The name of the suggested vizualization should be descriptive.
         
         Remember: You are creating a single, cohesive presentation, not isolated slides. Think about the key details in the chunk that will be relevant to the presentation, the more details the better. Then think about the key themes conveyed by these details. Then think about how to connect the details and the themes in the a coherent and logical summary."""
@@ -301,7 +300,6 @@ class PresentationSummarizer:
         self.previous_summaries = []
 
 def get_best_image(text_query, image_index):
-    
     query_emb = get_text_embedding(text_query)
     best_score = -1
     best_image = None
@@ -309,7 +307,7 @@ def get_best_image(text_query, image_index):
         score = F.cosine_similarity(query_emb, img_emb, dim=0).item()
         if score > best_score:
             best_score = score
-            best_image = fname
+            best_image = os.path.join("images", fname)
     return best_image, best_score
 
 # def get_image_dimensions(image_name):
@@ -433,7 +431,23 @@ def update_image_dimensions(slide_content):
             image_dimensions = []
             for image_path in slide['slide_content']['image_paths']:
                 try:
-                    full_path = os.path.join('images', image_path)
+                    # If the path is already absolute, use it directly
+                    if os.path.isabs(image_path):
+                        full_path = image_path
+                    else:
+                        # Otherwise, join with the images directory
+                        full_path = os.path.join('images', image_path)
+                    
+                    print(f"Attempting to open image at: {full_path}")
+                    if not os.path.exists(full_path):
+                        print(f"Image file does not exist: {full_path}")
+                        image_dimensions.append({
+                            'path': image_path,
+                            'width': None,
+                            'height': None
+                        })
+                        continue
+                        
                     with Image.open(full_path) as img:
                         width, height = img.size
                         image_dimensions.append({
@@ -441,6 +455,7 @@ def update_image_dimensions(slide_content):
                             'width': width,
                             'height': height
                         })
+                        print(f"Successfully processed image: {full_path}")
                 except Exception as e:
                     print(f"Error getting dimensions for {image_path}: {str(e)}")
                     image_dimensions.append({

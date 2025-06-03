@@ -29,19 +29,19 @@ def search_and_download_image_from_web(
     query: str,
     output_dir: str = "images",
     filename: Optional[str] = None,
-    index: int = 0
+    max_attempts: int = 5  # Try up to 5 different images
 ) -> Optional[str]:
     """
-    Search Tavily for an image and download the first result.
+    Search Tavily for an image and download the first working result.
 
     Args:
         query (str): The image search query (e.g., image caption).
         output_dir (str): Directory to save the downloaded image.
         filename (str, optional): Filename for the image (defaults to slugified query).
-        index (int): Which image result to download (0 = top result).
+        max_attempts (int): Maximum number of different images to try.
 
     Returns:
-        str: Path to the saved image, or None if no image found.
+        str: Full path to the saved image, or None if no working image found.
     """
     try:
         print(f"🔍 Searching for image: {query}")
@@ -51,25 +51,44 @@ def search_and_download_image_from_web(
             print("⚠️ No images found for this query.")
             return None
 
-        image_url = results["images"][index]
-        print(f"📸 Found image URL: {image_url}")
-
         # Prepare save path
         os.makedirs(output_dir, exist_ok=True)
         safe_filename = filename or f"{query.lower().replace(' ', '_')[:50]}.jpg"
-        image_path = safe_filename
-        image_path2 = os.path.join(output_dir, safe_filename)
+        image_path = os.path.join(output_dir, safe_filename)
 
-        # Download and save image
-        img_data = requests.get(image_url).content
-        with open(image_path2, "wb") as f:
-            f.write(img_data)
+        # Try multiple images until we find one that works
+        for i, image_url in enumerate(results["images"][:max_attempts]):
+            try:
+                print(f"📸 Trying image {i+1}/{max_attempts}: {image_url}")
+                
+                # Download image
+                img_data = requests.get(image_url).content
+                
+                # Try to open and verify the image
+                img = Image.open(BytesIO(img_data))
+                
+                # Convert to RGB if necessary
+                if img.mode in ('RGBA', 'LA') or (img.mode == 'P' and 'transparency' in img.info):
+                    background = Image.new('RGB', img.size, (255, 255, 255))
+                    background.paste(img, mask=img.split()[-1] if img.mode == 'RGBA' else None)
+                    img = background
+                elif img.mode != 'RGB':
+                    img = img.convert('RGB')
+                
+                # Save as JPEG
+                img.save(image_path, 'JPEG', quality=95)
+                print(f"✅ Successfully saved image at: {image_path}")
+                return image_path
+                
+            except Exception as e:
+                print(f"⚠️ Failed to process image {i+1}: {str(e)}")
+                continue  # Try the next image
 
-        print(f"✅ Image saved at: {image_path2}")
-        return image_path
+        print("❌ Could not find any working images after trying all attempts")
+        return None
 
     except Exception as e:
-        print(f"❌ Failed to download image: {e}")
+        print(f"❌ Failed to search for images: {e}")
         return None
 
 def update_slide_content(slide_content):    

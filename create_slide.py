@@ -2,6 +2,7 @@ from pptx import Presentation
 from pptx.util import Inches, Pt
 from pptx.enum.text import MSO_AUTO_SIZE
 import os
+from config import PATHS
 
 def create_slide_from_content(template_path, output_path, slides_data):
     """
@@ -84,14 +85,16 @@ def create_slide_from_content(template_path, output_path, slides_data):
                 
                 # Handle image
                 elif item['content_type'] == 'image_path':
-                    image_path = './images/' + item['value']
-                    if os.path.exists(image_path):
+                    # Join with PATHS['images'] using the filename
+                    image_path = PATHS['images'] / item['value']
+                    if image_path.exists():
                         try:
                             left = shape.left
                             top = shape.top
                             width = shape.width
                             height = shape.height
-                            slide.shapes.add_picture(image_path, left, top, width, height)
+                            slide.shapes.add_picture(str(image_path), left, top, width, height)
+                            print(f"✅ Added image: {image_path}")
                         except Exception as e:
                             print(f"⚠️ Error adding image: {str(e)}")
                     else:
