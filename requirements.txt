@@ -9,7 +9,6 @@ chromadb
 langchain
 langchain-openai
 langchain-community
-langchain-huggingface
 openai
 pydantic
 python-docx
@@ -18,7 +17,8 @@ requests
 beautifulsoup4
 llama-parse
 llama-index
+--find-links https://download.pytorch.org/whl/torch_stable.html
+torch==2.2.1+cpu
 transformers
-torch
 sentence-transformers
 huggingface-hub 
