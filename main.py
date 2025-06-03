@@ -7,7 +7,8 @@ from multi_document_rag import MultiDocumentRAG
 from multimodal_rag import build_image_index
 from get_image_from_web import search_and_download_image_from_web
 from tools import get_best_image
-from slide_content_generator import generate_slide_content
+# from slide_content_generator import generate_slide_content
+from slide_wise_generator import generate_slide_content
 from tools import update_image_dimensions
 from slide_content_generator import get_llm_friendly_layouts
 from presentation_pipeline import run_presentation_pipeline
@@ -179,4 +180,4 @@ def main(document_path):
     run_presentation_pipeline(chosen_template, output_path, str(PATHS['slide_content']), layout_specs)
 
 if __name__ == "__main__":
-    main()
+    main('docs/Uber.pdf')
