@@ -1,0 +1,6 @@
+app_location: "/frontend"
+api_location: ""
+output_location: "out"
+app_build_command: "npm run build && npm run export"
+api_build_command: ""
+app_artifact_location: "out" 

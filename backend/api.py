@@ -29,6 +29,15 @@ app.add_middleware(
     allow_headers=["*"],
 )
 
+# Add CORS middleware
+app.add_middleware(
+    CORSMiddleware,
+    allow_origins=["https://*.azurestaticapps.net"],
+    allow_credentials=True,
+    allow_methods=["*"],
+    allow_headers=["*"],
+)
+
 @app.post("/upload")
 async def upload_file(file: UploadFile = File(...)):
     # Save the uploaded file
