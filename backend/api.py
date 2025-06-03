@@ -1,6 +1,6 @@
 from fastapi import FastAPI, UploadFile, File
 from fastapi.middleware.cors import CORSMiddleware
-from fastapi.responses import FileResponse
+from fastapi.responses import FileResponse, JSONResponse
 import shutil
 import os
 from pathlib import Path
@@ -15,6 +15,12 @@ PROJECT_ROOT = Path(__file__).parent.parent
 # Add the parent directory to sys.path to import the main processing module
 sys.path.append(str(PROJECT_ROOT))
 
+# Create necessary directories
+REQUIRED_DIRS = ['uploads', 'outputs', 'images', 'docs']
+for dir_name in REQUIRED_DIRS:
+    dir_path = PROJECT_ROOT / dir_name
+    dir_path.mkdir(parents=True, exist_ok=True)
+
 from main import main
 from config import PATHS
 
@@ -23,11 +29,26 @@ app = FastAPI()
 # Configure CORS
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["http://localhost:3000"],  # Frontend URL
+    allow_origins=[
+        "http://localhost:3000",  # Local development
+        "https://*.azurewebsites.net",  # Azure domains
+        "https://*.azurestaticapps.net"  # Azure Static Web Apps
+    ],
     allow_credentials=True,
     allow_methods=["*"],
     allow_headers=["*"],
 )
+
+@app.get("/")
+async def root():
+    return JSONResponse({
+        "status": "success",
+        "message": "Slide Whisperer API is running",
+        "endpoints": {
+            "upload": "/upload",
+            "download": "/download/{filename}"
+        }
+    })
 
 @app.post("/upload")
 async def upload_file(file: UploadFile = File(...)):
@@ -107,6 +128,17 @@ async def download_file(filename: str):
         print(f"❌ Error serving file: {str(e)}")
         os.chdir(original_dir)
         return {"error": str(e)}
+
+@app.get("/test")
+async def test():
+    return JSONResponse({
+        "status": "success",
+        "message": "API is working",
+        "project_root": str(PROJECT_ROOT),
+        "directories": {
+            dir_name: str(PROJECT_ROOT / dir_name) for dir_name in REQUIRED_DIRS
+        }
+    })
 
 if __name__ == "__main__":
     import uvicorn
