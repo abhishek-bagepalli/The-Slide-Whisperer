@@ -4,7 +4,6 @@ from typing import List, Dict
 from document_parser import process_document
 from langchain_chroma import Chroma
 from langchain_community.embeddings import HuggingFaceEmbeddings
-from langchain_huggingface import HuggingFaceEmbeddings
 from langchain.text_splitter import RecursiveCharacterTextSplitter
 from langchain.schema import Document
 from langchain.chains import RetrievalQA

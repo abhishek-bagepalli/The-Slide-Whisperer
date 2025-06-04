@@ -1,17 +1,19 @@
 import nest_asyncio
-from PIL import Image
 import json
 import os
 from llama_parse import LlamaParse
-from llama_index.core import SimpleDirectoryReader
-from transformers import CLIPProcessor, CLIPModel
-import torch
 from dotenv import load_dotenv
+import asyncio
 
 
 load_dotenv()
 
-nest_asyncio.apply()
+# Only apply nest_asyncio if we're not using uvloop
+try:
+    import uvloop
+    asyncio.set_event_loop_policy(uvloop.EventLoopPolicy())
+except ImportError:
+    nest_asyncio.apply()
 
 def rename_image_files(job_id, images_dir="./images"):
     """

@@ -1,18 +1,11 @@
 from openai import OpenAI
-from langchain.tools import tool
 import os
 import shutil
-from multimodal_rag import get_text_embedding, build_image_index
+from multimodal_rag import get_text_embedding
 import torch.nn.functional as F
 import json
-from typing_extensions import TypedDict
-from langgraph.graph import StateGraph, END
-import torch
-from pptx import Presentation
-from pptx.util import Inches, Pt
 from llama_parse import LlamaParse
 from document_parser import rename_image_files
-import copy
 from pydantic import BaseModel, Field
 from typing import List, Dict
 

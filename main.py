@@ -4,7 +4,8 @@ from document_parser import extract_text_and_tables
 from tools import clear_images_folder, PresentationSummarizer
 from text_chunker import chunk_text
 from multi_document_rag import MultiDocumentRAG
-from multimodal_rag import build_image_index
+# from multimodal_rag import build_image_index  # Comment out local version
+from multimodal_rag_api import build_image_index  # Use API version instead
 from get_image_from_web import search_and_download_image_from_web
 from tools import get_best_image
 # from slide_content_generator import generate_slide_content
@@ -180,4 +181,4 @@ def main(document_path):
     run_presentation_pipeline(chosen_template, output_path, str(PATHS['slide_content']), layout_specs)
 
 if __name__ == "__main__":
-    main('docs/Uber.pdf')
+    main('docs/Cosmology.pdf')

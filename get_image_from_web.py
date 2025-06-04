@@ -1,17 +1,11 @@
 import os
 import requests
-from langchain_community.tools.tavily_search import TavilySearchResults
 from dotenv import load_dotenv
-import os
-import requests
 from tavily import TavilyClient
 from typing import Optional
-from tools import get_best_image, build_image_index
-from typing import List, Dict
-import requests
+from tools import get_best_image
 from PIL import Image
 from io import BytesIO
-from tools import get_best_image
 from multimodal_rag import build_image_index
 import copy
 import json
