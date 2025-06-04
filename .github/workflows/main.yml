@@ -1,0 +1,36 @@
+name: Deploy to Azure Web App
+
+on:
+  push:
+    branches:
+      - build-frontend  # or your specific branch name
+
+jobs:
+  build-and-deploy:
+    runs-on: ubuntu-latest
+    
+    steps:
+    - uses: actions/checkout@v2
+    
+    - name: Set up Python
+      uses: actions/setup-python@v2
+      with:
+        python-version: '3.12'
+    
+    - name: Install dependencies
+      run: |
+        cd backend
+        python -m pip install --upgrade pip
+        pip install -r requirements.txt
+
+    - name: Azure Login
+      uses: azure/login@v1
+      with:
+        creds: ${{ secrets.AZURE_CREDENTIALS }}
+    
+    - name: Deploy to Azure Web App
+      uses: azure/webapps-deploy@v3
+      with:
+        app-name: slide-whisperer-backend
+        package: ./backend
+        publish-profile: ${{ secrets.AZURE_WEBAPP_PUBLISH_PROFILE }}
