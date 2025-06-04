@@ -3,7 +3,7 @@ name: Deploy to Azure Web App
 on:
   push:
     branches:
-      - build-frontend # or your specific branch name
+      - build-frontend
 
 jobs:
   build-and-deploy:
@@ -27,7 +27,8 @@ jobs:
       uses: azure/login@v1
       with:
         creds: ${{ secrets.AZURE_CREDENTIALS }}
-    
+        enable-AzPSSession: true
+
     - name: Deploy to Azure Web App
       uses: azure/webapps-deploy@v3
       with:
