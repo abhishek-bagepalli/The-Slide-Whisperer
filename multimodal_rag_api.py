@@ -5,7 +5,7 @@ import io
 import base64
 from typing import List, Tuple
 
-#random changes
+#random changes 2
 # Hugging Face API configuration
 API_URL = "https://api-inference.huggingface.co/models/openai/clip-vit-base-patch32"
 headers = {"Authorization": f"Bearer {os.getenv('HUGGINGFACE_API_KEY')}"}
